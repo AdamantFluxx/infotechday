@@ -46,10 +46,11 @@ h1 {
 }
 .wrapper .row section{
   background: #fff;
+  /*
   border-radius: 5px;
   border-width: 1px;
   border-color: black;
-  border-style: solid;
+  border-style: solid; */
   width: calc(50% - 40px);
   padding: 20px;
   position: relative;
@@ -69,22 +70,33 @@ h1 {
 /* Over here is speaker profile css */
 
 .container-1 {
-  background-color: #6497B2;
+  background-color: #FCFCFC;
   
   padding: 20px;
   position: relative;
 }
 
 .card {
-    margin: 3%;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 10%;
+    margin-bottom: -5%;
+    border: none;
+    background-color: #FCFCFC;
+    
 
 }
 
 .card-img-top {
-    
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     height: 350px ;
     
+}
+
+.card-body {
+  border: none;
+}
+
+.row-speaker {
+  justify-content: center;
 }
 
 
@@ -160,12 +172,18 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
+
+
+.row section {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
 .row section .details .title{
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .row section h5 {
+  font-size: 20px;
   font-weight: bold;
 }
 .row section p{
