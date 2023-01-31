@@ -79,10 +79,13 @@ h1 {
 .card {
     margin: 10%;
     margin-bottom: -5%;
-    border: none;
+    border: 0;
     background-color: #FCFCFC;
-    
+}
 
+.card-body {
+  background-color: #FCFCFC;
+  border: 0;
 }
 
 .card-img-top {

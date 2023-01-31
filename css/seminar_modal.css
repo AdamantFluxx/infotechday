@@ -1,0 +1,40 @@
+
+
+
+
+.modal-content{
+    width: 600px;
+}
+.speaker {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 200px ;
+    margin-left: 20px;
+    margin-right: -20px;
+}
+
+.name {
+    font-size: 22px;
+}
+
+.content {
+    
+    width: 350px;
+}
+
+.titles {
+    margin-bottom: 6%;
+}
+
+.content-2 {
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+
+
+
+
+
