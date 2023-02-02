@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -17,8 +20,19 @@ body{
     width: 100%;
 
 }
-
-
+#navbar{
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    top:0;
+    transition: top 0.1s;
+}
+#navbarMenu{
+    z-index: 100;
+    width: 100%;
+    top:55px;
+    transition: top 0.1s;
+}
 #seminarSelect {
     display: inline-block;
     transition: 1s;
@@ -60,7 +74,7 @@ a {
 }
 
 .rounded-xl {
-    filter: brightness(50%);
+
     border-radius: 2rem;
 
 }

@@ -6,6 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../js/nav.js">
+
+    </script>
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
@@ -15,27 +20,26 @@
 </head>
 
 <body id="toTop" data-spy="scroll" data-target=".navbar">
-
-    <!--nav logo-->
-    <nav class="navbar navbar-custom">
+    <nav id="navbar" class="navbar navbar-custom">
         <img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" width="400" height="45"></a>
     </nav>
     <!--nav menu-->
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <nav id="navbarMenu" style="position:fixed; z-index: 100; width: 100%;"
+        class="navbar navbar-expand-lg navbar-custom">
+
+        
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navMenu">
+        <div class=" navbar-collapse" id="navMenu">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link page-scroll">Projects</a>
+                    <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#seminars">Seminars</a>
+                    <a class="nav-link" href="index.html#seminars">Seminars</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#iit">IIT Courses</a>
+                    <a class="nav-link" href="index.html#iit">IIT Courses</a>
                 </li>
             </ul>
             <span class="navbar-text">
@@ -44,12 +48,14 @@
                         <a class="nav-link" href="../html/about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Getting To TP</a>
+                        <a class="nav-link" href="../html/directions.html">Getting To TP</a>
                     </li>
                 </ul>
             </span>
         </div>
     </nav>
+
+
     <center><img id="banner" style="width: 100%; height: auto;" src="../img/landing_titled.PNG"></center>
     <br>
     <center>
@@ -168,31 +174,31 @@
         <br>
         <div class="container">
             <div id="aiproject" class="col-sm-5">
-                <p><a href="#projects"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                <p><a target="_blank" href="https://www.tp.edu.sg/schools-and-courses/students/schools/iit/common-ict-programme.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
                             src="../img/common_ict.jpg">
                 </p>
                 <br>
             </div>
             <div id="bdproject" class="col-sm-5 col-sm-offset-1">
-                <p><a href="#projects"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                <p><a target="_blank" href="https://www.tp.edu.sg/schools-and-courses/students/schools/iit/applied-artificial-intelligence.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
                             src="../img/applied_ai.jpg">
                 </p>
                 <br>
             </div>
             <div id="csproject" class="col-sm-5">
-                <p><a href="#projects"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                <p><a target="_blank" href="https://www.tp.edu.sg/schools-and-courses/students/schools/iit/big-data-analytics.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
                             src="../img/big_data.jpg">
                 </p>
                 <br>
             </div>
             <div id="improject" class="col-sm-5 col-sm-offset-1">
-                <p><a href="#projects"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                <p><a target="_blank" href="https://www.tp.edu.sg/schools-and-courses/students/schools/iit/cybersecurity-digital-forensics.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
                             src="../img/cybersecurity_digitalforensics.jpg">
                 </p>
                 <br>
             </div>
             <div id="improject" class="col-sm-5">
-                <p><a href="#projects"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                <p><a  target="_blank"  href="https://www.tp.edu.sg/schools/iit/information-technology"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
                             src="../img/iit.jpg">
                 </p>
                 <br>
@@ -210,7 +216,8 @@
     <section id="footer" class="footer-section">
         <p> Organized by:</p>
         <img src="../img/tp-justified-red.png" height="50">
- 
+
+        <script src="../js/navload.js"></script>
 
     </section>
 </body>
