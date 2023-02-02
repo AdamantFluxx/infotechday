@@ -1,0 +1,70 @@
+/*----- Tabs -----*/
+.tabs {
+	width: 100%;
+	display: inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.tab-links li {
+	margin: 2px 12px;
+	display: inline-block;
+	list-style: none;
+}
+
+.tab-links a {
+	padding: 9px 15px;
+	display: inline-block;
+	border-radius: 3px 3px 0px 0px;
+	background: #e5a7a7;
+	font-size: 16px;
+	font-weight: 600;
+	transition: all linear 0.15s;
+}
+
+.tab-links a:hover {
+	background: #e46e6e;
+	text-decoration: none;
+}
+
+li.active a,
+li.active a:hover {
+	background: #EA1C2D;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+	padding: 15px;
+	border-radius: 3px;
+	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+	background: #fff;
+}
+
+.tab {
+	display: none;
+}
+
+.tab.active {
+	display: block;
+}
+
+#parking-table {
+
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+@media all and (min-width: 720px) {
+
+#tpmap{
+	width: 100%;
+
+}
+}
+
