@@ -1,0 +1,1540 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/search.css" rel="stylesheet">
+
+
+    <style>
+        /*Banner Imager*/
+
+        .img-wrapper {
+            position: relative;
+        }
+
+            .img-wrapper img {
+                width: 100%;
+            }
+
+            .img-wrapper .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .img-wrapper h2 {
+                margin: 0 0 .5em;
+            }
+
+        /*End*/
+        /*Project image center*/
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .image {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+
+            .image img {
+                display: block;
+                width: 245px;
+                height: 138px;
+            }
+/*Read More Button*/
+            .btnDesign {
+              border-radius: 12px;
+              transition-duration: 0.4s;
+              background-color: #afdbf1;
+            }
+
+            .btnDesign:hover {
+              background-color: #c4e3f3;
+            }
+/*modal*/
+            .modal {
+                text-align: center;
+            }
+            .modal-dialog {
+                text-align: left; /* you'll likely want this */
+                max-width: 100%;
+                width: auto !important;
+                display: inline-block;
+            }
+    </style>
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+
+
+
+    <title>InfoTech Day 2023</title>
+</head>
+
+
+
+
+
+<body id="toTop" data-spy="scroll" data-target=".navbar" style="overflow-x: hidden;">
+
+    <!--nav logo-->
+    <nav class="navbar navbar-custom">
+        <a><img src="..\img\tp-horizontal-white.png" alt="Temasek Polytechnic" width="400" height="45"></a>
+    </nav>
+    <!--nav menu-->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#seminars">Seminars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#iit">IIT Courses</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Getting To TP</a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </nav>
+    <!--Banner With Button-->
+    <center>
+
+        <div class="img-wrapper">
+            <img src="../img/cybersecurityBanner.jpg" />
+            <div class="overlay">
+                <h1 style="color:white;">Cybersecurity &amp; Digital Forensics Projects</h1>
+                <div class="container">
+                  <input type="search" placeholder="Search..." class="form-control search-input" data-table="customers-list"/>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </center>
+    <!--Banner End-->
+    <br>
+    <!--Search Bar-->
+
+    <!--back to top icon-->
+    <div id="backTop">
+        <a style="position: fixed; right: 50px; bottom: 15px; z-index: 100 "
+           onClick="ga('send', 'event', { eventCategory: 'InfoTech Day 2022', eventAction: 'InfoTech Day 2022:Navigation', eventLabel: 'Page Top'});"
+           class="page-scroll" href="#toTop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="71.736" height="73.837"
+                 viewBox="0 0 71.736 73.837">
+                <path id="Icon_awesome-arrow-alt-circle-up" data-name="Icon awesome-arrow-alt-circle-up"
+                      d="M.562,37.481C.562,17.087,16.616.563,36.43.563S72.3,17.087,72.3,37.481,56.244,74.4,36.43,74.4.562,57.876.562,37.481ZM42.794,54.75V37.481H53.048a1.8,1.8,0,0,0,1.229-3.052L37.66,17.414a1.685,1.685,0,0,0-2.444,0L18.583,34.429a1.793,1.793,0,0,0,1.229,3.052H30.067V54.75A1.767,1.767,0,0,0,31.8,56.536h9.256A1.767,1.767,0,0,0,42.794,54.75Z"
+                      transform="translate(-0.563 -0.563)" fill="#002f5e" />
+            </svg>
+        </a>
+    </div>
+
+    <!--projects-->
+    <section id="projectAiOthers" class="projects-section" >
+
+        <center>
+          <table class="table table-bordered table-striped customers-list" id="otherprojects_table" >
+            <tr>
+                <th  style="background-color: #011b77; color: #ffffff;"><h4>Project Title &nbsp;</h4></th>
+                <th onclick="sortTable(1)" style="background-color: #011b77; color: #ffffff; width: 10%;"></th>
+            </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Metrics Consolidation & CTI Runbook</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity9"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Segregation of Duties</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity10"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Trend Micro Cloud One Sales Kit</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity11"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Automated Benchmarking Tool for Linux</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity12"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Security Operations Automation Initiative</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity13"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Malware Information Sharing Platform (MISP)</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity14"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Android Malware Incident Response</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity15"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Smart Alexa Planter</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity16"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">IoT Cloud Exploration</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity17"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Azure IoT Exploration</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity18"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Operational Technology Cybersecurity</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity19"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Crime Scene Evaluation Challenge</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity20"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Automation Scripts</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity21"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">MacOS Forensics Analysis Tool</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity22"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">CyberHeroes</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity23"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Develop Systematic Threats For Smart Industry Systems</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity24"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Enhanced IP Platform</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity25"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Kroll’s Live Incident Response Case</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity26"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Keyboard in Disguise</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity27"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Mobile Cyber Range</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity28"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Cybersecurity for the Seniors</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity29"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Secure Infrastructure for Vehicle Charging at Electric Vehicle (EV) Charging Point</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity30"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Malware Analysis Project</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity31"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">AWS Environment Setup</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity32"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Sandcastle Analysis Platform</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity33"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">The Hacker’s Playground 2</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity34"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Whitelist Analyzer & Report Automation</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity35"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Detecting Spam Emails Using Machine Learning</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity36"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">CTF Playground</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity37"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Quantum CI Analysis Collector Enhancement</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity38"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Youth Cyber Exchange Programme (YCEP)</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity39"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Automated Static Analysis of Malware (ASAM)</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#cybersecurity40"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">World Skills Singapore Simulation</td>
+                <td class="info"><a data-toggle="modal" href="#cybersecurity41"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+    
+          </table> 
+        </div>
+      </div>
+
+        </center>
+
+    </section>
+
+    <!--
+         <div id="ai-analytics_modal"></div>
+    -->
+
+
+
+    <br />
+    <section id="footer" class="footer-section">
+      <p> Organized by:</p>
+      <img src="../img/tp-justified-red.png" height="50">
+
+      <script src="../js/navload.js"></script>
+
+  </section>
+
+
+
+    <!--Scripts-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/jquery.appear.js"></script>
+    <script src="../js/modals.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
+    <!--
+      <script src="../css/search.css"></script>
+    -->
+    <script>
+           (function(document) {
+            'use strict';
+
+            var TableFilter = (function(myArray) {
+                var search_input;
+
+                function _onInputSearch(e) {
+                    search_input = e.target;
+                    var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
+                    myArray.forEach.call(tables, function(table) {
+                        myArray.forEach.call(table.tBodies, function(tbody) {
+                            myArray.forEach.call(tbody.rows, function(row) {
+                                var text_content = row.textContent.toLowerCase();
+                                var search_val = search_input.value.toLowerCase();
+                                row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
+                            });
+                        });
+                    });
+                }
+
+                return {
+                    init: function() {
+                        var inputs = document.getElementsByClassName('search-input');
+                        myArray.forEach.call(inputs, function(input) {
+                            input.oninput = _onInputSearch;
+                        });
+                    }
+                };
+            })(Array.prototype);
+
+            document.addEventListener('readystatechange', function() {
+                if (document.readyState === 'complete') {
+                    TableFilter.init();
+                }
+            });
+
+        })(document);
+    </script>
+
+
+
+
+
+    <!--Modals-->
+
+
+     <!-- Metrics Consolidation & CTI Runbook  -->
+     <div class="modal fade" id="cybersecurity9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Metrics Consolidation & CTI Runbook</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Metrics Consolidation is to perform data analysis on IT Service Management tool with Python and provide data story with dashboards to have a clearer view of the data. Hence, designing better processes to improve the efficiency and effectiveness to complete future requests.
+              </p>
+              <p>Cyber Threat Runbooks is to gather cyber threat information and set a standardized documentation and procedures used to describe the task which walks staff through the steps and the process of remediation of alerts. Hence, Remediating the alert as soon as possible to minimize the risk of damages.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                  <li>Cao ShouKun</li>                          
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Willie Lui (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+           <!-- Segregation of Duties  -->
+           <div class="modal fade" id="cybersecurity10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 style="text-align:center;">Segregation of Duties</h3>
+                </div>
+                <div class="modal-body">
+                  <h4>Project Background</h4>
+                  <p>Segregation of Duties is an internal control designed to prevent fraud and error by ensuring that two or more individuals are responsible for the separate parts of any tasks, essentially breaking down tasks so that not only one party is solely in control. Hence, with Segregation of Duties, privileges are controlled and the risks of malicious acts such as fraud or embezzlement are lowered.
+                  </p>
+                  <h4>Project By</h4>
+                  <ul>
+                      <li>Daryl Chong Han Kin
+                      </li>                          
+                  </ul>
+                  <h4>Supervisor</h4>
+                  <p>Willie Lui (Mr)</p>
+                  <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+                  <br />
+                  <br />
+                </div>
+              </div>
+              <!-- /.modal-content --> 
+            </div>
+            <!-- /.modal-dialog --> 
+          </div>
+          <!-- /.modal --> 
+      
+          <!-- Trend Micro Cloud One Sales Kit  -->
+          <div class="modal fade" id="cybersecurity11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 style="text-align:center;">Trend Micro Cloud One Sales Kit</h3>
+                </div>
+                <div class="modal-body">
+                  <h4>Project Background</h4>
+                  <p>When creating product demonstrations at Trend Micro, sales engineers typically spend around 2 hours to create and test their proof-of-concept demonstrations. This project aims to reduce that time significantly using automation and cloud provisioning tools.
+                  </p>
+                  <p>The Cloud One Sales Kit uses various cloud technologies to streamline and automate deployment of technical demonstrations for client presentations. It creates a pre-defined virtual environment on Amazon Web Services that simulates production infrastructure. 
+                  </p>
+                  <p>Additionally, technical knowledge required to operate this sales kit is kept to a minimum, allowing even the non-technical sales team to showcase all capabilities of Trend Micro’s Cloud One solution professionally. 
+                  </p>
+                  <p>This project is regularly used by the cloud sales team whenever a product demonstration is required. It has also been used when presenting at conferences and briefings with C-Suite executives.
+                  </p>
+                  <p>The Cloud One Sales Kit estimates more than 300 hours saved yearly in productivity.
+                  </p>
+                  <h4>Project By</h4>
+                  <ul>
+                      <li>Matthias Loong
+                      </li>                          
+                  </ul>
+                  <h4>Supervisor</h4>
+                  <p>Benny Chin (Mr)</p>
+                  <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+                  <br />
+                  <br />
+                </div>
+              </div>
+              <!-- /.modal-content --> 
+            </div>
+            <!-- /.modal-dialog --> 
+          </div>
+          <!-- /.modal --> 
+      
+              <!-- Automated Benchmarking Tool for Linux  -->
+              <div class="modal fade" id="cybersecurity12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 style="text-align:center;">Automated Benchmarking Tool for Linux</h3>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Project Background</h4>
+                      <P>The project is a "plug-and-play" automated auditing service tool for Linux. The tool is capable of quickly auditing a Linux machine automatically, offering the choice of selecting the configuration level of the system based on the CIS Benchmark to audit. The project mainly targets users who are auditors who need to manage multiple systems and help them reduce time needed to audit Linux machines. The project also target users who are learning how to audit, showing them how the system works.
+                      </P>
+                      <h4>Project By</h4>
+                      <ul>
+                          <li>Safwan
+                          </li> 
+                          <LI>Haresh</LI>  
+                          <li>Sonny</li>     
+                          <li>Azim</li>                  
+                      </ul>
+                      <h4>Supervisor</h4>
+                      <p>Simon Ngeow (Mr)</p>
+                      <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+                      <br />
+                      <br />
+                    </div>
+                  </div>
+                  <!-- /.modal-content --> 
+                </div>
+                <!-- /.modal-dialog --> 
+              </div>
+              <!-- /.modal --> 
+          
+            <!-- Security Operations Automation Initiative  -->
+            <div class="modal fade" id="cybersecurity13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 style="text-align:center;">Security Operations Automation Initiative</h3>
+                  </div>
+                  <div class="modal-body">
+                  <h4>Project Background</h4>
+                  <p>This automation initiative aims to implement automation capabilities for fulfilling manual operational tasks with the usage of CyberArk rest APIs. Automation eliminates repetitive tasks that can save time and ensure that manual intervention is not required.</p>
+                  <h4>Project By</h4>
+                  <ul>
+                  <li>Ho Kang Zhi Torrence</li>                 
+                  </ul>
+                  <h4>Supervisors</h4>
+                  <p>Chiah Tong Eng (Mr) (GIC)</p>
+                  <p>Simon Ngeow (Mr) (TP)</p>
+                  <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+                  <br/>
+                  <br/>
+                  </div>
+                </div>
+              <!-- /.modal-content --> 
+              </div>
+            <!-- /.modal-dialog --> 
+            </div>
+            <!-- /.modal --> 
+      
+      <!-- Malware Information Sharing Platform (MISP) -->
+      <div class="modal fade" id="cybersecurity14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Malware Information Sharing Platform (MISP)</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>MISP is a threat intelligence and sharing platform created with the goal of analyzing and disseminating information regarding malware. It facilities the structured storing of Indicators of Compromise as well as the integration of external analysis tools to provide a more effective malware analysis. Therefore, through the utilization of data correlation and automation, it enables more effective usage of malware information to hasten the investigative process of malware analysis.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Chua Yi Reng (Group Leader)
+                </li>
+                <li>Elgin Ling
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Julie Cabuhat (Ms)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- Android Malware Incident Response -->
+      <div class="modal fade" id="cybersecurity15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Android Malware Incident Response</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Android Malware Incident Response is a solution to deal with malware within an Android device and minimize damage or impact caused by the malware. It also teaches people, including employees and employers within a company to understand the importance of preparing for a cyberattack and how to deal with it in case of one. Thus, impact caused by the malware including data loss & monetary loss, etc, can be drastically reduced.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Darren (Project Leader)</li>
+                <li>Zenden</li>
+                <li>Shannon</li>
+                <li>Yi Wei</li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Lim Chee Yong (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- Smart Alexa Planter -->
+      <div class="modal fade" id="cybersecurity16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Smart Alexa Planter</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Singapore has a high rainfall, the Smart Alexa Planter was made to harness this and prevent the overwatering of plants. When plants received enough water from the rain. The system will be able to detect it and not activate it’s watering mode.
+              </p>
+              <p>Additionally, for busy users, they are able to manually operate the system with their voice through the use of voice commands with Alexa. There is also an application that be used for remote control. The system has security functions to prevent misuse.
+              </p>
+              <h4>Functions:</h4>
+              <li>Automatic watering on voice command
+              </li>
+              <li>Smart Watering system
+              </li>
+              <li>Ability to schedule watering
+              </li>
+              <li>Secure Alexa from being misued
+              </li>
+              <h4>Project By</h4>
+              <ul>
+                <li>MUHAMMAD HANIFF BIN MOHAMMAD TAUFIK</li>
+                <li>MUHAMMAD NIQMAT SAADIQIN BIN MOHAMMAD FARID</li>
+                <li>MUHAMMAD RAEES BIN P N HAJA HIYAJUDEEN</li>
+                <li>MUHAMMAD NAFIS B MOHAMED IDRIS</li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>John Leong (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- IoT Cloud Exploration -->
+      <div class="modal fade" id="cybersecurity17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">IoT Cloud Exploration</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>The Internet of Things (IoT) has been a growing trend in technology. Many custom devices can interact and transfer environmental data via the cloud, bringing limitless remote data access possibilities. Our goal was to dive deep into exploring the various IoT devices and IoT Cloud platforms and were tasked to create an IoT themed product that can transmit and receive data from different cloud services. Our objective is to explore, to consider all the security aspects of our project device architecture, from the physical to the application layer, while making it marketable to attract customers to our product.	
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>ERIN ZHOU CHU XIONG</li>
+                <li>YEO HONG CHUN</li>
+                <li>MUTHUKRISHNAN ANAND KISHORE</li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>John Leong (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+                
+      <!-- Azure IoT Exploration -->
+      <div class="modal fade" id="cybersecurity18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Azure IoT Exploration</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>This project is an exploration on Internet of Things (IoT) services on Azure platform. It will cover selected applications chosen by the group to explore and create a simulated environment with reference to their research and articles provided by Microsoft Documents. The selected applications for this project are Azure Digital Twins and Azure IoT Central which is split into two phases: experimental and implementation. Azure Digital Twins was used as a blueprint to design a simulated environment for an IoT plant monitoring system that is later physically implemented by the team using IoT Central, microcontroller and plant sensors.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>AMIRUL HASIF B NASHARUDIN</li>
+                <li>NG YAN KAI GLEN
+                </li>
+                <li>TAN JUN AN
+                </li>
+                <li>LIM MICHELLE MARIE ALILING</li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>John Leong (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+                
+      <!-- Operational Technology Cybersecurity -->
+      <div class="modal fade" id="cybersecurity19" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Operational Technology Cybersecurity</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>The Operational Technology Cybersecurity project highlights the vulnerabilities of OT systems that uses that Modbus Protocols. This will provide Plant Engineers with acute cybersecurity awareness and insight by understanding the cyber-physical threats, vulnerabilities, and potential physical disruptions to OT systems. 
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Kevin Heng Jin Xi 
+                </li>
+                <li>Damien Teh Zhanrong
+                </li>
+                <li>Haadi Muhammad Abdullah
+                </li>
+              </ul>
+              <h4>Supervisors</h4>
+              <p>Raymond Gu (Mr)</p>
+              <p>Zhi Wei Tay (Mr)</p>
+              <p>Shaun Tan (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+                
+      <!-- Crime Scene Evaluation Challenge -->
+      <div class="modal fade" id="cybersecurity20" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Crime Scene Evaluation Challenge</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Education and games are usually not topics that would  be discussed together, however when it comes to educating students about Forensics Investigations, theory lessons may make students less interested as it is too heavy in content. In this game, the students are playing as a private investigator to find out who has leaked customer data of a company. This would ensure that they learn about Evidence Integrity, Hashing, Digital Evidence vs Physical Evidence, Cross-referencing, Anton Pillar Orders.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Tan Yong Hao Jeremy (Project Leader)
+                </li>
+                <li>Teo Yu Siang Sanders
+                </li>
+                <li>Tan YuZhe
+                </li>
+                <li>Tong Yi Chen
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Seah Chong Poh (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- Automation Scripts -->
+      <div class="modal fade" id="cybersecurity21" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Automation Scripts</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Penetration testers have too many repetitive tasks to be completed. We created automation scripts to increase efficiency and reduce human error. Thus, lesser time and resources are required to complete the project.</p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Jan Guirey
+                </li>
+                <li>Huang Kai Yan
+                </li>
+              </ul>
+              <h4>Supervisors</h4>
+              <p>Willie Lui (Mr)</p>
+              <p>Edmund Goh (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+                
+      <!-- MacOS Forensics Analysis Tool -->
+      <div class="modal fade" id="cybersecurity22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">MacOS Forensics Analysis Tool</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>MacOS Forensics Analysis Tool is a command line tool written in python. It can automatically extract files and important data from a user supplied directory, which helps reduce the amount of manual analysis required to be performed on forensics data.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Verity Lim
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Chia Jia Hong (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- CyberHeroes -->
+      <div class="modal fade" id="cybersecurity23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">CyberHeroes</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Based on statistics, education has fallen under the top 6 worst performing sectors in cybersecurity. Mainly this is due to the low cybersecurity awareness in students but high cyber-attack cases in students. 	
+              </p>
+              <h4>What problems does this project solve?
+              </h4>
+              <li>The game is designed to increase cyber awareness in primary school students
+              </li>
+              <li>The game is also designed to teach simple cybersecurity terms and concepts to primary school students
+              </li>
+              <p>CyberHeroes is a game designed to increase cybersecurity awareness in primary school students. It also teach primary school students simple cybersecurity terms and concepts. Thus, reduce the chances of primary school students from falling victim into cyber crimes.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Benjamin Tan (Project Leader)
+                </li>
+                <li>Augman</li>
+                <li>Venetia</li>
+                <li>Soma</li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Seah Chong Poh (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- Develop Systematic Threats For Smart Industry Systems -->
+      <div class="modal fade" id="cybersecurity24" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Develop Systematic Threats For Smart Industry Systems</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>The main goal of our project is to Develop systematic threats for Smart Industry systems. The main purpose of this project is to reduce the exposure these Smart Industry systems face by identifying any zero-day attacks registered in the CVE database.
+              </p>
+              <h4>Key Features</h4>
+              <li>A system architecture based on the Purdue model for ICS Security
+              </li>
+              <li>Hybrid Threat Model Method including STRIDE and Attack Tree threat models
+              </li>
+              <li>A website that displays all threats related to the Smart Industry systems taken from the CVE database
+              </li>
+              <li>Prototype system set up with the Kali Linux operating system to perform simulation attacks using Metasploit.
+              </li>
+              <h4>Description</h4>
+              <p>We started on our project by building a prototype architecture of a Smart Industry system. Then, we proceeded by breaking down and understanding the current Smart Industry systems and using STRIDE and attack tree threat models to identify potential threats and attack vectors. Next, we created a website that allows us to regularly retrieve threats from the CVE database. Last but not least, we used a Metasploit virtual machine to carry out sample attacks with simulation methods. 
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Anson Poh
+                </li>
+                <li>Nathanael Goh
+                </li>
+                <li>Tai Wei Xiang
+                </li>
+                <li>Eshwer S/O Gunaseelan
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Rosita Jupri (Ms)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+                
+      <!-- Enhanced IP Platform -->
+      <div class="modal fade" id="cybersecurity25" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Enhanced IP Platform</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>The Enhanced IP Platform is a Monitoring Web Application developed using automation technology. It reduces the time needed to manually use OSINT tools to search for IP Reputation and automatically escalates it to clients for them to block it on their Firewall. This project aims to reduce a Security Operations Centre Analyst’s workload by Automating monotonous daily tasks and increase the efficiency of Security Analysts.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Jun Qian Lee Isaac (Leader)
+                </li>
+                <li>Samuel Lau
+                </li>
+                <li>Koh he Kai
+                </li>
+                <li>Afiq Ab'Qari Bin Hanapi
+                </li>
+                <li>Andon Goh</li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Sayed Hamzah Alhabshe (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- Kroll’s Live Incident Response Case -->
+      <div class="modal fade" id="cybersecurity26" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Kroll’s Live Incident Response Case</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Using digital forensic tools and platforms such as Magnet Axiom and KAPE, an investigation for a client of Kroll’s is conducted. Based on the findings gathered, a report is then presented to the client.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Izzah Nia Sara
+                </li>
+              </ul>
+              <h4>Supervisors</h4>
+              <p>Lim Chee Yong (Mr)</p>
+              <p>Rob Phillips (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- Keyboard in Disguise -->
+      <div class="modal fade" id="cybersecurity27" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Keyboard in Disguise</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Keyboard in Disguise (KiD) is a keyboard with a hidden malware that looks like an ordinary keyboard. It can be used as an auditing tool to find out which user or machine is not protected against external USB device attacks. It is a tool to teach users about HID attack, and to be careful about using unknown USB devices.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Zheng Haowen 
+                </li>
+                <li>Wang Zining 
+                </li>
+                <li>Zachary Phoon Jun Ze 
+                </li>
+                <li>Tan Jia Zheng
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Shaun Tan (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+                
+      <!-- Mobile Cyber Range -->
+      <div class="modal fade" id="cybersecurity28" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Mobile Cyber Range</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>The Mobile Cyber Range combines several cybersecurity components into a single solution to assess users' ability to respond to different scenarios. Real-world scenario simulation allows users to apply their existing knowledge while honing their cybersecurity skills in both attacking and defending, allowing them to better protect their business assets.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Sim Ying Zhong, Bryan</li>
+                <li>Toh Bing Hui Jeric </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Willie Lui (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- Cybersecurity for the Seniors -->
+      <div class="modal fade" id="cybersecurity29" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Cybersecurity for the Seniors</h3>
+            </div>
+            <div class="modal-body">
+              <h4>What problem does your project solve?</h4>
+              <p>As technology is advancing, elderlies are being left behind with little to no help towards living with technology, hence being vulnerable to cyber-attacks. We aim to help them integrate with the cyber world by creating a secure shopping website where they can purchase their daily necessities safely. The website comes in the 4 main languages, with user interface that are elderly-friendly, as well as visual aids that raises awareness on how to avoid falling victim to cyberattacks and scams.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Raphael Tan 
+                </li>
+                <li>Dylan Sim
+                </li>
+                <li>Nelson Tan
+                </li>
+                <li>Joleen Tan
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Nurul Arifah Shukor (Ms)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- Secure Infrastructure for Vehicle Charging at Electric Vehicle (EV) Charging Point -->
+      <div class="modal fade" id="cybersecurity30" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Secure Infrastructure for Vehicle Charging at Electric Vehicle (EV) Charging Point</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>The usage of smart grid in EV charging infrastructure comes with higher cybersecurity risks.​ As a result, our project consists of a simulated EV charging environment using protocols commonly used in a typical architecture with defence mechanisms implemented against threat actors.</p>
+              <p>Our EV chargers and vehicles have been effectively tested against denial-of-service, man-in-the-middle, CANbus vulnerabilities, Modbus vulnerabilities and SSH bruteforce attacks.
+              </p>
+              <p>We have used industry-recognised defence tools such as Suricata and ntopng for our alert monitoring.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Siti Aisyah Binte Mahadi
+                </li>
+                <li>Hoong Mun Hyun
+                </li>
+                <li>Teo Justin
+                </li>
+                <li>S Ahmad Shukery B S Affindy
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Rosita Jupri (Ms)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      
+      <!-- Malware Analysis Project -->
+      <div class="modal fade" id="cybersecurity31" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Malware Analysis Project</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>The project is a custom built VM environment that automates malware analysis. The project is made to simplify and automate certain aspects of malware analysis that are repetitive. The process is not completely automated and allow the user certain control over some processes. A simple application is built into the Control Virtual Machine (CVM) for ease of use.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Choon Shing 
+                </li>
+                <li>Thingal John
+                </li>
+                <li>Shakeel Haikel
+                </li>
+                <li>Ye Tingkai
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Poh Zhi Yuan (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- AWS Environment setup -->
+      <div class="modal fade" id="cybersecurity32" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">AWS Environment Setup</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>AWS Environment setup is a project that helps user who needs a working environment that was deployed in the cloud to work on any Cyber related stuff. With AWS, the services provided can be up to the creator’s needs and scale it to what they want.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Khairun Nisa Binte Yunos
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Rob Phillips (Mr)</p>
+              <p>Chee Yong Lim (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+                
+      
+      <!-- Sandcastle Analysis Platform -->
+      <div class="modal fade" id="cybersecurity33" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Sandcastle Analysis Platform</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Sandbox Analysis Platform is an interactive web platform consisting of multiple systems to analyse and evaluate the threat level of malware. The different system helps securely transfer, assess, store and display data relating to the uploaded malware. Hence, organisations can better understand these malware threats and defend themselves from cyberattacks.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Jaibun Thana
+                </li>
+                <li>Toh Yun Zhen
+                </li>
+                <li>Leng Chi Yeong, Andrew
+                </li>
+                <li>Tan Weisheng, Clarence
+                </li>
+                <li>Ho Ting Hui Benjamin
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Jet Lim (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      
+      <!-- The Hacker’s Playground 2 -->
+      <div class="modal fade" id="cybersecurity34" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">The Hacker’s Playground 2</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>The Hacker’s Playground is a simulated corporate environment built on virtual machines (VMs). It allows students to exhibit and demonstrate ethical hacking skills used in the real world. Thus, students will be able to develop further understanding of cybersecurity and have fun with challenges.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Matin Mirza
+                </li>
+                <li>Muhammad Mikail
+                </li>
+                <li>Muhammad Aniq Syukri
+                </li>
+                <li>Benjamin Quek
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Sayed Hamzah Alhabshe (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      
+      <!-- Whitelist Analyzer & Report Automation -->
+      <div class="modal fade" id="cybersecurity35" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Whitelist Analyzer & Report Automation</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Our project intended to help lighten the workload of the analysts by automating operations as the workload for analysts are increasingly demanding. This project will be able to assist the analysts in automating the report and searching for whitelisted users. The analysts will be able to focus more on monitoring and investigating with the usual time spent manually sorting out the reports and whitelisted users. 
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Naqib Yan (Leader)
+                </li>
+                <li>Stephanie Ng
+                </li>
+                <li>Hui Xin Ng
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Sayed Hamzah Alhabshe (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+                
+      
+      <!-- Detecting Spam Emails Using Machine Learning -->
+      <div class="modal fade" id="cybersecurity36" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Detecting Spam Emails Using Machine Learning</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Spamail is an all-in-one email spam detection website trained using machine learning. Not only does our website help users check whether the email message they receive is spam or not, but it also offers other features such as an image text extractor, email header checker, and attachment checker. Thus, users can protect themselves against potentially malicious emails and be educated about the dangers of spam by using Spamail.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Donovan Koh
+                </li>
+                <li>Lydia Tan
+                </li>
+                <li>Mohaamad Nabbhil
+                </li>
+                <li>Megan Lee
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Willie Lui (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- CTF Playground -->
+      <div class="modal fade" id="cybersecurity37" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">CTF Playground</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>CTF Playground is a Capture-the-Flag (CTF) platform which counters flag-sharing during Jeopardy-styled CTF competitions. It utilises automated generation of challenge instances to help facilitate random flag generation which significantly minimises the likelihood of flag-sharing amongst participants. Thus, providing CTF participants with a more effective learning experience during such competitions (by using their own means and capabilities).
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Javier Oh Rui An (Project Leader)
+                </li>
+                <li>Ang Yan Jie, Sidney
+                </li>
+                <li>Jovan Lee Songying
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Edmund Wee (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      
+      <!-- Quantum CI Analysis Collector Enhancement -->
+      <div class="modal fade" id="cybersecurity38" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Quantum CI Analysis Collector Enhancement</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Quantum's CI analysis collector is a tool that consume scanned outputs from third-party vulnerability assessment(VA) tools. 
+              </p>
+              <p>The outputs are then transformed into a simple graphical interface for users to view via the Quantum Security Platform. This can be further sorted to match the user's needs like prioritizing remediation efforts. 
+              </p>
+              <p>The VA tools can scan different aspects of software like images, directories, codes and websites. 
+              </p>
+              <p>Users would be able to run the analysis collector using the Docker containers that Quantum supplies for each of the officially supported open-sourced VA tools. 
+              </p>
+              <h4>Our Role</h4>
+              <li>Integrated majority of the official supported tools into the CI analysis collector. 
+              </li>
+              <li>Create unit tests for the code implemented and fix bugs discovered through this process.
+              </li>
+              <li>Create Docker containers for ease of usage so users can operate the tools without installing each of the supported tools.
+              </li>
+              <li>Map/ingest existing mappings for the rules that each tool uses to security frameworks i.e., MITRE ATT&CK.
+              </li>
+              <li>Create the API that is required for developers and users to query from.
+              </li>
+              <h4>Project By</h4>
+              <ul>
+                <li>Brendon Teo Hwee
+                </li>
+                <li>Elliot Chee Chong Jun
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Edmund Wee (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- Youth Cyber Exchange Programme (YCEP) -->
+      <div class="modal fade" id="cybersecurity39" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Youth Cyber Exchange Programme (YCEP)</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Youth cyber exchange programme (YCEP), is a workshop that acts as a starting point for youths to develop their experience in Cybersecurity. 
+              </p>
+              <p>As representatives of Temasek Polytechnic, we provided learning materials and a Capture the Flag for participants which covered topics from web and system hacking to digital forensics.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Moira Denise Gonzales Calvo (Project Leader)
+                </li>
+                <li>Jayalekshmy Pradeep Gaurav
+                </li>
+                <li>Chirapparambil Joy Arbin
+                </li>
+                <li>Zechariah Chow Zi Xin 
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Edmund Wee (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- Automated Static Analysis of Malware (ASAM) -->
+      <div class="modal fade" id="cybersecurity40" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Automated Static Analysis of Malware (ASAM)</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>The project is to address the problem Malware Analysts face, where Static Analysis is constantly to be done despite being repetitive and tedious and aims to make it more efficient and entirely eliminate the need for it to be done manually. An automated static analysis process to gather the various common static properties using a few tools that ultimately forms a report for Malware Analysts to refer to.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Chua Lenti
+                </li>
+                <li>Brian Koh
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Poh Zhi Yuan (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+      <!-- World Skills Singapore Simulation -->
+      <div class="modal fade" id="cybersecurity41" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">World Skills Singapore Simulation</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+              <p>Our Major Project is to set up and simulate the actual World Skills Singapore (WSS) environment which allows Temasek Polytechnic’s (TP) competitors to get themselves better prepared prior to the actual competition.
+              </p>
+              <h4>Description</h4>
+              <p>The aim of our simulation is to prepare TP’s competitors on what are the possible challenges and problems they might encounter during their competition. Thus, we simulated the competition environment with varieties of challenges for them to have ample practices and know what they are lacking off prior to the actual competition.
+              </p>
+              <h4>Project By</h4>
+              <ul>
+                <li>Chan Ting Hui(Project Leader)
+                </li>
+                <li>Han Xiao Zhi
+                </li>
+                <li>Lau Joe Lian
+                </li>
+                <li>Goh Kai Xuan, Jerick
+                </li>
+              </ul>
+              <h4>Supervisor</h4>
+              <p>Edmund Wee (Mr)</p>
+              <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+                
+                
+            
+      
+        
+</body>
+</html>
+

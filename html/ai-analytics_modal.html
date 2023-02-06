@@ -1,0 +1,1569 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/search.css" rel="stylesheet">
+
+
+    <style>
+        /*Banner Imager*/
+
+        .img-wrapper {
+            position: relative;
+        }
+
+            .img-wrapper img {
+                width: 100%;
+            }
+
+            .img-wrapper .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .img-wrapper h2 {
+                margin: 0 0 .5em;
+            }
+
+        /*End*/
+        /*Project image center*/
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .image {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+
+            .image img {
+                display: block;
+                width: 245px;
+                height: 138px;
+            }
+/*Read More Button*/
+            .btnDesign {
+              border-radius: 12px;
+              transition-duration: 0.4s;
+              background-color: #afdbf1;
+            }
+
+            .btnDesign:hover {
+              background-color: #c4e3f3;
+            }
+/*modal*/
+            .modal {
+                text-align: center;
+            }
+            .modal-dialog {
+                text-align: left; /* you'll likely want this */
+                max-width: 100%;
+                width: auto !important;
+                display: inline-block;
+            }
+    </style>
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+
+
+
+    <title>InfoTech Day 2023</title>
+</head>
+
+
+
+
+
+<body id="toTop" data-spy="scroll" data-target=".navbar" style="overflow-x: hidden;">
+
+    <!--nav logo-->
+    <nav class="navbar navbar-custom">
+        <a><img src="..\img\tp-horizontal-white.png" alt="Temasek Polytechnic" width="400" height="45"></a>
+    </nav>
+    <!--nav menu-->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#seminars">Seminars</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#iit">IIT Courses</a>
+            </li>
+            </ul>
+            <span class="navbar-text">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Getting To TP</a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </nav>
+    <!--Banner With Button-->
+    <center>
+
+        <div class="img-wrapper">
+            <img src="../img/ai.jpg" />
+            <div class="overlay">
+                <h1 style="color:white;">AI & Analytics Projects</h1>
+                <div class="container">
+                  <input type="search" placeholder="Search..." class="form-control search-input" data-table="customers-list"/>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </center>
+    <!--Banner End-->
+    <br>
+    <!--Search Bar-->
+
+    <!--back to top icon-->
+    <div id="backTop">
+        <a style="position: fixed; right: 50px; bottom: 15px; z-index: 100 "
+           onClick="ga('send', 'event', { eventCategory: 'InfoTech Day 2022', eventAction: 'InfoTech Day 2022:Navigation', eventLabel: 'Page Top'});"
+           class="page-scroll" href="#toTop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="71.736" height="73.837"
+                 viewBox="0 0 71.736 73.837">
+                <path id="Icon_awesome-arrow-alt-circle-up" data-name="Icon awesome-arrow-alt-circle-up"
+                      d="M.562,37.481C.562,17.087,16.616.563,36.43.563S72.3,17.087,72.3,37.481,56.244,74.4,36.43,74.4.562,57.876.562,37.481ZM42.794,54.75V37.481H53.048a1.8,1.8,0,0,0,1.229-3.052L37.66,17.414a1.685,1.685,0,0,0-2.444,0L18.583,34.429a1.793,1.793,0,0,0,1.229,3.052H30.067V54.75A1.767,1.767,0,0,0,31.8,56.536h9.256A1.767,1.767,0,0,0,42.794,54.75Z"
+                      transform="translate(-0.563 -0.563)" fill="#002f5e" />
+            </svg>
+        </a>
+    </div>
+
+    <!--projects-->
+    <section id="projectAiOthers" class="projects-section" >
+
+        <center>
+          <table class="table table-bordered table-striped customers-list" id="otherprojects_table" >
+            <tr>
+                <th  style="background-color: #011b77; color: #ffffff;"><h4>Project Title &nbsp;</h4></th>
+                <th onclick="sortTable(1)" style="background-color: #011b77; color: #ffffff; width: 10%;"></th>
+            </tr>
+            <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Automation of Data Extraction and Invoice Parking Using RPA</td>
+                <td class="info"><a data-toggle="modal" href="#ai-analytics11"><button class="btnDesign"style="color: black; height: 50px; ">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">FiNDNet BI Report</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics12"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Machine Learning Model for Major Project Scheduling and Marking</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics13"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+            </tr>
+              <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Analyzing Students E-textbook Access Patterns 1</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics14"><button class="btnDesign"  style="color: black; height: 50px; ">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Analyzing Students E-textbook Access Patterns 2</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics15"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Project ODA</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics16"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Improvement on Efficiency 2.0 Project</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics17"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Web-based Application with User Interface</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics18"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">SIP Matching</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics19"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Operational Dashboard</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics20"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Dimensional Modelling & Data Marts</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics21"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Analysis of Company Profit Trend</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics22"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">MTF Analysis Program</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics23"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Key Stakeholder Analysis</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics24"><button class="btnDesign"  style="color: black; height: 50px; width: 100px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">FNA QlikView to Power BI</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics25"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Head Pose Estimation</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics26"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Quantifying Human Emotions with Visual Analog Scale</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics27"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Data Models, Data Marts & Data Lineage</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics28"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">COCONUT (GIC)</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics29"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Live AI Monitoring and Management</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics30"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Determine factors causing Hospitalisation Length to improve hospital efficiency</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics31"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Project MAMI</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics32"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Utilization Minutes of Machines</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics33"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">IAM Operational Dashboard</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics34"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Supply Chain Analysis Dashboard</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics35"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">IPD Engagement Analytics</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics36"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Balefire V3</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics37"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Modulation Transfer Function Guided user interface (MTF GUI)</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics38"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Analysis and Building Data Modelling and Data Mart</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics39"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Automation of Archiving Report</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics40"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Creation of Data Marts</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics41"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Automation Process Analytics Dashboard</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics42"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Department Data and Dashboard Development</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics43"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Business Data Analysis</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics44"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Power Bi Migration Project 1</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics45"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td style="background-color:#c4e3f3; vertical-align: middle;">Power Bi Migration Project 2</td>
+              <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#ai-analytics46"><button class="btnDesign"  style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            <tr style="font-size: 18px;">
+              <td class="info" style="vertical-align: middle;">Sales Dashboard and Orchard Branch Network Project</td>
+              <td class="info"><a data-toggle="modal" href="#ai-analytics47"><button class="btnDesign" style="color: black; height: 50px;">Read More</button></a></td>
+            </tr>
+            
+    
+          </table> 
+        </div>
+      </div>
+
+        </center>
+
+    </section>
+
+
+
+
+    <br />
+    <section id="footer" class="footer-section">
+      <p> Organized by:</p>
+      <img src="../img/tp-justified-red.png" height="50">
+
+      <script src="../js/navload.js"></script>
+
+  </section>
+
+
+
+    <!--Scripts-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/jquery.appear.js"></script>
+    <script src="../js/modals.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
+    <!--
+      <script src="../css/search.css"></script>
+    -->
+    <script>
+           (function(document) {
+            'use strict';
+
+            var TableFilter = (function(myArray) {
+                var search_input;
+
+                function _onInputSearch(e) {
+                    search_input = e.target;
+                    var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
+                    myArray.forEach.call(tables, function(table) {
+                        myArray.forEach.call(table.tBodies, function(tbody) {
+                            myArray.forEach.call(tbody.rows, function(row) {
+                                var text_content = row.textContent.toLowerCase();
+                                var search_val = search_input.value.toLowerCase();
+                                row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
+                            });
+                        });
+                    });
+                }
+
+                return {
+                    init: function() {
+                        var inputs = document.getElementsByClassName('search-input');
+                        myArray.forEach.call(inputs, function(input) {
+                            input.oninput = _onInputSearch;
+                        });
+                    }
+                };
+            })(Array.prototype);
+
+            document.addEventListener('readystatechange', function() {
+                if (document.readyState === 'complete') {
+                    TableFilter.init();
+                }
+            });
+
+        })(document);
+    </script>
+
+
+
+
+
+    <!--Modals-->
+<!-- Automation of Data Extraction and Invoice Parking Using RPA -->
+<div class="modal fade" id="ai-analytics11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modal-lg">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Automation of Data Extraction and Invoice Parking Using RPA</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Robotic Process Automation (RPA) refers to a software that can be easily programmed to do basic, repetitive tasks across applications. It creates and deploys a software robot with the ability to launch and operate other software and is designed primarily for office-type functions. RPA works like a digital assistant, doing routine onerous tasks that would otherwise eat up employees' time.</p>
+
+        <h4>Problems Identified</h4>
+        <p>Parking an invoice is the process of taking data from an invoice and typing it into a database. This process is very time-consuming and repetitive, wasting the time and effort of workers who have to manually complete the tasks.</p>
+        <h4>Project Objective</h4>
+        <p>To use a combination of Python and RPA to make a program that can automatically extract and collect data from invoices and park it into the company’s database. </p>
+        <h4>Business Value</h4>
+        <p>This project will help to increase the productivity and work efficiency of workers as they can focus more of their time on important tasks.</p>
+        <h4>Demo Video</h4>
+        <p>This video is a demo of how the project would work. Disclaimer: This is a silent video to show the program in action. All information shown in this video are recreated and thus, is fake.</p>
+        <p><iframe width="455" height="315" src="https://www.youtube.com/embed/w9YQJxjMXYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        
+        </ul>
+        <h4>Project By</h4>
+        <ul>
+          <li>Seow Yong Rui Jodan</li>
+        </ul>
+    
+        <h4>Company Supervisor</h4>
+        <p>Shiva Prasad Chincheti (Mr)</p>
+        <h4>Liaison Officer</h4>
+        <p>Zaw Htet Wai (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+
+<!-- FiNDNet BI Report -->
+<div class="modal fade" id="ai-analytics12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">FiNDNet BI Report</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Business intelligence is the technology that allows businesses and organizations to organize their data, analyse them, as well as help to understand better on their business data. 
+        </p>
+        <p>In this pandemic period, the internal users in the Operational Team and Finance team, as well as external users from security companies are looking for the development of new reports by the BI team in Dnata using the source data from FiNDNet. Dnata is a company based in the air industry, the company is using FiNDnet Suite which is a comprehensive ground handling software solution developed by another company, Damarel systems. 
+        </p>
+        <p>The area we are looking at in this project for the FiNDNet system is the FiNDNet operational database, where flight information is inputted by a team handling ground handling operations in Dnata. For this project, we use multiple datasets from FiNDNet as our source data to develop BI reports after the transformation and cleaning of the data.
+        </p>
+
+        <h4>Objectives of the project</h4>
+        <p>Retrieval of source data from FiNDNet and performing transformation & cleansing to get high quality data for development of reports and dashboards.
+        </p>
+        <p>To develop reports and dashboards for different use cases so that internal and external users in the company can perform their daily reporting as well as to gain insights on data from the developed reports and dashboards.
+        </p>
+        <h4>Business Value</h4>
+        <p>The business value for this project would be that there is a method to visualize clean data to make accurate data driven decisions after the development of reports and dashboards, which is a solution that BI is only able to achieve. </p>
+        <p>Furthermore, without clean and transformed data, as well as the development of reports and dashboards, internal and external users would have to refer to unclean source data without the right format for reporting and gaining insights. This would lead to inaccurate data driven decisions and would be detrimental to the company.</p>  
+      </ul>
+        <h4>Project By</h4>
+        <ul>
+          <li>Gerald Wee Hui Peng</li>
+        </ul>
+  
+        <h4>Liaison Officer</h4>
+        <p>Zaw Htet Wai (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Workshop Analysis -->
+<div class="modal fade" id="ai-analytics13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Machine Learning Model for Major Project Scheduling and Marking</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Problem Statement</h4>
+        <p>In the end of the MP, the students need to present their MP to a review panel (from the diploma team) and submit their MP reports. The diploma team needs to schedule the student's MP presentation within one or two weeks after the students completed their MP. It needs to consider the MP supervisor and/or LO availability, the minimum number of lecturers in one session and the maximum number of students in one session.
+        </p>
+        <h4>Project Objective</h4>
+        <li>Develop a scheduling model for the MP presentation to assist lecturers in generating the schedule list. It could improve in the time-consuming due to manual scheduling.
+        </li>
+        <li>Develop an algorithm to automate MP grade calculation to assist lecturers in generating out the final result from a different component like pitching and panel.
+        </li>
+        <h4>Project By</h4>
+        <ul>
+          <li>Chick Rui Wen</li>
+        </ul>
+        <h4>Supervisor</h4>
+        <ul>
+          <li>Linda William (Dr)</li>
+        </ul>
+  
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Analyzing Students E-textbook Access Patterns 1 -->
+<div class="modal fade" id="ai-analytics14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Analyzing Students E-textbook Access Patterns 1</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>This project is focused on the extraction and analysis of data in VitalSource to measure students’ reading of the course materials and their relationship, if any, with their grades in an online course in Singapore University of Social Science (SUSS): Marketing Management (MKT202). We are to analyse the data extracted and visualise the dashboards we have created with the discoveries we found. These dashboards will be used to help SUSS to find solutions in improving the overall grades of the students.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Yonatan Kenson Huay
+          </li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>Goh Kai Song (Mr)
+        </p>
+  
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+
+<!-- Analyzing Students E-textbook Access Patterns 2 -->
+<div class="modal fade" id="ai-analytics15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Analyzing Students E-textbook Access Patterns 2</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Home-based learning has been on the rise due to Covid-19. Thus, many schools are now adapting and switching over to online learning and SUSS wants more information of the outcome of the students learning through the e-textbook they provide.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Phua Tiffany</li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>Goh Kai Song (Mr)
+        </p>
+  
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+
+
+<!-- Project ODA -->
+<div class="modal fade" id="ai-analytics16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Project ODA</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+       <p>The objective of this project is to have an operationally ready dashboard for Boomi Integration Platform solution to analyze logs. The dashboard should be able to help in troubleshooting or planning for the department. Create a visualizing dashboard which can monitor and analyze logs of API proxy call.
+      </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Chang Kai Yang</li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>Mr. Swaminathan</p>
+
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Improvement on Efficiency 2.0 Project -->
+<div class="modal fade" id="ai-analytics17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Improvement on Efficiency 2.0 Project</h3>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Feedback and inquiries submitted via web form are routed to their case management system. For feedback and inquiries via other channels such as calls, emails, social media and e-commerce platforms – the company’s Customer Care Team has to create the cases manually in the case management system. The volume of feedback averages out 3,000 per month. 
+          </li>
+          <li>The current feedback and inquiries process is time-consuming: preparing the weekly and monthly reports for submission to the Operation Team requires 4 hours/week and 5 hours/month, respectively. In addition, extended time is necessary to clean and analyse the data when the volume of feedback increases. </li>
+          <li>This project aims to improve the customer service management process by devising a more effective way to consolidate feedback, analyse and visualise data through business intelligence tools like Power BI, Tableau, or QlikView. </li>
+        </ul>
+        <h4>Project By</h4>
+        <ul>
+          <li>Ng Kee Tian
+          </li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>Linda William (Dr)</p>
+
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+
+<!-- Web-based Application with User Interface -->
+<div class="modal fade" id="ai-analytics18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Web-based Application with User Interface</h3>
+      </div>
+      <div class="modal-body">
+        <p>The project aims to develop a web-application to capture material inventory process. The current system is using Excel files for recording and tracking purposes. It gives a lot of problems, such as: cannot handle large database. Hence, a web-based application is developed to replace the Excel Files. 
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Tan Wei Zhen, Genevieve 
+          </li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>Linda William (Dr)</p>
+
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+
+<!-- SIP Matching -->
+<div class="modal fade" id="ai-analytics19" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">SIP Matching</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Current manual allocation process for SIP is time consuming and requires more manpower. Decision-making process during SIP allocation may be inaccurate due to human error. This may create stress for the staff, students and companies. Hence, an automated system to match the students and the companies is required. 
+        </p>
+        <p>The system is developed using Python. It considers different criteria, such as technical skills, soft-skill, company type and student’s preferences. 
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Ngan Yan Yi 
+          </li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>Linda William (Dr)</p>
+
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Operational Dashboard  -->
+<div class="modal fade" id="ai-analytics20" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Operational Dashboard</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Objective</h4>
+        <p>The main objective of this project is to develop an interactive dashboard to monitor the staff’s productivity during WFH arrangement.</p>
+        <p>Using the data from the company’s in-house web application (such as such as assignments assigned to each employee, timesheet movement for each employee, and HR-related issues), interactive dashboard using PowerBI is developed. 
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Chye Xian You</li>
+          <li>Lew Qian Ping</li>
+          <li>Mohamed Irfanudeen S/O Mohd S</li>
+          <li>Muhammad Isa Bin Azhari</li>
+          <li>Siow Chong Yuan</li>
+        </ul>
+        <h4>Supervisors</h4>
+        <p>Linda William (Dr)</p>
+        <p>Swaminathan Rajamanickam (Mr)</p>
+
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Dimensional Modelling & Data Marts  -->
+<div class="modal fade" id="ai-analytics21" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Dimensional Modelling & Data Marts</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Dimensional modelling is a data structure technique that involves the creation of data marts used to optimize analytical tools, end-user queries, and data storage. It breaks down the enterprise-wide data warehouse into specific topics and sectors, making the data models simple and comprehensible. Therefore, expediting the process of data consumption for quicker analysis and insights.</p>
+
+        <h4>Project By</h4>
+        <ul>
+          <li>Marcus Liow</li>
+        </ul>
+        <h4>Supervisors</h4>
+        <p>Ms Iman Tang (TP)</p>
+        <p>Mr Teo Chun Yong (MOM)</p>
+
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Analysis of Company Profit Trend  -->
+<div class="modal fade" id="ai-analytics22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Analysis of Company Profit Trend</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>The company I joint for my internship was losing money, I had provided one solution which is reducing purchasing cost. Based on formula ‘Profit = Selling Price - Purchasing Cost’, if we want to increase profit, we either increase selling price or reduce purchasing cost. Thus, reducing purchasing profit is the only method.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Li Yutong</li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>Surojit Dutta (Mr)</p>
+
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- MTF Analysis Program  -->
+<div class="modal fade" id="ai-analytics23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">MTF Analysis Program</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>The MTF analysis program is a set of 3 scripts, 2 scripts to clean the 2 different raw data files and 1 for analysis. When run together they can take in and processing the raw data and plot MTF charts and other helpful analysis for the lenses in the wafer.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Dhruv Patel</li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>Imanishi Nami (Ms)</p>
+
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+
+
+<!-- Key Stakeholder Analysis  -->
+<div class="modal fade" id="ai-analytics24" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Key Stakeholder Analysis</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Business company often like to expand on their reach to other region and country and Asahi Glass Company (AGC) is no exception. However, trying to determine which company to contact is often an issue as some might be small and unpopular, some might have bad history, or some company support their AGC competitors. Due to reason like this, creating a project list with a full list of data of each project in 2022 will allow AGC to determine which company they should aim for by having a scoring system for each criteria. The higher the score the project has, the more important those company stakeholder are for AGC.</p>
+        <p>The project is done by using a platform called BCI Asia. It specialize in construction project as it can search based on project detail like the specific ID and project value. It is also able to search based on company name which will then show a list of the company’s past project. Using this data, AGC is able to give scoring via specific criteria. Example would if the building project is an Airport, the score for that criteria would be 10 while an apartment would be 3. After scoring is done for all 3 projects, the total score will be tallied and the top project 20 with the highest score will be the top priority for 2022 for AGC to target.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Tan Chuan Bin</li>
+        </ul>
+        <h4>Supervisors</h4>
+        <p>Yew Meng Lim (Mr)</p>
+        <p>Susan Tan (Mrs)</p>
+
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- FNA QlikView to Power BI -->
+<div class="modal fade" id="ai-analytics25" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">FNA QlikView to Power BI</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>FNA (Focus Network Agency)  is a distribution and retailing company which mainly sells chocolates and sweets. (The coca tree is part of them.)</p>
+        <p>In 2014 they had an outside vendor design the data base and set up the QlikView dashboard for them.</p>
+        <p>They want to see if power BI will be a better alternative to QlikView and they want to have a better designed dashboard with charts, visualisation and interactivity.</p>
+        <p>We are working as a group of four, me and 3 other group mates and I was tasked with Department, Salesman, supplier, and country data. We need to export data into Power BI, design the dashboard and showcase why Power BI is the better choice. We were given laptop from FNA to design the dashboard, which has the QlikView dashboard and SQL database.</p>
+        <p>4 separate dashboards with different purpose was made.</p>
+        <p>The first dashboard was made with data exported from QlikView by variable. This dashboard is the main dashboard with all the special functions and features
+        </p>
+        <p>The second dashboard is made with SQL data and the purpose is to show that Power BI is compatible with SQL. I have also explained to FNA that if we had the necessary documentation, I can design a dashboard directly with SQL database.</p>
+        <p>The third and fourth dashboard is a request by FNA to provide a data diagram as an example. I have used an online sample data called Supermart and made my own data to show the data diagram. 
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Xuliang
+          </li>
+          <li>Rebeca</li>
+          <li>Yijia</li>
+          <li>Shihui</li>
+        </ul>
+        <h4>Supervisors</h4>
+        <p>Ms Ho</p>
+        <p>Dr Linda</p>
+
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Head Pose Estimation -->
+<div class="modal fade" id="ai-analytics26" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Head Pose Estimation</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Head pose estimation is a head detecting software using deep learning technology. It detects the face on which direction or angle they are looking at based on the Euler angles and using center coordinates provided by the nose using python libraries. This is to make students eye contact visible instead of looking at the screen this makes it more comfortable for the presenter to do their presentations.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Bryan Ng</li>
+        </ul>
+        <h4>Supervisor</h4>
+         <p>Imanishi Nami (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Quantifying Human Emotions with Visual Analog Scale -->
+<div class="modal fade" id="ai-analytics27" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Quantifying Human Emotions with Visual Analog Scale</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>This project is a collaboration between Temasek Polytechnic, Singapore and Kitakyushu National College of Technology, Japan. The goal of the project is to understand human emotions better by quantifying them. Emotions are usually captured using Linkert Scale. However, we propose and prove that Visual Analog Scale is the go-to method for more accurate data.
+          </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Sherman Chan</li>
+        </ul>
+        <h4>Supervisors</h4>
+          <p>Professor Naruki Shirahama Ka (Project Leader)</p>
+          <p>Nami Imanishi (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Data Models, Data Marts & Data Lineage -->
+<div class="modal fade" id="ai-analytics28" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Data Models, Data Marts & Data Lineage</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Building a Logical model for business users to use as a reference to understand the business logic, relationships and business keys used. Physical model are the actual design of the database. Designing high-level data lineage to help developers with identifying authenticity of data flowing into the framework, allow developers to quickly spot errors and speed up migration projects. Data marts are created to help business users and data analysts to source out relevant information rapidly without having to comb through the entire data warehouse, this will improve efficiency and improve work quality.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Emonda Wong Pui Si</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Iman Tang (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- COCONUT (GIC) -->
+<div class="modal fade" id="ai-analytics29" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">COCONUT (GIC)</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>COCONUT stands for Continuous Control Monitoring Utility System. It aims to automate risk assessments of applications using data and logic (python scripts) to improve timeliness and remove manual effort, continuously monitoring the application’s compliance to each control with an evidence-based approach.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Jack Tan</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Iman Tang (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Live AI Monitoring and Management -->
+<div class="modal fade" id="ai-analytics30" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Live AI Monitoring and Management</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Live AI Monitoring and Management aims to provide similar levels of observability as cloud, to edge deployed models. It compared edge AI models to cloud industry models to automatically benchmark the edge models. Thus, increasing the reliability and stability of edge AI models.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Evan Ang</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Goh Kai Song (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Determine factors causing Hospitalisation Length to improve hospital efficiency -->
+<div class="modal fade" id="ai-analytics31" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Determine factors causing Hospitalisation Length to improve hospital efficiency</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>This project aims to analyse Length of stay, generate insights and recommend solutions and courses-of-action. Length of stay is an indicator used for measuring efficiency of healthcare management. Thus, this –project helps to determine the causes of inefficiency in healthcare management and solve it.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Ryan Chua</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Surojit Dutta (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Project MAMI -->
+<div class="modal fade" id="ai-analytics32" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Project MAMI</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Project MAMI is a series of dashboards that displays the current ports’ occupancy and the various factors affecting it. It features interactive graphs and filters for drill-downs for users to get an in-depth view of the status of the ports, allowing them to manage and reduce and risk of over-occupancy.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Cleman Tan</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Swaminathan Rajamanickam (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Utilization Minutes of Machines -->
+<div class="modal fade" id="ai-analytics33" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Utilization Minutes of Machines</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>At my workplace, there are machines that are not in used and kept running. The costs of running these machines could be put to other uses. I created charts to find out which machines are the least used and managed to discover some trends too.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Abdul Hakim</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Nami Imanishi (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- IAM Operational Dashboard -->
+<div class="modal fade" id="ai-analytics34" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">IAM Operational Dashboard</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>IAM Operational dashboards are dashboards created for operation teams in Identity and Access Management team to increase operational efficiency and monitor risk-based scenarios. They help operation teams to focus time and effort on high priority tasks. Furthermore, they alert operation teams to risk scenarios that require immediate intervention.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Kwon DaHee</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Iman Tang (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Supply Chain Analysis Dashboard -->
+<div class="modal fade" id="ai-analytics35" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Supply Chain Analysis Dashboard</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>In Infineon Technologies, supply chains are formed in order to note the manufacturing route and details of each process the raw material goes through to be made into the product. The Master Data product team manages the data of the supply chains of each product. As of now the only way of analysis available for supply chains is through searching and filtering through excel sheets. As this is a long and laborious process, I created dashboards to help collate the data available for easier analysis and to support their tasks. 
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Tok Yu Hang Xavier</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Imanishi Nami (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- IPD Engagement Analytics -->
+<div class="modal fade" id="ai-analytics36" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">IPD Engagement Analytics</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>IPD, or Industry Partnerships Department does not have a way to view past engagements, activities and events with external companies. A dashboard which displays vital information on a concise interface was created for staff to identify and track engagement trends.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Xavier Tan</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Imanishi Nami (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Balefire V3 -->
+<div class="modal fade" id="ai-analytics37" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Balefire V3</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>From 2019 onwards, No Smoking Zone (ORNSZ) and Designated Smoking Areas (DSAs) were introduced in Singapore which started in Orchard Road precinct and progressively to other areas in Singapore. To automatically monitor the utilisation of these ORNSZs and DSAs by counting the number of smoking instances, Balefire was developed. Balefire is a smoking detection AI-model trained using deep learning techniques. It detects and returns the counts of the number of unique persons and smokers from a camera’s field-of-view. The AI model enabled the agency to obtain the counts for trending analysis without heavy manual manpower efforts. This project is to train and develop the 3rd iteration of the AI model where the key objective is to improve the count accuracies while maintaining the operating costs.
+        </p>
+        <h4>Key Benefits</h4>
+        <p><strong>Manpower savings</strong> - The smoking detection engine is a lot efficient in automatically counting the number of smoking instances from CCTVs/video feeds without needing a person to manually watch and count them in videos.</p>
+        <p><strong>Scalable</strong> - The solution is expandable according to the number of CCTVs/video feeds</p>
+        <h4>Key Technologies Used</h4>
+        <ul>
+          <li>Person Detection</li>
+          <li>Person Tracker</li>
+          <li>Pose Estimation</li>
+          <li>Face Classifier</li>
+        </ul>
+        <h4>Potential Enhancements</h4>
+        <p>This project can be enhanced with the following:</p>
+        <li>Refinement of the model to further improve the accuracies</li>
+        <li>Implement new and more cutting AI models as part of the solution stack</li>
+        <h4>Industry Partner</h4>
+        <p>GovTech DSAID’s agency partners</p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Ong Yi Chen</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Goh Kai Song (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Modulation Transfer Function Guided user interface (MTF GUI) -->
+<div class="modal fade" id="ai-analytics38" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Modulation Transfer Function Guided user interface (MTF GUI)</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>The Modulation transfer function GUI revamps the old GUI in VBA, by providing faster , easier analysis of wafers. Therefore, engineers can determine the wafer and lens quality quickly and easily.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Kobe Chang Ze Rui</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Imanishi Nami (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Analysis and Building Data Modelling and Data Mart -->
+<div class="modal fade" id="ai-analytics39" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Analysis and Building Data Modelling and Data Mart</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>To accelerate the business processes and allow user to access to the relevant information in the data warehouse and, include partitioned and consolidated data to meet department’s query and reporting needs and, providing Single Source of Truth (SSOT).
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Loke Yin Er</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Iman Tang (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Automation of Archiving Report -->
+<div class="modal fade" id="ai-analytics40" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Automation of Archiving Report</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>An archiving report is a report that is published quarterly about products for archiving. Currently, the process of preparing and reporting the archiving report is too time-consuming, manual and repetitive. Moreover, the reporting is done on Excel without any data visualizations. 
+        </p>
+        <p>Thus, using automation and Tableau dashboards, the company saves dozens of man-hours per year and can obtain valuable patterns, trends and insights into the data, improving business operations.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Muthu Praveen</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Imanishi Nami (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Creation of Data Marts -->
+<div class="modal fade" id="ai-analytics41" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Creation of Data Marts</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>When users want to access data for analysis, they need to retrieve the required tables from the centralized data warehouse, which is time-consuming and poses a potential security risk. Creating data marts would aid in maintaining security and improving user consumption.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Pia Isabel Gertes Martinez</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Iman Tang (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Automation Process Analytics Dashboard -->
+<div class="modal fade" id="ai-analytics42" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Automation Process Analytics Dashboard</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Repetitive manual processes can be time-consuming as it takes up extra time and man power. My project aims to tackle this issues by creating macros and automating these processes as well as creating an analytics dashboard that combs through data and converts it to a presentable format. Thus, improves overall productivity & efficiency.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Hansveer Singh Kairon</li>
+        </ul>
+        <h4>Supervisor</h4>
+          <p>Ho Liang Gek (Ms)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Department Data and Dashboard Development -->
+<div class="modal fade" id="ai-analytics43" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Department Data and Dashboard Development</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Data and Dashboard development build from QlikSense, a business intelligence software. The developed business intelligence dashboards display precise and crucial data with appropriate charts, which aid departments in business decision-making. In addition, the dashboards add clarity to the data presented, allowing easy access to essential data.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Chia Ke Ying Kristle
+          </li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>Choy Hoe Yun, Peter (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Business Data Analysis -->
+<div class="modal fade" id="ai-analytics44" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Business Data Analysis</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>My project allowed the restaurant boss to know about how their restaurant’s sale is doing for the past 6 months, April to October, and if there are any items that they can remove from their menu so that they can reduce inventory lost.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Lim Joey
+          </li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>Vincent Chew (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Power Bi Migration Project 1 -->
+<div class="modal fade" id="ai-analytics45" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Power Bi Migration Project 1</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>The Power Bi migration project migrates Refinitiv’s oil old reports into Power Bi reports. It consolidates all data sources into one place, and visualizations to be used onto the reports. Thus, analysts can spend more time working on their analysis and commentary more efficiently.
+        </p>
+        <p>Oil Prices are driven by demand and supply. Refinitiv’s oil analysts reports covers flows between regions such as Asia, Middle East, West Arbitrage. The products covered are flammable oils that includes Naphtha that is used in production of plastics and Fuel Oil that is used in heating up homes.  Each analysts has data sources located in various locations such as SharePoint, and Eikon. However, to be able to report quickly and accurately is essential for Refinitiv’s Oil Analysts
+        </p>
+        <p>Adhering the ETL process (extract, transform and load), the project utilizes Power Bi to pull and prepare data from sources such as SharePoint and Eikon and reporting all in one place.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Chua Xinhui
+          </li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>Wong Kok Keong (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Power Bi Migration Project 2 -->
+<div class="modal fade" id="ai-analytics46" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Power Bi Migration Project 2</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>The Power Bi migration project migrates Refinitiv’s oil old reports from Word Documents and Excel spreadsheets into Power Bi reports. This project leverage on Share Point and Eikon to gather the data sources, and Power bi to create the visualizations.
+        </p>
+        <p>Among all the benefits the project brings, the main advantage is that it consolidates all the data sources into one place, it enhances the visualizations within the report, and it automates the company’s process. 
+        </p>
+        <p>Thus, it solves the problem of sourcing for data from various sources and it diminishes the analyst’s workflow. Furthermore,  the analysts can spend more time working on their analysis and commentary with the automated and enhanced visualizations.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Bella Ong
+          </li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>Wong Kok Keong (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+
+<!-- Sales Dashboard and Orchard Branch Network Project -->
+<div class="modal fade" id="ai-analytics47" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Sales Dashboard and Orchard Branch Network Project</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>The sales dashboard displays real-time sales data in a visual format. It is able to give salespeople and managers an easy-to-understand summary of their key performance indicators, allowing them to track their progress toward sales goals, targets and have a better view of the sales position, and exploit client consumption characteristics. 
+        </p>
+        <p>The Orchard Bank branch will open in September, and we need to finish the network installation and test it well before then. And because of Covid-19, the majority of bank employees will work from home. The IT network team configured the Cisco Jabber Phone application and connect it to the bank user database to replace the traditional desk phone to communicate with customers.
+        </p>
+        <h4>Project By</h4>
+        <ul>
+          <li>Lu Rouzhi
+          </li>
+        </ul>
+        <h4>Supervisor</h4>
+        <p>George Lee (Mr)</p>
+        <p>Wong Kok Keong (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal -->
+
+
+</body>
+</html>
+
