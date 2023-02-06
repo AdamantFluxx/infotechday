@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/search.css" rel="stylesheet">
+
+
+    <style>
+        /*Banner Imager*/
+
+        .img-wrapper {
+            position: relative;
+        }
+
+            .img-wrapper img {
+                width: 100%;
+            }
+
+            .img-wrapper .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .img-wrapper h2 {
+                margin: 0 0 .5em;
+            }
+
+        /*End*/
+        /*Project image center*/
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .image {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+
+            .image img {
+                display: block;
+                width: 245px;
+                height: 138px;
+            }
+/*Read More Button*/
+            .btnDesign {
+              border-radius: 12px;
+              transition-duration: 0.4s;
+              background-color: #afdbf1;
+            }
+
+            .btnDesign:hover {
+              background-color: #c4e3f3;
+            }
+/*modal*/
+            .modal {
+                text-align: center;
+            }
+            .modal-dialog {
+                text-align: left; /* you'll likely want this */
+                max-width: 100%;
+                width: auto !important;
+                display: inline-block;
+            }
+    </style>
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+
+
+
+    <title>InfoTech Day 2023</title>
+</head>
+
+
+
+
+
+<body id="toTop" data-spy="scroll" data-target=".navbar" style="overflow-x: hidden;">
+
+    <!--nav logo-->
+    <nav class="navbar navbar-custom">
+        <a><img src="..\img\tp-horizontal-white.png" alt="Temasek Polytechnic" width="400" height="45"></a>
+    </nav>
+    <!--nav menu-->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link page-scroll">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#seminars">Seminars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#iit">IIT Courses</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Getting To TP</a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </nav>
+    <!--Banner With Button-->
+    <center>
+
+        <div class="img-wrapper">
+            <img src="../img/ImmersiveBanner.jpg" />
+            <div class="overlay">
+                <h1 style="color:white;">Immersive Media Projects</h1>
+                <div class="container">
+                  <input type="search" placeholder="Search..." class="form-control search-input" data-table="customers-list"/>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </center>
+    <!--Banner End-->
+    <br>
+    <!--Search Bar-->
+
+    <!--back to top icon-->
+    <div id="backTop">
+        <a style="position: fixed; right: 50px; bottom: 15px; z-index: 100 "
+           onClick="ga('send', 'event', { eventCategory: 'InfoTech Day 2022', eventAction: 'InfoTech Day 2022:Navigation', eventLabel: 'Page Top'});"
+           class="page-scroll" href="#toTop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="71.736" height="73.837"
+                 viewBox="0 0 71.736 73.837">
+                <path id="Icon_awesome-arrow-alt-circle-up" data-name="Icon awesome-arrow-alt-circle-up"
+                      d="M.562,37.481C.562,17.087,16.616.563,36.43.563S72.3,17.087,72.3,37.481,56.244,74.4,36.43,74.4.562,57.876.562,37.481ZM42.794,54.75V37.481H53.048a1.8,1.8,0,0,0,1.229-3.052L37.66,17.414a1.685,1.685,0,0,0-2.444,0L18.583,34.429a1.793,1.793,0,0,0,1.229,3.052H30.067V54.75A1.767,1.767,0,0,0,31.8,56.536h9.256A1.767,1.767,0,0,0,42.794,54.75Z"
+                      transform="translate(-0.563 -0.563)" fill="#002f5e" />
+            </svg>
+        </a>
+    </div>
+
+    <!--projects-->
+    <section id="projectAiOthers" class="projects-section" >
+
+        <center>
+          <table class="table table-bordered table-striped customers-list" id="otherprojects_table" >
+            <tr>
+                <th  style="background-color: #011b77; color: #ffffff;"><h4>Project Title &nbsp;</h4></th>
+                <th onclick="sortTable(1)" style="background-color: #011b77; color: #ffffff; width: 10%;"></th>
+            </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Swim Watch</td>
+                <td class="info"><a data-toggle="modal" href="#immersive-media5"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Boba Dash</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#immersive-media6"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">G2GO, Device Care</td>
+                <td class="info"><a data-toggle="modal" href="#immersive-media7"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">The Curious Cape Boy</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#immersive-media8"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">REBEE-RRT</td>
+                <td class="info"><a data-toggle="modal" href="#immersive-media9"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Organ-ised</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#immersive-media10"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">SCDF AR Application</td>
+                <td class="info"><a data-toggle="modal" href="#immersive-media11"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Kidney Health Facility</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#immersive-media12"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Smart Serious Game Analytics Engine</td>
+                <td class="info"><a data-toggle="modal" href="#immersive-media13"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Project Hygge</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#immersive-media14"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Study-Go</td>
+                <td class="info"><a data-toggle="modal" href="#immersive-media15"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">IOS Software Sample</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#immersive-media16"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">DokiDare - Scene System</td>
+                <td class="info"><a data-toggle="modal" href="#immersive-media17"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">AR Balloon</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#immersive-media18"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Personalised Feedback App</td>
+                <td class="info"><a data-toggle="modal" href="#immersive-media19"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+      
+    
+          </table> 
+        </div>
+      </div>
+
+        </center>
+
+    </section>
+
+    <br />
+    <section id="footer" class="footer-section">
+      <p> Organized by:</p>
+      <img src="../img/tp-justified-red.png" height="50">
+
+      <script src="../js/navload.js"></script>
+
+  </section>
+
+
+
+    <!--Scripts-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/jquery.appear.js"></script>
+    <script src="../js/modals.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
+    <!--
+      <script src="../css/search.css"></script>
+    -->
+    <script>
+           (function(document) {
+            'use strict';
+
+            var TableFilter = (function(myArray) {
+                var search_input;
+
+                function _onInputSearch(e) {
+                    search_input = e.target;
+                    var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
+                    myArray.forEach.call(tables, function(table) {
+                        myArray.forEach.call(table.tBodies, function(tbody) {
+                            myArray.forEach.call(tbody.rows, function(row) {
+                                var text_content = row.textContent.toLowerCase();
+                                var search_val = search_input.value.toLowerCase();
+                                row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
+                            });
+                        });
+                    });
+                }
+
+                return {
+                    init: function() {
+                        var inputs = document.getElementsByClassName('search-input');
+                        myArray.forEach.call(inputs, function(input) {
+                            input.oninput = _onInputSearch;
+                        });
+                    }
+                };
+            })(Array.prototype);
+
+            document.addEventListener('readystatechange', function() {
+                if (document.readyState === 'complete') {
+                    TableFilter.init();
+                }
+            });
+
+        })(document);
+    </script>
+
+
+
+
+
+    <!--Modals-->
+    <!-- Swim Watch -->
+<div class="modal fade" id="immersive-media5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Swim Watch</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>There were a couple of drowning cases at condominium, hotel, and public swimming pools. SportSG being the agency using sport to create greater sporting opportunities and access, more inclusivity and integration as well as broader development of capabilities; will strive to prevent and reduce drownings and injuries in Singapore. We hope this project encourages everyone to swim safe and stay fit.
+          </p>
+          <p>The purpose of the is gamification project is to create awareness on water safety especially for swimming pool users.  Adults and children can play at anytime and anywhere since the game will be published in Google Play Store. 
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Ong Wee Hock (Project Leader)
+            </li>
+            <li>Joey Goh
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Delphine Fong (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Boba Dash -->
+  <div class="modal fade" id="immersive-media6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Boba Dash</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Boba Dash is a “play to win” game, which engages players to win bubble tea vouchers by playing the game and earning exclusive power ups and passing time in the public transport (MRT), as well as keeping in mind of the goal to earn as many achievement badges as possible. 
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Flexibility </strong>- Users can quit the animation if they do not want to follow through with it</p>
+          <p><strong>Convenience </strong>- Users will be able to learn a lot more about CPR, First Aid and how to extinguish a fire at any time, as long has they had the target image</p>
+          <h4>Key Technologies Used</h4>
+          <li>Unity</li>
+          <li>Vuforia</li>
+          <li>Figma</li>
+          <li>MAYA</li>
+          <h4>Potential Enhancements</h4>
+          <p>This project can be enhanced with the following:</p>
+          <li>Design: A uniform colour throughout, Better fonts (not so cluttered and random)</li>
+          <li>Animations: Choose better animations; make use of diverse animations rather than the 	  same ones (make it more interesting; dynamic, to engage audience)
+          </li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Sheryl Teh
+            </li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>SCDF (Singapore Civil Defence Force)</p>
+          <h4>Supervisor</h4>
+          <p>Nalaka Edirisinghe (Dr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- G2GO, Device Care -->
+  <div class="modal fade" id="immersive-media7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">G2GO, Device Care</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Understanding and processing vague and grouped up information/ instructions at once would be an impossible task for most of the students in Grace Orchard School. In addition, some students are unable to read and hence require text-to-speech functions.  Sadly, most games do not come with broken down instructions or text-to-speech.
+          </p>
+          <p>G2GO, Device Care is an application made with the intention of supporting and assisting teachers, as well as helping students retain and practice device care practices taught to them through the gamification and reinforcement of concepts taught by their teachers. Hence, this application comes with a text-to-speech function, as well as a code teachers can enter to give the student an achievement badge if the student has really understood the device care practice.
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Assist </strong>- Teachers can use the application to verify if students have understood the device care practice taught</p>
+          <p><strong>Motivate </strong>- Students will be motivated to do better to get the more attractive achievements out of the 3 possible achievements available</p>
+          <h4>Key Technologies Used</h4>
+          <li>Inkarnate.com – Map Creation</li>
+          <li>Maya – Game Models</li>
+          <li>Photoshop – Sprites/ Images/ Textures</li>
+          <li>PISKELApp.com – Sprites/ Images</li>
+          <li>Unity – Game Engine</li>
+          <h4>Potential Enhancements</h4>
+          <p>This project can be enhanced with the following:</p>
+          <li>Implement Text-To-Speech for Game Levels as well</li>
+          <li>Implement Online/ Cloud Data Storage</li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Lucius Tan</li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>Grace Orchard School</p>
+          <h4>Supervisor</h4>
+          <p>Nash Lin (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+            
+  <!-- The Curious Cape Boy -->
+  <div class="modal fade" id="immersive-media8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">The Curious Cape Boy</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The SingTel GDP (Global Delivery Platform) is made up of many operations from several departments. Because each department is preoccupied with its own tasks, they do not have time to learn about the work of the other departments. Conducting an online quiz would be straightforward and dull, so the staff would be even less interested as a result. 
+          </p>
+          <p>We created a 2D platformer quiz game to allow staff to engage in learning new things and playing games at the same time. There is a score system implemented inside the game, as the person with the highest score will get a reward every week. The game itself is on mobile, so they can play it anywhere, anytime.
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Educational and Entertaining </strong>- The game offers excitement as it allows the player to move around platforms and acquire new knowledge by doing quizzes that are scattered throughout the level.</p>
+          <p><strong>Challenging </strong>- The difficulty of the game will increase as player progress to a new stage.</p>
+          <h4>Key Technologies Used</h4>
+          <li>Adobe Photoshop</li>
+          <li>Adobe XD</li>
+          <li>Unity Game Engine</li>
+  
+          <h4>Potential Enhancements</h4>
+          <p>This project can be enhanced with the following:</p>
+          <li>Adding a database for rotation of the quiz question set and saving users data (e.g., score, timing).</li>
+          <li>Using a simpler algorithm for the quiz.</li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Murphy Wong Kah Leong</li>
+            <li>Ng Zheng Long</li>
+            <li>Pior Zheng Jie</li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>SingTel Ltd</p>
+          <h4>Supervisor</h4>
+          <p>Malcolm Grant (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- REBEE-RRT -->
+  <div class="modal fade" id="immersive-media9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">REBEE-RRT</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Rebee-RRT is a project that is intended to be sold to the army for to conduct RRT testing remotely. The special functionality of the project is to be able to detect when the person is cheating, while using the sensor to do the exercise.  There are multiple warning systems in place to detect when the user is cheating, such as when the user does the exercise too fast, or when the user is in a wrong position when doing the exercise. All these warnings make the results more reliable, which makes the entire system more feasible to the army who will get accurate results from the trainee’s exercises, allowing them to conduct remote testing, preventing the spread of COVID.
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Reliability </strong>- Results are more accurate and reliable for conducting remote testing.</p>
+          <p><strong>Remote </strong>- Testing can be conducted remotely, preventing spread of COVID amongst trainees/testers.</p>
+          <p><strong>Convenience </strong>- Trainees no longer have to come down to the testing area in order to be tested.</p>
+          <h4>Key Technologies Used</h4>
+          <li>Unity Game Engine</li>
+          <li>IOT Gyroscope Sensors</li>
+  
+          <h4>Potential Opportunities</h4>
+          <p>This project can be enhanced with the following:</p>
+          <li>Storing warning data online: Allows for the testers to check what warnings the trainee has triggered to check whether the trainees are actually cheating, and see what they are doing wrong.
+          </li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Ryan Pong</li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>XCLR8 Technologies Pte. Ltd.</p>
+          <h4>Supervisor</h4>
+          <p>Nash Lin (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal -->
+            
+  <!-- Organ-ised -->
+  <div class="modal fade" id="immersive-media10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Organ-ised</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Organ-ised is an educational, puzzle game used to teach the youths about Kidney Health. It will teach them how to analyse nutritional labels , learn how to differentiate which foods are healthy or unhealthy.  Thus, players will start to live a healthy lifestyle, preventing kidney failure in the future.
+          </p>
+          
+          <h4>Project By</h4>
+          <ul>
+            <li>Darryl Loo Wen Tong</li>
+            <li>Ding Xiao Yang</li>
+            <li>He Tian You</li>
+            <li>Lee Hong Yi</li>
+            <li>Neythan Goh Qi Heng</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Nur Aisha Khalid (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal -->
+  
+  <!-- SCDF AR Application  -->
+  <div class="modal fade" id="immersive-media11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">SCDF AR Application</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>SCDF AR Application is an AR app that educate members of the public on topics such as basic first aid, CPR technique and the utilization of fire extinguishers. With a usage of a memorabilia , a photo frame, which allows the user to be able to scan with an application and educational games on the above topics can be played. 
+          </p>
+          <p>Previously, most Fire Station in Singapore would hold a weekly open house tour of the station. At the end of the tour visitors would receive a plastic helmet as memorabilia. However, the novelty of the helmet would quickly wear off and it would soon be neglected and be thrown.
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Educate </strong>- Educate the public about essential first aids that could save a life</p>
+          <p><strong>Convenient </strong>- SCDF will not have to give memorabilia for keepsake instead it can doubled as education opportunity to the public</p>
+          <h4>Key Technologies Used</h4>
+          <li>Unity Game Engine</li>
+          <li>Autodesk Maya for modeling
+          </li>
+          <li>Adobe XD
+          </li>
+          <li>Adobe Photoshop
+          </li>
+  
+          <h4>Potential Opportunities</h4>
+          <p>This project can be enhanced with the following:</p>
+          <li>More example of fire hazard and steps to use a fire extinguisher
+          </li>
+          <li>More advanced and seamless menu system </li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Alfonso Diomampo Rubio</li>
+            <li>Swee Jun Hao</li>
+            <li>Goh Yue Han Jon</li>
+            <li>Yong Rong Hao</li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>Singapore Civil Defence Force</p>
+          <h4>Supervisor</h4>
+          <p>Shamim Akhtar (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal -->
+  
+  <!-- Kidney Health Facility  -->
+  <div class="modal fade" id="immersive-media12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Kidney Health Facility</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>This is the role that players will play as part of this project designed for The National Kidney Foundation. The purpose of this game is to encourage healthy habits from a young age, to prevent the onset of kidney disease in the future.
+          </p>
+          <p>Targeted at students, this escape room type game serves to be a whole different kind of educational game, incorporating challenging puzzles that relate back to kidney disease, at just the right difficulty to be completed successfully by teens, while not being too easy such that the game does not leave a lasting impression. The puzzle’s aim is to subtly show players what are some good habits to develop to prevent kidney disease. 
+          </p>
+          <p>The intended final game is a web based game that will be presented on NKF’s website for the general public to enjoy.
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Lasting Impression </strong>- The challenge of the game separates our educational game from traditional educational games</p>
+          <p><strong>Outreach </strong>- Built with public presentation in mind, this game can be played anywhere, regardless of being a public roadshow or at home</p>
+          <h4>Key Technologies Used</h4>
+          <li>Unity Game Engine</li>
+          <li>Blender</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+  
+          <h4>Potential Enhancements</h4>
+          <p>This project can be enhanced with the following:</p>
+          <li>Online multiplayer to encourage collaborative gameplay (encouraging friends and family)
+          </li>
+          <li>Include complex animations to improve the immersion of the game, interactivity with moving objects
+          </li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Javier Lai Mao Sheng (Project Leader)
+            </li>
+            <li>Ee Shi Kiat
+            </li>
+            <li>Owen Tham Yeow Siang
+            </li>
+            <li>Teh Wei Jie
+            </li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>National Kidney Foundation</p>
+          <h4>Supervisor</h4>
+          <p>Douglas Finnigan (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal -->
+  
+  <!-- Smart Serious Game Analytics Engine  -->
+  <div class="modal fade" id="immersive-media13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Smart Serious Game Analytics Engine</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The WannaBee Coder ideate web-based gaming platform is designed to help instructors and students achieve their individual serious game goals. While students' goals are centered on game enjoyment and final score goals, educators can take advantage of this opportunity by using data analytics to uncover the most prevalent obstacles in teaching/learning different courses.
+          </p>
+          <p>Students will also be able to learn from a variety of subjects while adhering to their educators' coursework requirements. This implies that the web-game system should be dynamic and scalable in order for both sides to be able to teach and gain further knowledge and studies.
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Scalability </strong>- Questions can be scaled to a student’s needs.</p>
+          <p><strong>Convenience </strong>- Educators can track their student’s learning, helping them to plan future lessons more effectively.</p>
+          <h4>Key Technologies Used</h4>
+          <li>Unity Game Engine</li>
+          <li>Visual Studio</li>
+          <li>Spriter</li>
+          <li>Adobe Photoshop</li>
+  
+          <h4>Potential Enhancements</h4>
+          <p>This project can be enhanced with the following:</p>
+          <li>More question types
+          </li>
+          <li>More rewards from questions
+          </li>
+          <li>Customizable profile
+          </li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Tan Wei Liang, Terril
+            </li>
+            <li>Lim Kai Xian, Garrison
+            </li>
+            <li>Ong Jia Le, Zacus
+            </li>
+            <li>Keane Low Cheng Feng
+            </li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>Temasek Polytechnic</p>
+          <h4>Supervisor</h4>
+          <p>Nur Aisha Khalid (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal -->
+  
+  <!-- Project Hygge  -->
+  <div class="modal fade" id="immersive-media14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Project Hygge</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Recently, companies are struggling to get their teams to bond, as the COVID-19 pandemic limits in-person social interactions and meet-ups. With the limited amount of team bonding activities that are available, companies are in need of an option that caters to their needs and values.</p>
+          <p>Project Hygge is an escape room game designed to be played in teams with the help of screen-sharing software. It features immersive engaging puzzles that are tailored around a customizable set of words, allowing companies to modify it based on their own needs and requirements. Thus, it offers a modular solution that provides a virtual team bonding experience, through a game that companies could use to teach their core values, history, and even more.
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Insightful </strong>- Challenges players based on their knowledge the puzzles are created for.</p>
+          <p><strong>Teamwork </strong>- Helps team members bond over a virtual environment with the mechanics designed for multiple players.</p>
+          <p><strong>Engaging </strong>- Has a score system that makes players try to achieve the highest score, as well as a unique art style and colourful animations.</p>
+          <h4>Key Technologies Used</h4>
+          <li>Unity Game Engine</li>
+          <li>C#</li>
+          <li>Autodesk Maya</li>
+          <li>Adobe Photoshop</li>
+  
+          <h4>Potential Enhancements</h4>
+          <p>This project can be enhanced with the following:</p>
+          <li>A currency system to add progression and replayability</li>
+          <li>Having more rooms/levels to overcome</li>
+          <li>Higher fidelity assets to make the game look better</li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Ian Yang
+            </li>
+            <li>Muhammad</li>
+            <li>Roy Oh
+            </li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>Singapore Telecommunications Limited (Singtel)</p>
+          <h4>Supervisor</h4>
+          <p>Malcolm Stuart Grant (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal -->
+  
+  <!-- Study-Go  -->
+  <div class="modal fade" id="immersive-media15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Study-Go</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>In this current day and age, many students have difficulty in finding motivation to study at home. Hence, teachers are constantly finding different ways to engage and motivate students and incorporate these techniques into their teaching style.
+          </p>
+          <p>"Study-Go" is a web-based application that has elements of a learning management system(LMS) and designed to be fused with gamification ideas. The app design allows teachers and students to work together more efficiently. Students will be able to learn every step by learning after each question and referring , releasing the pressure. This is efficient for learning style of applying right after learning about something. Both the teachers and students can track their progress from the app.
+          </p>
+          <p>Most importantly, the application gives a sense of flexibility of being able to bring their learning inside and outside of the classroom. A simple and friendly app will be more appealing to students than websites, as students use their phones on a daily. Therefore, students can study comfortably with their devices and learn effectively.
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Convenient </strong>- Application can be easily accessible on any of the user's devices. </p>
+          <p><strong>Flexibility </strong>- Teachers and Students are able to take their learning inside and outside of the classroom.</p>
+  
+          <h4>Key Technologies Used</h4>
+          <li>Adobe XD</li>
+          <li>Glide</li>
+          <li>Google Sheets</li>
+  
+          <h4>Potential Enhancements</h4>
+          <p>This project can be enhanced with the following:</p>
+          <p>- Complete and Working Reward System</p>
+          <li>Display List of Rewards that can be attained
+          </li>
+          <li>Usable system between Teacher and Student
+          </li>
+          <p>- Achievement System
+          </p>
+          <li>Tasks contribute to Achievements
+          </li>
+          <li>Achievement System contributes to Reward System
+          </li>
+          <p>- Pomodoro Timer</p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Karl Elijah Peralta Quinola (Project Leader)
+            </li>
+            <li>Darius Wong Jun Jie
+            </li>
+            <li>Jovan Soon Haoteng
+            </li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>Stepping Stone Studios Singapore</p>
+          <h4>Supervisor</h4>
+          <p>Nash Lin (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal -->
+  
+  <!-- IOS Software Sample  -->
+  <div class="modal fade" id="immersive-media16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">IOS Software Sample</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>This IOS software exists to facilitate the realistic training of flight controls. As the training events are becoming larger and more widely distributed across the networked environment, the staffing for these training exercises starts to get insufficient. So, the instructors and trainees will need IOS to manage their tasks, including instructors designing scenarios, running exercises, providing real-time guidance and feedback to the trainees. The instructors can inject events amid the lessons to stimulate trainees’ responses. During lessons, the instructors can also assess trainees' progress and generate reports to allow them to identify their problem areas and work on them.​
+          </p>
+          <p>Thus, the main objective of this project is to simulate the realism of flying a plane for the users. However, due to limitations of time, I can only produce a software sample that will serve as the preliminary blueprint for IOS and based on the instructor version. With more time, I will be able to work towards the completion of this software and further refine the user experience by conducting more research and gathering more feedback.​
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Realism </strong>- Simulates real-life flight experiences.</p>
+          <p><strong>Convenience </strong>- Online education for trainees from instructors​. The instructors can see the progress straight after the lesson to give a proper report to each trainee and understand where they stand at.</p>
+  
+          <h4>Key Technologies Used</h4>
+          <li>Adobe Photoshop</li>
+          <li>Adobe XD</li>
+          <li>Visual Studio Code</li>
+  
+          <h4>Potential Enhancements</h4>
+          <p>This project can be enhanced with the following:</p>
+          <li>Visual appearance to create a more modern-looking software</li>
+          <li>Login and content page for instructors to access</li>
+          <li>Rotation of the map on the lesson page</li>
+          <li>More functions related to flight controls</li>
+          <li>Recording and reviewing of the lessons</li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Cindy Ang Xin Li</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Yuan Su (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal -->
+  
+  <!-- DokiDare - Scene System  -->
+  <div class="modal fade" id="immersive-media17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">DokiDare - Scene System</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Streaming as a Virtual Tuber has been on the rise and some published application offers such platform for these users to stream their contents using virtual avatars. However, setting up their scenes virtually can prove to be very troublesome as it takes considerable amount of time for them to beautify their scenes, especially when launching the application again.</p>
+          <p>DokiDare offers a Scene System feature that helps users to save the data of all the items that exists in the current scene, right down to where the items are placed and able to load them exactly as how it was set up. The loading scenes are also interchangeable which makes it more convenient to load scenes even while streaming.
+          </p>
+          <p>With the Scene System implemented, it will eliminate the need to manually set up scenes from scratch whenever users re-launch the application.
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Adjective </strong>- Eliminate the need to manually set up scenes after every start of application.</p>
+          <p><strong>Convenient </strong>- Easy to use with unlimited number of scenes to save. Interchangeable between loaded scenes and account-based usage where saved scenes can only be loaded by the user’s account it was saved in.</p>
+  
+          <h4>Key Technologies Used</h4>
+          <li>Unity Game Engine</li>
+          <li>Unity’s JSON Utility</li>
+  
+          <h4>Potential Enhancements</h4>
+          <p>This project can be enhanced with the following:</p>
+          <li>Create an overwrite button to quickly overwrite current loaded scene.</li>
+          <li>Create a clear button that clears all existing items in the scene to restart scene set up.</li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Muhammad Amirul Bin Safiee</li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>YOOZOO Singapore</p>
+          <h4>Supervisors</h4>
+          <p>Daniel Tan Fook Hao (Mr)</p>
+          <p>Tang Jiasheng (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal -->
+                     
+  <!-- AR Balloon  -->
+  <div class="modal fade" id="immersive-media18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">AR Balloon</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>From birth, children learn to identify, express, and manage their emotions. They learn this ability from significant adults in their lives, such as parents and grandparents. For example, a child's behavior will reflect their perception of anger and associated aggression, such as shouting. Consider being unable to identify emotions at a young age and then being unable to demonstrate or express one's own emotions, as we were taught emotions are for the weak. That describes the majority of us, including you. Therefore, why not assist in educating children about emotions? 
+          </p>
+          <p>Emotion Learning Detector is an emotion detection software trained using deep learning technologies (AI and ML).  It has multiple features such as a gamified part of the app and facial emotion detection, where children must scan their surroundings to find and get NPCS to spawn and learn about emotions through real life people or themselves, respectively. This allows them to decide on the choices to make where they can learn how to deal with their own and as well as other's emotions. Thus, this can allow them to learning and better deal with emotions at a young age.
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Interesting </strong>- Children get excited easily, so by detecting their emotions can interest them</p>
+          <p><strong>Convenient </strong>- Since it is an app, it can be downloaded in any devices such as Apple and Android</p>
+          <p><strong>Educational </strong>- Teaching children about the different emotions and how to handle them</p>
+  
+          <h4>Key Technologies Used</h4>
+          <li>Modelling: Maya, Adobe Photoshop, Adobe Illustrator, Unity Asset Store</li>
+          <li>Animation: Animation – Maya</li>
+          <li>Design: Adobe Photoshop, Adobe Illustrator, PowerPoint, Adobe XD, Unity Asset Store</li>
+          <li>Programming: Visual Studios, Unity Asset Store</li>
+          <li>Base: Unity (Version 2021.1.22f1)</li>
+  
+          <h4>Potential Opportunities</h4>
+          <p>This project can be enhanced with the following:</p>
+          <li>Adding more effects on the balloon when it pop</li>
+          <li>Add a better background for the main menu to fit with the UI better</li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Yeo Zhi Ling Rennie (Project Leader)
+            </li>
+            <li>Pang Kai Cheng
+            </li>
+            <li>Jennicia Low
+            </li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>Sparkle Tots</p>
+          <h4>Supervisor</h4>
+          <p>Douglas Finnigan (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal -->
+  
+  <!-- Personalised Feedback App  -->
+  <div class="modal fade" id="immersive-media19" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Personalised Feedback App</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Our Project is to improve the effectiveness of feedback given to FILA (Facts, Ideation, Learning Issue, Action Plan) and SDL (Self-directed learning) by allowing students to view feedback and scores of their FILA and SDL side by side in the same app.
+          </p>
+          <p>Viewing the FILA and SDL with the feedback and scores given lessens the effectiveness of the feedback as students will have to take time to compare between their phone and computer. By allowing the feedback and scores to be compared directly side by side the student will be able to know where is the problem faster.
+          </p>
+          <p>Key features for the Personalised background app include image links to link websites directly for the teacher to view, image upload sections if the student wishes to upload an image using his camera/phone and a section where the student can view written feedback by the teacher.
+          </p>
+          <h4>Key Benefits</h4>
+          <p><strong>Helpful </strong>- Students can learn from their mistakes and understand the feedback easily for each of their work.</p>
+          <p><strong>Convenient </strong>- The app allows students to key in their work and view the scores and feedback on the same page.</p>
+  
+          <h4>Key Technologies Used</h4>
+          <li>Glide App
+          </li>
+          <li>Google Sheets
+          </li>
+          <h4>Potential Enhancements</h4>
+          <p>This project can be enhanced with the following:</p>
+          <li>An upgraded version of Glide which allows storing real email address.</li>
+          <li>A better app development software with lesser restrictions.</li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Le Yu Zhe (Project Leader)
+            </li>
+            <li>Syed Salim Bin Syed Esa Alsree
+            </li>
+            <li>Tan Zhi Rong
+            </li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>Temasek Polytechnic</p>
+          <h4>Supervisor</h4>
+          <p>Nash Lin (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal -->
+
+</body>
+</html>
+

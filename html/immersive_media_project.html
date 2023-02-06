@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/main.css" rel="stylesheet">
+    <style>
+        /*Banner Imager*/
+
+        .img-wrapper {
+            position: relative;
+        }
+
+            .img-wrapper img {
+                width: 100%;
+            }
+
+            .img-wrapper .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .img-wrapper h2 {
+                margin: 0 0 .5em;
+            }
+
+        /*End*/
+        /*Project image center*/
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .image {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+
+            .image img {
+                display: block;
+                width: 245px;
+                height: 138px;
+        }
+
+        .modalW{
+             width: 600px;
+        }
+        .btnDesign {
+              border-radius: 25px;
+              transition-duration: 0.4s;
+              background-color: #afdbf1;
+              text-align: center;
+              padding-top: 5px;
+            }
+
+            .btnDesign:hover {
+              background-color: #c4e3f3;
+            }
+    </style>
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+
+
+
+    <title>InfoTech Day 2023</title>
+</head>
+
+
+
+
+
+<body id="toTop" data-spy="scroll" data-target=".navbar" style="overflow-x: hidden;">
+
+    <!--nav logo-->
+    <nav class="navbar navbar-custom">
+        <a><img src="..\img\tp-horizontal-white.png" alt="Temasek Polytechnic" width="400" height="45"></a>
+    </nav>
+    <!--nav menu-->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#seminars">Seminars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#iit">IIT Courses</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Getting To TP</a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </nav>
+    <!--Banner With search Bar-->
+    <center>
+
+        <div class="img-wrapper">
+            <img src="../img/ImmersiveBanner.jpg" />
+            <div class="overlay">
+                <h1 style="color:white;">Immersive Media</h1>
+                <a href="../html/immersive_media_modal.html"> <button class="btnDesign"><h3>Other Projects</h3></button></a>
+            </div>
+        </div>
+
+            
+
+    </center>
+    <!--Banner End-->
+    <br>
+
+    <!--back to top icon-->
+    <div id="backTop">
+        <a style="position: fixed; right: 50px; bottom: 15px; z-index: 100 "
+           onClick="ga('send', 'event', { eventCategory: 'InfoTech Day 2022', eventAction: 'InfoTech Day 2022:Navigation', eventLabel: 'Page Top'});"
+           class="page-scroll" href="#toTop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="71.736" height="73.837"
+                 viewBox="0 0 71.736 73.837">
+                <path id="Icon_awesome-arrow-alt-circle-up" data-name="Icon awesome-arrow-alt-circle-up"
+                      d="M.562,37.481C.562,17.087,16.616.563,36.43.563S72.3,17.087,72.3,37.481,56.244,74.4,36.43,74.4.562,57.876.562,37.481ZM42.794,54.75V37.481H53.048a1.8,1.8,0,0,0,1.229-3.052L37.66,17.414a1.685,1.685,0,0,0-2.444,0L18.583,34.429a1.793,1.793,0,0,0,1.229,3.052H30.067V54.75A1.767,1.767,0,0,0,31.8,56.536h9.256A1.767,1.767,0,0,0,42.794,54.75Z"
+                      transform="translate(-0.563 -0.563)" fill="#002f5e" />
+            </svg>
+        </a>
+    </div>
+
+    <!--projects-->
+    <section id="ImmersiveMedia" class="projects-section">
+
+        <center>
+            <!--1-->
+            <div class=" container">
+                <div class="row">
+
+                            <div class="col-sm">
+                              <div class="image">
+                                <button type="button" data-toggle="modal" data-target="#immersive-media1"><img src="../img/immersive/2022-immersive-media-img1.jpg" ></p></button>
+                            </div>
+                              <h4>Forest Adventure</h4>
+                              <p>&nbsp;</p>
+                            </div>
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#immersive-media2"><img src="../img/immersive/2022-immersive-media-img2.jpg"></button>
+                        </div>
+                        <h4>Kidney Defense</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#immersive-media3"><img src="../img/immersive/2022-immersive-media-img3.jpg"></button>
+                        </div>
+                        <h4>Get Fit!</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#immersive-media4"><img src="../img/immersive/2022-immersive-media-img4.jpg"></button>
+                        </div>
+                        <h4>The Mini Escape</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </center>
+
+    </section>
+
+
+
+
+    <br />
+    <section id="footer" class="footer-section">
+      <p> Organized by:</p>
+      <img src="../img/tp-justified-red.png" height="50">
+
+      <script src="../js/navload.js"></script>
+
+  </section>
+
+
+
+    <!--Scripts-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/jquery.appear.js"></script>
+    <script src="../js/modals.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
+
+<!--Modals-->
+	<!-- Forest Adventure - An Engaging Way of Reinforcing Physics Concepts -->
+    <div class="modal fade" id="immersive-media1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Forest Adventure</h3>
+            </div>
+            <div class="modal-body">
+                <h4>Project Background</h4>
+                <p>Physics is an abstract subject with many complex equations that can often be 
+                  difficult to understand. To help address this problem, Forest Adventure provides 
+                  an engaging environment for students to learn about Newtonian mechanics and 
+                  the kinematic equations of motion. As a proof of concept, Forest Adventure shows 
+                  how game-based learning can help students learn the use of these equations in a 
+                  fun and visual way.</p>
+                  <p>Designed as a multi-level platformer game, Forest Adventure challenges students 
+                    to use the equations of motions to progress from one level to the next. For 
+                    example, students must calculate the correct final velocities from different speed 
+                    boosts to defeat their enemies.</p>
+                
+                <h4>Key Benefits</h4>
+                <ul>
+                <li>Puzzle based reinforcement of complex physics concepts for more engaging learning.</li>
+                <li>The enhancement of student motivation through the application of gamified learning techniques.</li>
+                </ul>
+                <h4>Key Technologies Used</h4>
+                <ul>
+                  <li>Unity Game Engine</li>
+                  <li>Adobe Photoshop</li>
+                  <li>MAYA Autodesk</li>
+                </ul>
+                <h4>Potential Enhancements</h4>
+                <p>This application can be enhanced with the following:</p>
+                <ul>
+                  <li>Implementations of more physics formulas</li>
+                  <li>Sound effects</li>
+                   <li>Vfx and lighting design</li>
+                   <li>Implementations of more level for each formula</li>
+                </ul>
+                <h4>Project By</h4>
+                <ul>
+                  <li> Abbie Ng Kai Lin (Team Leader)</li>
+                  <li> Amanda Chan Jie Hui</li>
+                  <li> Bryan Lim Jun Jie</li>
+                  <li> Ong Jia Xi</li>
+                </ul>
+                <h4>Industry Partner</h4>
+                <p>Raymond's Math and Science Studio</p>
+                <h4>Supervisor</h4>
+                <p>Douglas Finnigan (Mr)</p>
+            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+            <br /><br />
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      
+          <!-- Kidney Defense -->
+      <div class="modal fade" id="immersive-media2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Kidney Defense</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+                <p>Taking care of your kidney early is important because the effects of kidney disease
+                  are unreversible. Hence, this project was created to spread awareness about the
+                  importance of kidney health and as the many of the younger generations do not
+                  take care of their kidneys and do not know the risks of harming their kidney.
+                  </p>
+                <p>Kidney defense is a game that is playable on the web where the player defend
+                  your kidney against enemy fast food characters using ally sports characters. It
+                  teaches the player how eating too much fast food can harm your kidney and doing
+                  sports can help protect your kidney.</p>
+                
+                <h4>Key Benefits</h4>
+                <ul>
+                <li><strong>Awareness</strong> –  Spread awareness about the importance of kidney health to the younger generations</li>
+                <li><strong>Educate</strong> – Teach the younger generations on how to take care of their kidney by doing sports</li>
+                </ul>
+                <h4>Key Technologies Used</h4>
+                <ul>
+                  <li>AutoDesk Maya</li>
+                  <li>Adobe Photoshop</li>
+                  <li>Adobe XD</li>
+                  <li>Unity</li>
+                </ul>
+                <h4>Potential Enhancements</h4>
+              <p>This application can be enhanced with the following:</p>
+                <ul>
+                  <li>Adding more enemy types to the game</li>
+                  <li>Adding more ally characters representing more sports</li>
+                  <li>Using a more complex model for object detection.</li>
+                </ul>
+                <h4>Video</h4>
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/4tmmnS73-3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>Project By</h4>
+                <ul>
+                <li>Tan Zheng Liang (Team Leader)</li>
+                <li>Toh Si Yao Jerhyn</li>
+                <li>Wong Zi Jian</li>
+                <li>Yeo Zong Lin</li>
+                </ul>
+                <h4>Industry Partner</h4>
+                <p>National Kidney Foundation</p>
+              <h4>Supervisor</h4>
+                <p>Shamim Akhtar (Mr)</p>
+            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+            <br /><br />
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      
+      
+          <!-- The Get Fit App - Motivating Healthy Lifestyle Initiatives Among Students -->
+      <div class="modal fade" id="immersive-media3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">Get Fit!</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+                <p>Students today are living more sedentary lives, with the advent of home-based learning and
+                  work from home lifestyles, students have less and less of an incentive to go outside and
+                  exercise, which can lead to health problems that can manifest in the later stages of their
+                  lives.</p>
+                <p>This projects aims to solve this issue, by incentivizing students to engage in more active
+                  lifestyles through the form of a mobile app. Even a simple walk around their neighborhood
+                  or jog can do wonders for their physical health. The app also features a meal tracking
+                  feature, and integration with other apps so students can more accurately monitor their own
+                  health and plan their routes in advance.</p>
+                  <p>This app makes use of built-in sensors that come with modern Android devices to track a
+                    user’s steps. Firebase to securely log in, register, and store user data, and QR Codes to help
+                    students share their own meal information to other students.</p>
+                <h4>Key Benefits</h4>
+                <ul>
+                <li><strong>Health Awareness</strong> – Incentivizes students to live healthier lifestyles by rewarding their efforts to participate in physical activities.</li>
+                <li><strong>Convenience</strong> – Helps students keep track of what they put into their bodies through exercise and meal tracking.</li>
+                </ul>
+                <h4>Key Technologies Used</h4>
+                <ul>
+                  <li>Firebase Authentication</li>
+                  <li>Cloud Firestore</li>
+                  <li>Android Studio</li>
+                </ul>
+                <h4>Potential Enhancements</h4>
+              <p>This application can be enhanced with the following:</p>
+                <ul>
+                  <li>A machine learning model that detects if a user is running, walking, jogging etc.</li>
+                  <li>More statistics when tracking user steps</li>
+                </ul>
+                <h4>Project By</h4>
+                <ul>
+                <li>Kway Ler Koon</li>
+                </ul>
+                
+              <h4>Supervisor</h4>
+                <p>Nojiri Kosei {National Institute of Technology (KOSEN), Kumamoto College}</p>
+            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+            <br /><br />
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      
+      
+      <!-- The Mini Escape -->
+      <div class="modal fade" id="immersive-media4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 style="text-align:center;">The Mini Escape</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Project Background</h4>
+                <p>The Mini Escape is an online gaming hub in Roblox for players of all ages and types
+                  to converge and play together. It is a casual game where players can unwind and
+                  play leisurely. Players are insects who are accidently getting baked in the kitchen
+                  oven. They have to overcome many obstacles and race against time to successfully
+                  escape from the house. This game encourages competition and interaction with
+                  other players; jumping from platform to platform and seeing who can finish a level
+                  the fastest and win prizes.</p>
+                <p>When the COVID-19 pandemic happened, physical/social interactivity was reduced
+                  to prevent the spread of the virus. Many were mentally affected by the virus as
+                  they stayed at home for months. The usage of Roblox changed that allowed
+                  players to connect with others through the digital world rather than the physical
+                  world. In the past few months, Hyundai, Vans, Nike and many more big brands
+                  created experiences in Roblox to create a social experience for the players and for
+                  marketing purposes.</p>
+                
+                <h4>Key Benefits</h4>
+                <ul>
+                <li><strong>Sociability</strong> – Allows for people of all ages and variety to interact and play together. Converse, interact and befriend many new people online through play thus making it an enriching gaming experience​</li>
+                <li><strong>Convenient</strong> – Allow people of all ages to converge and play together in a light hearted manner that is accessible in Roblox, a free to play platform.​</li>
+                </ul>
+                <h4>Key Technologies Used</h4>
+                <ul>
+                  <li>Roblox Studio</li>
+                  <li>Maya and Blender</li>
+                  <li>Adobe Photoshop</li>
+                </ul>
+                <h4>Potential Enhancements</h4>
+              <p>This project can be enhanced with the following: </p>
+                <ul>
+                  <li>Replayability</li>
+                  <li>Mechanic Variety</li>
+                </ul>
+                <h4>Project By</h4>
+                <ul>
+                <li>Estela Astrid Shanya Almendras (Project Leader)</li>
+                <li>Muhammad Hafiz Bin Muhammad Nazri</li>
+          <li>Terence Hau Qi Zhi</li>
+          <li>Vanessa Chua Siew Jin</li>
+          <li>Xavier Kwek Ze Quan</li>
+                </ul>
+              <h4>Industry Partner</h4>
+                <p>Stepping Stone Studios LLP</p>
+                <h4>Supervisor</h4>
+                <p>Nash Lin (Mr)</p>
+            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+            <br /><br />
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+</body>
+</html>
