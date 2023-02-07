@@ -1,3 +1,4 @@
+
 /*----- Tabs -----*/
 .tabs {
 	width: 100%;
@@ -21,7 +22,7 @@
 .tab-links a {
 	padding: 9px 15px;
 	display: inline-block;
-	border-radius: 3px 3px 0px 0px;
+	border-radius: 6px;
 	background: #e5a7a7;
 	font-size: 16px;
 	font-weight: 600;
@@ -42,6 +43,7 @@ li.active a:hover {
 .tab-content {
 	padding: 15px;
 	border-radius: 3px;
+	border-color: black;
 	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
 	background: #fff;
 }
@@ -60,11 +62,38 @@ li.active a:hover {
 	border-collapse: collapse;
 }
 
-@media all and (min-width: 720px) {
 
-#tpmap{
-	width: 100%;
+.directions-link a {
+	padding: 9px 40px;
+	display: inline-block;
+	background: #a6a6a6;
+	font-size: 15px;
+	transition: all linear 0.15s;
+	width: 50%;
+}
+.directions-link a:hover {
+	background: #868686;
+	text-decoration: none;
 
 }
+
+.directions-link li {
+
+	margin: 2px 12px;
+	list-style: none;
+
 }
 
+.directions-link li.active a,
+.directions-link li.active a:hover {
+	background: #585858;
+
+	margin: 2px 12px;
+	list-style: none;
+
+}
+.container{
+	display: none;
+
+
+}

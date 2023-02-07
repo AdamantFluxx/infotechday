@@ -1,17 +1,32 @@
-html {
-    scroll-behavior: smooth;
-  }
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@media (max-device-width: 1000px)  {
+    #navbarMenu {
+        display: none;
+
+    }
+
+    .dropbtn {
+        display: block;
+    }
+
 }
-.navbar-custom {
-    background-color: #002F5E;
-    color: white;
+@media (max-width: 1000px) {
+    #navbarMenu {
+        display: none;
+
+    }
+
+    .dropbtn {
+        display: block;
+    }
+
 }
 
-.navbar-nav {
-    display: flex;
-    justify-content: space-between;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #projectSelect {
@@ -20,19 +35,7 @@ body{
     width: 100%;
 
 }
-#navbar{
-    z-index: 100;
-    width: 100%;
-    position: fixed;
-    top:0;
-    transition: top 0.1s;
-}
-#navbarMenu{
-    z-index: 100;
-    width: 100%;
-    top:55px;
-    transition: top 0.1s;
-}
+
 #seminarSelect {
     display: inline-block;
     transition: 1s;
@@ -64,23 +67,21 @@ body{
 
 }
 
-.navbar-nav>li {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-a {
-    color: white !important;
-}
-
 .rounded-xl {
 
-    border-radius: 2rem;
+    border-radius: 3rem;
+    transition: 0.5s;
 
+}
+
+.rounded-xl:hover {
+
+    border-radius: 3rem;
+    filter: grayscale(100%);
 }
 
 .column {
-  display: inline-block;
+    display: inline-block;
 }
 
 .row::after {
@@ -88,12 +89,14 @@ a {
     clear: both;
     display: table;
 }
-.container{
-    text-align:center;
+
+.container {
+    text-align: center;
 }
-.footer-section{
-    background-color: #002F5E ;
+
+.footer-section {
+    background-color: #002F5E;
 }
-.nav-link{
-    font-size: larger;
+a{
+    text-decoration: none !important;
 }
