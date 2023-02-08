@@ -1,0 +1,3226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/search.css" rel="stylesheet">
+
+
+    <style>
+        /*Banner Imager*/
+
+        .img-wrapper {
+            position: relative;
+        }
+
+            .img-wrapper img {
+                width: 100%;
+            }
+
+            .img-wrapper .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .img-wrapper h2 {
+                margin: 0 0 .5em;
+            }
+
+        /*End*/
+        /*Project image center*/
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .image {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+
+            .image img {
+                display: block;
+                width: 245px;
+                height: 138px;
+            }
+/*Read More Button*/
+            .btnDesign {
+              border-radius: 12px;
+              transition-duration: 0.4s;
+              background-color: #afdbf1;
+            }
+
+            .btnDesign:hover {
+              background-color: #c4e3f3;
+            }
+/*modal*/
+            .modal {
+                text-align: center;
+            }
+            .modal-dialog {
+                text-align: left; /* you'll likely want this */
+                max-width: 100%;
+                width: auto !important;
+                display: inline-block;
+            }
+    </style>
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+
+
+
+    <title>InfoTech Day 2023</title>
+</head>
+
+
+
+
+
+<body id="toTop" data-spy="scroll" data-target=".navbar" style="overflow-x: hidden;">
+
+    <!--nav logo-->
+    <nav class="navbar navbar-custom">
+        <a><img src="..\img\tp-horizontal-white.png" alt="Temasek Polytechnic" width="400" height="45"></a>
+    </nav>
+    <!--nav menu-->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#seminars">Seminars</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#iit">IIT Courses</a>
+            </li>
+            </ul>
+            <span class="navbar-text">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Getting To TP</a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </nav>
+    <!--Banner With Button-->
+    <center>
+
+        <div class="img-wrapper">
+            <img src="../img/BusinessBanner.jpg" />
+            <div class="overlay">
+                <h1 style="color:white;">business digitalisation Projects</h1>
+                <div class="container">
+                  <input type="search" placeholder="Search..." class="form-control search-input" data-table="customers-list"/>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </center>
+    <!--Banner End-->
+    <br>
+    <!--Search Bar-->
+
+    <!--back to top icon-->
+    <div id="backTop">
+        <a style="position: fixed; right: 50px; bottom: 15px; z-index: 100 "
+           onClick="ga('send', 'event', { eventCategory: 'InfoTech Day 2022', eventAction: 'InfoTech Day 2022:Navigation', eventLabel: 'Page Top'});"
+           class="page-scroll" href="#toTop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="71.736" height="73.837"
+                 viewBox="0 0 71.736 73.837">
+                <path id="Icon_awesome-arrow-alt-circle-up" data-name="Icon awesome-arrow-alt-circle-up"
+                      d="M.562,37.481C.562,17.087,16.616.563,36.43.563S72.3,17.087,72.3,37.481,56.244,74.4,36.43,74.4.562,57.876.562,37.481ZM42.794,54.75V37.481H53.048a1.8,1.8,0,0,0,1.229-3.052L37.66,17.414a1.685,1.685,0,0,0-2.444,0L18.583,34.429a1.793,1.793,0,0,0,1.229,3.052H30.067V54.75A1.767,1.767,0,0,0,31.8,56.536h9.256A1.767,1.767,0,0,0,42.794,54.75Z"
+                      transform="translate(-0.563 -0.563)" fill="#002f5e" />
+            </svg>
+        </a>
+    </div>
+
+    <!--projects-->
+    <section id="projectAiOthers" class="projects-section" >
+
+        <center>
+          <table class="table table-bordered table-striped customers-list" id="otherprojects_table" >
+            <tr>
+                <th  style="background-color: #011b77; color: #ffffff;"><h4>Project Title &nbsp;</h4></th>
+                <th onclick="sortTable(1)" style="background-color: #011b77; color: #ffffff; width: 10%;"></th>
+            </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">TP OH Website 2022</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation11"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">TP OH Website 2022 - Phase 1</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation12"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">TP OH Website 2022 - Phase 2</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation13"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Congregation Detector</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation14"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Recycle Sorter</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation15"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Smoking Detector</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation16"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+             <tr style="font-size: 18px;" >
+                <td class="info" style="vertical-align: middle;">Singtel Project Panda – Team B</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation17"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">ICT Asset Management System</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation18"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Sensors based Mobile Application Development</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation19"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Automation on Adjunct Request Form</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation20"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">APD Lab Events Management Portal</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation21"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">FNA RPA Project 1</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation22"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">FNA RPA Project 2</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation23"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Seawater Reverse Osmosis Plant System Failure 1</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation24"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Seawater Reverse Osmosis Plant System Failure 2</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation25"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Journal Editorial Application</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation26"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Journal Submission and Management System</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation27"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">LakeLife Activity Support Mobile Application</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation28"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Shell Record Management System</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation29"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">SIP Advertisement Portal</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation30"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Project Panda</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation31"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">APD Colony Counter Application</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation32"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Asset Tracking & Management 1</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation33"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Asset Tracking & Management 2</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation34"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Hot Desking</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation35"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">SmartFM</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation36"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Temi Concierge Robot</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation37"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">E-COMMERCE WEB SYSTEM</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation38"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Implementation of CareSenz into NPO’s website</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation39"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">New Joiner List Onboarding Chatbot</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation40"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">SLEC Intranet Portal and Nintex System</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation41"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Automation of Trade Processes</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation42"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Asia Polymers Master Bi Data</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation43"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Automation on Price Reporting</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation44"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Automation of Reports</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation45"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Bread Createur Site</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation46"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Compliance Handbook and Analytics Dashboard</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation47"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Creating Automated Dividend Calendar</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation48"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Dashboard Research and App Script Project</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation49"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Data Scraping with RPA</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation50"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Data Visualization for Syfe</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation51"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Department Data and Dashboard Development</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation52"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Development of e-commerce website & The Enhancement of Internship Training Programme</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation53"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Digio - Mobile Marketplace Application For The Micro Merchants</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation54"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">E-Commerce Application</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation55"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">FinLit Games</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation56"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">FoodBuy – An E2E Business Solution</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation57"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Fund Holiday and Units in Circulation</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation58"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">GoGetMe</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation59"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">HR On-boarding</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation60"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Increase Productivity via Automation</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation61"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Inventory System & Website design</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation62"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Inventory System</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation63"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">JCerts, Smart Contracts utilizing BlockChain Technology</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation64"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">LetsTrack</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation65"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Mobile Payments & Cryptocurrency</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation66"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">NIT Project</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation67"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Operation Support Automation</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation68"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Pioneer Group Project </td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation69"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Policy Summary Tool for STO</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation70"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Meta Data Project</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation71"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">PSPL VBA Process Automation</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation72"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Quick Withdrawal Macro Checker</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation73"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Reconciliation & Cash Management</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation74"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">RPA ChatBot</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation75"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">RPA - Billing Process 2021</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation76"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">RPA GR PROCESS 2021</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation77"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Scorecard Dashboard Pipeline Automation</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation78"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Tableau Dashboards</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation79"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Tracking Return Order System</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation80"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">VBA Project Implementation</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation81"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Vulnerability Assessment and Penetration Testing (VAPT)</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation82"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Automation of WhatsApp VBA</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation83"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Automation with Tote Board</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation84"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Automated Data Collection Using UiPath</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation85"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">RHB Bank IT Ops Manual Tracking</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation86"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Monthly Report Automation</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation87"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">S&P 500 Stock Analytics Interactive Dashboard</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation88"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Warehouse digitalization & Branding</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation89"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Timesheet Application</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation90"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Aste Global Pte Ltd - Ecommerce Online Catalog System</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation91"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Dealpipe+</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation92"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Decentralized Finance Arbitrage Bot</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation93"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">Firstcom Academy Training Management System (FCA TMS)</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation94"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">E-COMMERCE WEB SYSTEM</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation95"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td style="background-color:#c4e3f3; vertical-align: middle;">E-Commerce Website</td>
+                <td style="background-color:#c4e3f3;"><a data-toggle="modal" href="#business-digitalisation96"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+              <tr style="font-size: 18px;">
+                <td class="info" style="vertical-align: middle;">Meta Data Project</td>
+                <td class="info"><a data-toggle="modal" href="#business-digitalisation97"><button class="btnDesign" style="color: black; height: 50px; ">Read More</button></a></td>
+              </tr>
+    
+          </table> 
+        </div>
+      </div>
+
+        </center>
+
+    </section>
+
+
+
+    <br />
+    <section id="footer" class="footer-section">
+      <p> Organized by:</p>
+      <img src="../img/tp-justified-red.png" height="50">
+
+      <script src="../js/navload.js"></script>
+
+  </section>
+
+
+    <!--Scripts-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/jquery.appear.js"></script>
+    <script src="../js/modals.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
+    <!--
+      <script src="../css/search.css"></script>
+    -->
+    <script>
+           (function(document) {
+            'use strict';
+
+            var TableFilter = (function(myArray) {
+                var search_input;
+
+                function _onInputSearch(e) {
+                    search_input = e.target;
+                    var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
+                    myArray.forEach.call(tables, function(table) {
+                        myArray.forEach.call(table.tBodies, function(tbody) {
+                            myArray.forEach.call(tbody.rows, function(row) {
+                                var text_content = row.textContent.toLowerCase();
+                                var search_val = search_input.value.toLowerCase();
+                                row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
+                            });
+                        });
+                    });
+                }
+
+                return {
+                    init: function() {
+                        var inputs = document.getElementsByClassName('search-input');
+                        myArray.forEach.call(inputs, function(input) {
+                            input.oninput = _onInputSearch;
+                        });
+                    }
+                };
+            })(Array.prototype);
+
+            document.addEventListener('readystatechange', function() {
+                if (document.readyState === 'complete') {
+                    TableFilter.init();
+                }
+            });
+
+        })(document);
+    </script>
+
+
+
+
+
+    <!--Modals-->
+<!-- TP OH Website 2022 -->
+<div class="modal fade" id="business-digitalisation11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">TP OH Website 2022</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>This is a project for ST Engineering, the ST Engineering auditor manually update the information on audit and inspection conducted at our various work sites. The various data fields (example date, work site, auditor, description of observation,  pass, fail… ) are manually inserted into excel spreadsheet and charts were generated using the data inserted.  
+          </p>
+          <p>To reduce the time and effort of multiple data entry manually and generating chart there after, an android app for onsite data entry, docking end of the day and all data save into server and allow quick chart presentation on work site audit performance.
+          </p>
+          <p>To create an offline Android application for the auditors to key in the information and to allow staff to download the data via a dashboard without any internet connect or access to Cloud due to confidentiality of data.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Lin Yucong</li>
+            <li>Jasper Yip Beng Hon</li>
+            <li>Ong Xiang En</li>
+            <li>Marc Shaun Tay Wee Woon</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Lam Su Yi</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- TP OH Website 2022 - Phase 1 -->
+  <div class="modal fade" id="business-digitalisation12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">TP OH Website 2022 - Phase 1</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Phase 1 to create Open House website using HTML, JavaScript and CSS for Temasek Polytechnic Open House 2022.</p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Thant Htoo Aung</li>
+            <li>Tan Xin Wei Vanessa</li>
+            <li>Edmund Ong Kai Wei</li>
+            <li>Michael Lu Losczyk</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Lam Su Yi</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- TP OH Website 2022 - Phase 2 -->
+  <div class="modal fade" id="business-digitalisation13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">TP OH Website 2022 - Phase 2</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Phase 2 to create Open House website using HTML, JavaScript and CSS for Temasek Polytechnic Open House 2022.</p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Alex Hong Jia Lun(Project Leader)</li>
+            <li>Benard Goh Shao Hong</li>
+            <li>Hidir Mastur Bin Sajani</li>
+            <li>Liau Yu Guo Collin</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Lam Su Yi</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Congregation Detector -->
+  <div class="modal fade" id="business-digitalisation14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Congregation Detector</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Congregation Detector is an audio classification and object detection software trained using deep learning technology. It detects the presence of a loud sounds at neighbourhood basketball courts during quite times and classifies the sound to determine if it is a sound of interest (i.e. basketball noises) as well as to detect people at the court using object detection. Electronic posters would be shown via a monitor to educate the public.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Lwin Moe Oo (Project Leader)</li>
+            <li>Daryl Lim</li>
+            <li>Zawadzki Eric Nicholas</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Emile Sabastian (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Recycle Sorter -->
+  <div class="modal fade" id="business-digitalisation15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Recycle Sorter</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Recycle Sorter is an android mobile application. Its key function is to allow users to take a picture of the item they would like to recycle. The image will be analysed by the object detection function to locate the object in the image. It will then predict what object it is and inform the user if they can recycle it or not.  
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Harish Raaj (Project Leader)</li>
+            <li>Mohamed Marzuk</li>
+            <li>Andrew Ng</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Emile Sabastian (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Smoking Detector -->
+  <div class="modal fade" id="business-digitalisation16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Smoking Detector</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Smoking Detector is an image classification software trained using deep learning technology. It detects the action of smoking at prohibited places in the neighbourhood such as the HDB lift lobbies. Electronic posters would be shown via a monitor to educate the public.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Priyadharshiny Rajasekaran (Project Leader)</li>
+            <li>Shreya Rai</li>
+            <li>Qiu Lang</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Emile Sabastian (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Singtel Project Panda – Team B -->
+  <div class="modal fade" id="business-digitalisation17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Singtel Project Panda – Team B</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The aim of the project was to reduce the number of people standing in close quarters during lunch hours at the Singtel office food court while ordering and paying for food by allowing the vendors to host their menu on a webapp and allow the staff to order from that app. They would be informed when they can go down to collect their order.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Manav Bhandari</li>
+            <li>Sarah Chua Sin Yee</li>
+            <li>Noel Vivas Cendana</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Roselind Nah (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- ICT Asset Management System -->
+  <div class="modal fade" id="business-digitalisation18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">ICT Asset Management System</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>ICT Asset Management System is a two-part web application developed in Power Apps. The project aims to use the existing dataset exported from the legacy system and perform data migration by connecting the dataset to the new system. The system also involves creating automated workflows using Power Automate and leveraging the technologies to integrate and synchronize our asset management, enabling simplification. 
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Rachel Chua</li>
+            <li>Ethan Ng</li>
+            <li>Daniel Sng</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Lau Zhao Hong (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Sensors based Mobile Application Development -->
+  <div class="modal fade" id="business-digitalisation19" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Sensors based Mobile Application Development</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Device Diag is a mobile application that is developed in Android and Flutter. It serves as a standardized test suite that tests for general and sensor based functionalities and offers a dashboard representation.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Lucas Lee Jing Yi</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Hu Huimei (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Automation on Adjunct Request Form -->
+  <div class="modal fade" id="business-digitalisation20" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Automation on Adjunct Request Form</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>This project is to help alleviate the workload of the IT Director and reduce the need to cater more manpower in processing the application form by using the automation system that we are creating in the UiPath Studio to manage and process data in the Request for Adjunct Lecturer application form (for CET course). For the automation system, we will be working towards completing the basic requirement where the automation will help the IT director to go through every application forms in the folder and read the data into a text file. From there we would configure the properties in the automation to extract the necessary data out from the text file to an excel file. We would implement logic to do checks and ensure that it would facilitate the IT director greatly at work.  
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Goh See Leng (Project Leader)</li>
+            <li>Nancy Goh Yi Bing</li>
+            <li>Chua Edmund</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Qi Yutao (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- APD Lab Events Management Portal -->
+  <div class="modal fade" id="business-digitalisation21" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">APD Lab Events Management Portal</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Singapore does not currently have a dedicated local widespread platform to allow the public of all ages to easily gain access to learning opportunities to adapt to the ever changing job industries which requires the learning and understanding of new skills.
+          </p>
+          <p>The APD Lab Events Management portal aims to provide a platform for A*STAR and other public organizations to host workshops and symposiums, allowing the public to register for said events, aiming to achieve educational outreach to the public. With the addition of features such as uploading and downloading of activity files, users would be able to benefit from the events they have registered for through additional reading from the activity files.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Dwayne Arnold Aniban Otero</li>
+            <li>Xavier Cho Kok Xuan</li>
+            <li>Mohammed Sirajudeen Bin Mohamed Mydin</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Fang Ying Huey (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- FNA RPA Project 1 -->
+  <div class="modal fade" id="business-digitalisation22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">FNA RPA Project 1</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>What is your project about?​</p>
+          <li>An employee at a retail company is doing a very repetitive and mundane task called Sales Order processing on her computer. Our project is to automate this process using Robotic Process Automation in UiPath.
+          </li>
+          <br>
+          <p>What problem does it solve?​</p>
+          <li>Humans get tired after doing the same thing over and over again and are more prone to make mistakes which can be costly when dealing with a lot of money. A robot will not get tired, will not make mistakes and consistently provides high quality work.
+          </li>
+          <li>It also rids the burdens that come with hiring an employee.
+          </li>        
+          <h4>Key Features</h4>
+          <ul>
+            <li>Process sales orders from NTUC
+            </li>
+            <li>Process sales orders from Watson’s
+            </li>
+            <li>Notify FNA in case of an anomaly via email
+            </li>
+          </ul>
+          <h4>Project By</h4>
+          <ul>
+            <li>Divakaran Prakash</li>
+            <li>Ryan Ng</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Sankara Rajulu (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- FNA RPA Project 2 -->
+  <div class="modal fade" id="business-digitalisation23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">FNA RPA Project 2</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>What is your project about?​</p>
+          <li>Working with RPA using UiPath Studio</li>
+          <li>Tasked to create RPA for the FNA Group in creating order forms for overseas clients (China and Langkawi)</li>
+          <br>
+          <p>What problem does it solve?​</p>
+          <li>It helps in doing repetitive tasks for the workers</li>
+          <li>Workers can do other jobs while RPA do some jobs</li>    
+          <li>Tackle some jobs faster than workers</li>    
+          <h4>Key Features</h4>
+          <ul>
+            <li>Copy-pasting</li>
+            <li>Navigating around programs</li>
+            <li>Typing</li>
+            <li>Sorting each order list into respective folders.</li>
+          </ul>
+          <h4>Project By</h4>
+          <ul>
+            <li>Muhammad Hanif Fadhillah</li>
+            <li>Wong Chun Fei</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Sankara Rajulu (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Seawater Reverse Osmosis Plant System Failure 1 -->
+  <div class="modal fade" id="business-digitalisation24" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Seawater Reverse Osmosis Plant System Failure 1</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The project mainly focuses on a Seawater Reverse Osmosis Plant System developed by Hitachi. 
+            When the system fails or encounter a serious issue, water supply is affected and urgent repairs are needed. This will impose significant amount of cost to the client. The project’s goal is to develop insights and predictive models using historical data of system provided by Hitachi to determine the factors that causes the system to fail and to also predict a potential system failure in advance.
+            </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Chan Jing Xiang (Project Leader)</li>
+            <li>Vishnu Dass S/O Dhandayuthapani</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Jocelyn Lim (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Seawater Reverse Osmosis Plant System Failure 2 -->
+  <div class="modal fade" id="business-digitalisation25" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Seawater Reverse Osmosis Plant System Failure 2</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The project mainly focuses on a Seawater Reverse Osmosis Plant System developed by Hitachi. 
+            When the system fails or encounter a serious issue, water supply is affected and urgent repairs are needed. This will impose significant amount of cost to the client. The project’s goal is to develop insights and predictive models using historical data of system provided by Hitachi to determine the factors that causes the system to fail and to also predict a potential system failure in advance.
+            </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Li Haoge (Project Leader)</li>
+            <li>Choo Zhan Jie, Jet</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Jocelyn Lim (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Journal Editorial Application -->
+  <div class="modal fade" id="business-digitalisation26" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Journal Editorial Application</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Our project is about creating a powerful journal editorial application that will allow professionals from various fields to submit their research journals while also allowing administrators to manage them easily.
+          </p>
+          <p>It overcomes the problem of (research) articles receiving biased journal evaluations and applicants needing to find alternative means of paying for journal publishing services.
+          </p>
+          <p>It is currently launched and available to the public, however, additional improvements and further testing are required to ensure that it is fully functional and ready to serve real users. No, it has not been featured in any competitions.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Li Haoran (Project Leader)</li>
+            <li>Ong Chun Wei</li>
+            <li>Raees Irfan</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Jocelyn Lim (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Journal Submission and Management System -->
+  <div class="modal fade" id="business-digitalisation27" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Journal Submission and Management System</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The current standard of procedures of handling manuscripts is inefficient and time-consuming. When manuscripts are submitted, editors will seek out specialists in the field to review manuscripts. Since researchers in the related fields often know one another, conflict of interest may occur during the process of peer review.
+          </p>
+          <p>With the help of A*CES API, editors will be able to prevent conflict of interest by identifying suitable reviewers that are not affiliated with the applicant. Management of submitted manuscripts is also easier to administrate through simplified user interface. 
+          </p>
+          <p>Moreover, the average time taken to handle manuscripts will be reduced significantly with the automation email notification process. The system will do a verification daily, with the database to send out email reminders to the reviewers if the deadline is nearing. In addition, payment of the Article Processing Charges (Publication Fees) can also be made directly on the web application with the Express Checkout API created by PayPal.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Goh Hym Leong          </li>
+            <li>Yeo Fang Wei
+            </li>
+            <li>Koh Hui Ting Jonalyn
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Jocelyn Lim (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  
+  <!-- LakeLife Activity Support Mobile Application -->
+  <div class="modal fade" id="business-digitalisation28" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">LakeLife Activity Support Mobile Application</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>As part of the community outreach efforts from the residents` committee, the volunteers regularly organise various estate and public groups activities. However, due to the current pandemic, most of these programmes are conducted virtually. It is also difficult for the volunteers to collate data through text or email as these events are usually held face to face.
+          </p>
+          <p>This mobile application allows the volunteers to connect and engage with their residents without meeting physically. It enables them to gather valuable data to know their residents better. The volunteers (admins) can also publish events and quizzes in the app to engage the residents and receive feedback to improve the game or other concerns. Both residents and non-residents can sign up and participate in the app.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Angelita Kng Meyling (Project Leader)
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Lau Zhao Hong (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Shell Record Management System -->
+  <div class="modal fade" id="business-digitalisation29" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Shell Record Management System</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Shell is currently keeping records of any vehicle issues that they might have with the use of excel and the traditional pen & paper. Thus, there may be some discrepancies among the data if they forget to type in certain important information’s. Shell also wants to be able to view their past repair histories, and any trends they might have with the use of an interactive dashboard.
+          </p>
+          <p>Our solution enables Shell to efficiently keep track of any maintenance records that they have while minimizing the chances of any data discrepancies. While logging new records, it makes use of an interactive image map to allow the user to select the part of the vehicle which needs attention which would then automatically fill up the important information. It also allows the user to upload an image using their device camera to pinpoint the exact location that needs to be attended to. With the integration of a Power BI dashboard, we are able to show their previous trends and history as well.
+          </p>
+          <p>The web application is currently being used by Shell’s mechanics at the Changi Airfreight Centre as it was designed and developed to their requirements.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Kentjana Martyn (Project Leader)
+            </li>
+            <li>Gabriel Khoo
+            </li>
+            <li>Tay Ghim Long Javier
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Jocelyn Lim (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- SIP Advertisement Portal -->
+  <div class="modal fade" id="business-digitalisation30" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">SIP Advertisement Portal</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Our SIP Advertisement Portal is a web application platform that allows both students and lecturers in charge of SIP be able to use it with ease. It solves the problem of students complaining that their SIP allocation is not related to their diploma and what they have learnt, whereas for lecturers they have difficulties of posting job advertisements for students.
+          </p>
+          <p>Some of the key features the SIP Advertisement Portal offers are Search and Filter functions, Registration restricted to only TP Student Email accounts (User Validation), Ability to apply for a Job, Automation for uploading of Job Advertisements. As compared to InternSG, a product that exist in the current market, out of the key features mentioned, it only has the ability to apply for a job.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Muhammad Aqil B Nazzuin (Project Leader)
+            </li>
+            <li>Foo Chuang Yih
+            </li>
+            <li>Lee Jia Min
+            </li>
+            <li>Nurhakiem Bin Sufyan
+            </li>
+            <li>Tan Rui Shan
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Jarrad Thong (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Project Panda -->
+  <div class="modal fade" id="business-digitalisation31" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Project Panda</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Project Panda is an online food ordering and pickup mobile application allowing  Singtel staff to place and self-collect their orders from Singtel’s canteen. This reduces physical contact and waiting time for staff within the canteen thus minimizing the spread of Covid-19.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Timothy Neam Heng Chong  (Project Leader)
+            </li>
+            <li>Ong Min Chloe
+            </li>
+            <li>Piers Soh Yu Cheng 
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Roselind Nah (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- APD Colony Counter Application -->
+  <div class="modal fade" id="business-digitalisation32" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">APD Colony Counter Application</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The counting of colonies to quantitate bacteria is a common and important process used in a wide variety of lab scenarios, such as research, clinical diagnosis and environmental monitoring.
+          </p>
+          <p>A process like this is generally manually done, however the progression of technology has led to the possibility of automation in the form of colony counter machines that can be purchased. While these machines are efficient, they can be costly and be susceptible to challenges regarding clustered colonies which leads to inaccurate results.
+          </p>
+          <p>The project aims to solve these issues by leveraging on the usage of smartphones and developing an application that uses methods to better distinguish colony counts from colony plates and also automate the entire counting process. 
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Darren Tiang
+            </li>
+            <li>Wu Zekai
+            </li>
+            <li>Clemens Long
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ying Huey Fua (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Asset Tracking & Management 1 -->
+  <div class="modal fade" id="business-digitalisation33" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Asset Tracking & Management 1</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The Asset Tracking & Management system aims to keep track of an organizations physical assets by using RFID Technology. It helps organizations track their assets efficiently. Advantages are increased security and accountability for important assets as well as better lifecycle maintenance for assets.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Lucas Sng Wei Jun
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>S. Sankara Rajulu (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Asset Tracking & Management 2 -->
+  <div class="modal fade" id="business-digitalisation34" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Asset Tracking & Management 2</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Asset Tracking refers to the method of tracking physical assets by scanning Barcode, RFID, and many other ways. It is important in allowing organizations to keep track of their physical assets' information such as their locations, how they are used and when changes are made to them. It also lets organizations know their storage spaces in the office, warehouse, and storage facilities.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Leonard Koh Jun Yan
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>S. Sankara Rajulu (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  
+  <!-- Hot Desking -->
+  <div class="modal fade" id="business-digitalisation35" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Hot Desking</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Hot Desking is a service utilized in facilities management developed both as a mobile application and a web platform for users to access a series of facility services. The goal of this service is to eliminate potential conflict between employees due to a lack of available desks, which can be resolved by allowing them to book a desk remotely in advance.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Seah Qian Lin , Shannon
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>S. Sankara Rajulu (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- SmartFM -->
+  <div class="modal fade" id="business-digitalisation36" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">SmartFM</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>SmartFM is an integrated, cloud based, facility management solution that improves the management of a building’s facilities. It collects common data for operators to use on a single platform, sharing data between departments.  It records daily tasks and gives critical oversight and analysis to executives and managers to enhance dormitory operations. Thus, this improves communication and productivity. It also reduces response time, costs and manpower.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Ng You Juin
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>S. Sankara Rajulu (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Temi Concierge Robot -->
+  <div class="modal fade" id="business-digitalisation37" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Temi Concierge Robot</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>
+            Presently, slots for guided tours in museums are very limited. Temi robot acts as a tour guide and provides greater access to museum tours and content, including multi-lingual tours as well as tours for visitors with physical impairments.
+            </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Michael Soh Zheng Hean
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>S. Sankara Rajulu (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- E-COMMERCE WEB SYSTEM  -->
+  <div class="modal fade" id="business-digitalisation38" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">E-COMMERCE WEB SYSTEM </h3>
+        </div>
+        <div class="modal-body">
+          <h4>FIRSTCOM SOLUTIONS E-COMMERCE PLATFORM</h4>
+          <li>What problem does your project solve?</li><br>
+          <p>A content management system paired that allows users to build and manage websites without coding knowledge. This solution is paired with an e-commerce website with a server platform service and allows users to create their own commerce store. Businesses have taken a toll on businesses and digitising them with solutions such as these will allow them to boost their sales and increase consumer turnover rate. 
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Muhd Danish</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Peter Choy (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Implementation of CareSenz into NPO’s website  -->
+  <div class="modal fade" id="business-digitalisation39" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Implementation of CareSenz into NPO’s website</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>CareSenz is a non-profit management software developed over the Microsoft Dynamics 365 platform that enables beneficiaries, donors, volunteers, and community service providers to respond to needs faster and collaborate seamlessly with the community. In addition, Non-Profit Organizations (NPO) are able to better manage their database and gain insights based on the data generated.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Muhammad Ghazali Bin Abu Bakar</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Peter Choy (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- New Joiner List Onboarding Chatbot  -->
+  <div class="modal fade" id="business-digitalisation40" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">New Joiner List Onboarding Chatbot</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>New joiner list onboarding chatbot is an automation programme that transition employees in RHB Bank into company culture, helping them become familiar with  the tools, resources and also their colleagues. This is able to minimize frustrating manual process, provide clear information of the guidance of all the tool and resources needed, as well as interdepartmental cooperation.        </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Jin Chunzi</li>
+          </ul>
+          <h4>Supervisors</h4>
+          <p>Ryan Lim (Mr)</p>
+          <p>Jonathan Mah (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- SLEC Intranet Portal and Nintex System  -->
+  <div class="modal fade" id="business-digitalisation41" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">SLEC Intranet Portal and Nintex System</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Nintex system is a software that automate business workflow processes. It is a workflow tool that can transform long-winded manual processes into an efficient automated process.
+          </p>
+          <p>Intranet Portal is a central point for employees. Thus, employees can improve communication, improved collaboration, and document management. 
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Yeo Efione</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Peter Choy (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Automation of Trade Processes  -->
+  <div class="modal fade" id="business-digitalisation42" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Automation of Trade Processes</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Automation of Trade Processes is where manual back-office trade processes are fully automated with a button click. This simplified, automated process can efficiently produce accurate results for every run. Thus, allowing the business user to work on more important work that still requires human interaction.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Leshane Lee</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Jade Wang (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Asia Polymers Master Bi Data  -->
+  <div class="modal fade" id="business-digitalisation43" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Asia Polymers Master Bi Data</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The Master Bi Data acts as a centralized area to house and present all the relevant information that will be used by the entire polymer sales department at anytime. The reports in the master bi folder is well-organized to ensure quality and timely data presentation, which will make data viewing easier and boost productivity and efficiency. The developed visualizations will help disclose and communicate in-context insights into business performance, allowing users to make better decisions.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Wee Xuan Wen</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Alfred Teng (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Automation on Price Reporting  -->
+  <div class="modal fade" id="business-digitalisation44" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Automation on Price Reporting</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Automation on Price Reporting is an automated process that was developed using the Kryon software. Automation on Price Reporting includes two different processes. Price Check Screenshot and SMF Refresh, the automation verifies and reports the prices by filtering in excel, taking screenshots of the prices as supporting documents and reporting the values through email. 
+          </p>
+          <h4>What is RPA and Kryon?</h4>
+          <p>Robotic Process Automation (RPA) refers to a software that can be programmed to execute repetitive tasks for businesses.
+          </p>
+          <p>Kryon is an automation software that requires no knowledge to start developing automations. They are an AI-powered process discovery robots that monitor, map and analyze business processes.
+          </p>
+          <h4>Project Features</h4>
+          <p>SMF Refresh:</p>
+          <ul>
+            <li>Downloading the SMF_EQ(EQUITY) and SMF_FI(FIXED INCOME) reports</li>
+            <li>Check for SEDOL, ISIN, Coupon Rate Updates</li>
+            <li>Extract the flagged values</li>
+            <li>Paste the values into an email</li>
+          </ul>
+          <p>Price Check Screenshot:</p>
+          <ul>
+            <li>Filtering through tabs using VBA</li>
+            <li>Search flagged values in Bloomberg and taking a screenshot</li>
+            <li>Paste it into supporting document</li>
+            <li>Send Email Upon Completion</li>
+          </ul>
+          <h4>Key Benefits</h4>
+          <p>Price Check Screenshot:</p>
+          <li>Original time taken : 45mins</li>
+          <li>Improved timing: 18 mins/day</li><br>
+          <p>SMF Refresh:</p>
+          <li>Original time taken: 30 mins</li>
+          <li>Improved timing: 2 mins/day</li><br>
+          <p>Total Time Taken: 20mins/day, 6.6hrs - 7.6hrs/month (70% Time Reduction)</p> 
+          <h4>Key Technologies Used</h4>
+          <li>Kryon Studio</li>
+          <li>Visual Basic for Applications (VBA)</li>
+          <h4>Potential Opportunities</h4>
+          <p>This application can be enhanced with the following:</p>
+          <li>API Request Functions</li>
+          <li>Incorporate other coding languages (e.g. Python)</li>
+          <h4>Industry Partner</h4>
+          <p>Lion Global Investors (LGI)</p>
+          <h4>Project By</h4>
+          <ul>
+            <li>How Ai Ying</li>
+          </ul>
+          <h4>Supervisors</h4>
+          <p>Genevieve Lim (Ms)</p>
+          <p>Joshua Phua (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Automation of Reports  -->
+  <div class="modal fade" id="business-digitalisation45" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Automation of Reports</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Automation of Reports is an Excel Macro project that used VBA to automate the process of integrating and consolidating many data reports into a single excel file. As a result, users can improve efficiency and convenience by minimizing the number of steps required.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Bay Beng Siang</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Wong Kok Keong (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Bread Createur Site  -->
+  <div class="modal fade" id="business-digitalisation46" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Bread Createur Site</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>A Bread Createur site is a website I help to build in order to showcase the details and features of a client’s business. It is not troublesome to use the website and the backend. 
+          </p>
+          <p>Thus, by doing this can ease the workload of other department and increase the productivity of the company.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Hazirah</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Glenn Ng (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Compliance Handbook and Analytics Dashboard  -->
+  <div class="modal fade" id="business-digitalisation47" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Compliance Handbook and Analytics Dashboard</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Repetitive manual processes can be time-consuming as it takes up extra time and man power. My project aims to tackle this issues by creating macros and automating these processes as well as creating an analytics dashboard that combs through data and converts it to a presentable format. Thus, improves overall productivity & efficiency.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Hansveer Singh Kairon</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ho Liang Gek (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Creating Automated Dividend Calendar  -->
+  <div class="modal fade" id="business-digitalisation48" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Creating Automated Dividend Calendar</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The auto-populating dividend calendar aims to use Microsoft Excel VBA to create a dynamic, editable softcopy calendar with inputs and a summary for total number of events in a day to increase productivity and reduce manual human error.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Joshua Khoo</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ryan Lim (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Dashboard Research and App Script Project  -->
+  <div class="modal fade" id="business-digitalisation49" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Dashboard Research and App Script Project</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Google Data Studio is an online tool for converting data into customisable informative reports and dashboards, which help the marketing department to do gain insights for our ad's performance. 
+          </p>
+          <p>As for app script projects, it is a Google Sheet backend automation for our daily spreadsheet use. Thus, making our work more efficient and less manual handling.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Goh Jie Sie, Jess</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Chew Xin Yi (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Data Scraping with RPA -->
+  <div class="modal fade" id="business-digitalisation50" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Data Scraping with RPA</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Currently, information from invoices of the description of construction materials and their prices are manually scraped and recorded into an Excel database. For future projects, the database would allow for the retrieval and comparison of prices of similar materials. However, this manual scraping process is both time-consuming and tedious. 
+          </p>
+          <p>With the implementation of Robotic Process Automation (RPA) using UiPath, the entire process can be automated by mimicking the user's sequence of steps taken to complete the task. The Optical Character Recognition (OCR) technology instantaneously extracts texts from the PDF invoice documents and transfers the information over to the Microsoft SQL database. The data is stored in Microsoft SQL database as it facilitates greater ease of data retrieval using SQL queries, as compared to using Excel.
+          </p>
+        
+          <h4>Key Benefits</h4>
+          <ul>
+            <li><strong>Efficient </strong> - Manual and labor-intensive processes such as data entry are automated at a click of a button</li>
+            <li><strong>Cost Saving  </strong> - Usage of Open Source UiPath software allows for cost-savings for the company</li>
+            <li><strong>Reliable </strong>- Allows for data from the invoices to be accurately captured with minimal errors</li>
+          </ul>
+          <h4>Key Technologies Used</h4>
+          <ul>
+            <li>UiPath</li>
+            <li>Microsoft SQL</li>
+            <li>Microsoft Excel</li>
+          </ul>
+          <h4>Potential Enhancements</h4>
+          <p>This project can be enhanced with the following:</p>
+          <ul>
+            <li>Using a more complex OCR model that includes handwriting recognition ability</li>
+            <li>Training the OCR model to recognise different invoice layout types to ensure that information is captured more accurately</li>
+          </ul>
+          <h4>Project By</h4>
+          <ul>
+            <li>Stephen Lee Ye Cai (Project Leader)</li>
+            <li>Titus Chua Hao Yi</li>
+          </ul>
+          <h4>Industry Partner</h4>
+          <p>Tiong Seng Contractors (Pte) Ltd.</p>
+          <h4>Supervisor</h4>
+          <p>Vincent Chew (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Data Visualization for Syfe  -->
+  <div class="modal fade" id="business-digitalisation51" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Data Visualization for Syfe</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <li>My project helps the Operations Department at Syfe identify deficiencies in their client onboarding process.</li>
+          <li>By converting raw and unused data into eye catching and informative graphs, users can easily identify and act upon top trends in client onboarding for Syfe.</li>
+          <li>My project allows this via Tableau’s dashboards that provide users with quality data visualization.</li>
+          <h4>Project By</h4>
+          <ul>
+            <li>Lucas Allan</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ho Liang Gek (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Department Data and Dashboard Development  -->
+  <div class="modal fade" id="business-digitalisation52" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Department Data and Dashboard Development</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Data and Dashboard development build from Qlik Sense, a business intelligence software. The developed business intelligence dashboards display precise and crucial data with appropriate charts, which aid departments in business decision-making. In addition, the dashboards add clarity to the data presented, allowing easy access to essential data.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Joseph Tan (Project Leader)</li>
+            <li>Alan Wong</li>
+            <li>Siti Aishah Bte Ali</li>
+            <li>Yeo Ah Beng</li>
+          </ul>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Development of e-commerce website & The Enhancement of Internship Training Programme  -->
+  <div class="modal fade" id="business-digitalisation53" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Development of e-commerce website & The Enhancement of Internship Training Programme</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>My website project is an e-commerce website with a textbook order function and an additional tab to include training guides. It aims to solve the problem of purchasing textbooks physically in schools during the COVID-19 pandemic. 
+          </p>
+          <p>Developing an e-commerce website with a training guide tab for student interns helps the programming team meet demands and streamlines the internship training programme for interns. 
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Lim Yan Xuan</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Chen Weili (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Digio - Mobile Marketplace Application For The Micro Merchants  -->
+  <div class="modal fade" id="business-digitalisation54" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Digio - Mobile Marketplace Application For The Micro Merchants</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Digio is a mobile marketplace application for micro merchants to sell their goods and services. The application’s simple user interface design allows them to easily maintain and update their business information on the platform to avoid complexity. Therefore, they can market their goods and services with ease to more people around the world.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Ting Xie Han Brendon</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Wong Kok Keong (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- E-Commerce Application  -->
+  <div class="modal fade" id="business-digitalisation55" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">E-Commerce Application</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>With the ongoing pandemic, small and micro merchants are unable to run their business face-to-face with customers. And existing e-commerce platforms may not be easy-to-use if the merchants do not have the required knowledge or resources. The objective of this project is to create a simple all-in-one e-commerce application to help them continue to run their business during COVID-19.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Siah Zhi Hong          </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Wong Kok Keong (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- FinLit Games  -->
+  <div class="modal fade" id="business-digitalisation56" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">FinLit Games</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>FinLit Games is a Financial Game (MMORPG) as well as a website that helps Singaporeans improve their financial literacy. The financial game encourages the improvement of financial literacy by reducing/removing the inertia that people have towards learning. While the website brings them to trusted financial solution providers to help them improve their financial situation. Hence, providing a symbiotic relationship between both parties, where users are able to improve their financial well-being and financial solution providers are able to gain quality leads and sales (customer acquisition).
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Leo Lee Zhong Liang</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ho Liang Gek (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- FoodBuy – An E2E Business Solution   -->
+  <div class="modal fade" id="business-digitalisation57" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">FoodBuy – An E2E Business Solution</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The COVID-19 pandemic has brought about a massive acceleration of e-commerce. Micro-merchants with minimal or no experience with e-commerce platforms faced an immense struggle trying to make a digital transition that was sustainable. This provided the inspiration for FoodBuy.
+          </p>
+          <p>FoodBuy is a full end-to-end (E2E) business solution which comprises mobile applications and a website which collectively aids micro-merchants to digitalise their business. It creates a sustainable ecosystem, offering the micro-merchants opportunities to generate more revenue. This E2E business solution operates on a Group-Buy model aimed to solve the pain points faced by the micro-merchants. It serves to drive customer traffic flow for the merchants while remaining sustainable for all users, including the customer and the delivery personnel.  
+          </p>
+          <p>This project received the 1st Runner-up Award for the Sustainable Finance Category Finals of the PolyFinTech100 API Hackathon 2021.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Tan Zheng Yang Calven (Project Leader)</li>
+            <li>Chavelle Chong Qi Rui</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Alfred Teng (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Fund Holiday and Units in Circulation  -->
+  <div class="modal fade" id="business-digitalisation58" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Fund Holiday and Units in Circulation</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Fund Holiday and Units in Circulation are automation projects coded with the use of Kryon Studio. It helps automate 2 processes carried out within the department. Thus, through the automation of these projects, time is saved and valuable human resources are freed up for other tasks. 
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Goh Xuan Ling</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Vincent Chew (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  
+  <!-- GoGetMe  -->
+  <div class="modal fade" id="business-digitalisation59" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">GoGetMe</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>GoGetMe is a hybrid ecommerce application coded with the use of React.js and designed with the help of Shopify. It allows small business owners to better market and sell their products to their customers. Thus, acting as a small competitor in this retail industry.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Chua Dong En (Project Leader)</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Lim Beng Kee, Ryan (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  
+  <!-- HR On-boarding  -->
+  <div class="modal fade" id="business-digitalisation60" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">HR On-boarding</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Syfe’s HR Onboarding is a website that helps new hires get all the information they need to help them settle into their new role, swiftly and efficiently, without human interference.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Eririan</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ho Liang Gek (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Increase Productivity via Automation  -->
+  <div class="modal fade" id="business-digitalisation61" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Increase Productivity via Automation</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Companies constantly struggle with the repetitive manual process, which can be time-consuming. My projects aim to solve these repetitive manual processes with Excel VBA's help to automate these processes. Upon successful implementation, companies can expect to increase their productivity as they no longer have to spend extra time completing repetitive manual processes. 
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Ong Jing Xiang</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ho Liang Gek (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Inventory System & Website design  -->
+  <div class="modal fade" id="business-digitalisation62" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Inventory System & Website design</h3>
+        </div>
+        <div class="modal-body">
+          <h4>What problem does your project solve?</h4>
+          <p>Manually key in into excel sheets cells is a hassle. Instead of that my project inventory system uses form to assist the user to key in information. This will avoid margin of error when recording the information. For my website design I used a software. This software is flexible and able to follow the standard design of a website. With flexibility it help to improve the current website which is design constraint.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Muhammad Nor Reihan</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Jonathan Ng (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Inventory System  -->
+  <div class="modal fade" id="business-digitalisation63" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Inventory System</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>This inventory system is for Meatmen Butchery to have a fresh start on their inventories. It keeps track of the company’s inventory and their daily sale and purchase transaction. Thus, ensures the company can meet their customer’s needs.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Sarah Sim</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Loh Hong Yuan (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- JCerts, Smart Contracts utilizing BlockChain Technology  -->
+  <div class="modal fade" id="business-digitalisation64" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">JCerts, Smart Contracts utilizing BlockChain Technology</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>With the many pros that rapid advancements in technology has provided, comes cons as well, one of few being the rise of counterfeiting and forgery of certificates, and this is where Project JCerts comes in. Utilizing blockchain technology, smart contracts are used to generate certificates onto the blockchain network, providing transparency and security, making it near impossible to alter the content of certificates after they are uploaded.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Ivy Chang</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ho Liang Gek (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- LetsTrack  -->
+  <div class="modal fade" id="business-digitalisation65" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">LetsTrack</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Expense tracker application targeted at working Singaporeans to help them plan their finances more effectively with better spending awareness and management to better prepare them for retirement.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Athish Bahadur
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Wong Kok Keong (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Mobile Payments & Cryptocurrency  -->
+  <div class="modal fade" id="business-digitalisation66" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Mobile Payments & Cryptocurrency</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>A detailed report of mobile payments is necessary to provide insights on how these technologies shape our lives, have a deeper understanding of mobile payments and cryptocurrency as well as how they impact the society.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Evan Chan</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Lim Beng Kee Ryan (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- NIT Project  -->
+  <div class="modal fade" id="business-digitalisation67" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">NIT Project</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The web application designed aims to provide dormitory students with the ease of cancelling dormitory meals and submitting stay-out forms within school premises. Additionally, school staff can benefit as they could easily track and acknowledge students' requests and attendance once they report back to the dormitory and select the check-in button. Overall, this project would assist to improve the efficiency and productivity within NIT Kumamoto College.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Charles Lim Kai Hong</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Alfred Teng (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Operation Support Automation  -->
+  <div class="modal fade" id="business-digitalisation68" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Operation Support Automation</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Operation Support Automation improves IT Support Team’s productivity rate by automating the highly repetitive monthly windows patch and daily treasury management system (TMS) testing tasks that require long manpower hours and manual effort. The monthly windows patch automation helps to complete the patch procedures without human interactions while the daily TMS testing automation uses Selenium automation tool to test for system errors and bugs.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Rajaguru Prarthana Madhuvanthi</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ho Liang Gek (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Pioneer Group Project  -->
+  <div class="modal fade" id="business-digitalisation69" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Pioneer Group Project</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>This encapsulates my major project, termed the Pioneer Group Project (PGP). The PGP underpins our nation’s agenda in digitalizing and transforming the social sector. With 16,500 social service professionals, over 130,000 volunteers, and close to 500 Social Service Agencies (SSA)s in Singapore, PGP’s main objective is to leverage technology in building a digitalized, efficacious, and interconnected sector to benefit our social service professionals and beneficiaries (through 8 target groups). My role encompassed the end-to-end project management process from architecting the digital solution, issuing RFI,RFP, and RFQ, to scaling the solution to over 500 SSAs in Singapore.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Krystal Lim Yun Shi</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ryan Lim (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Policy Summary Tool for STO  -->
+  <div class="modal fade" id="business-digitalisation70" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Policy Summary Tool for STO</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Policy Summary Tool is a VBA Excel system that uses data validation and calculation of year to age to reduce the rate of human error during the process of data entry, thus increasing the work efficiency in the process of doing up a policy summary for clients.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Wong Wei Jie</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ho Liang Gek (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Meta Data Project  -->
+  <div class="modal fade" id="business-digitalisation71" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Meta Data Project</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>My Meta Data Project allows users to find out more information about various food cuisines and its food products, as well as search for information regarding food items involved with the clients that the company works with through an easy to navigate and responsive website.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Matthew Tan
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Choy Hoe Yun, Peter (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  
+  <!-- PSPL VBA Process Automation  -->
+  <div class="modal fade" id="business-digitalisation72" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">PSPL VBA Process Automation</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Repetitive manual data entry tasks are time-consuming and tiresome, which may lead to human errors and a decline in productivity. A VBA macro is able to automate these manual data entry tasks, eliminate human errors, and save time. Thus, users can perform their tasks much faster while maintaining high data quality.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Bradley Joandrey (Project Leader)</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Muhammad Ali Bin Aliuddin (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Quick Withdrawal Macro Checker  -->
+  <div class="modal fade" id="business-digitalisation73" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Quick Withdrawal Macro Checker</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>My quick withdrawal macro checker enables multiple large datasets of client information to be cross-checked accurately, quickly identifying the key mismatches for indicators to perform same day withdrawal for clients’ investments up to 90%. With this macro, precious time is saved and thus overall, improving the work productivity in the organisation.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Glaser Yeo Yao Quan</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ho Liang Gek (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Reconciliation & Cash Management  -->
+  <div class="modal fade" id="business-digitalisation74" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Reconciliation & Cash Management</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Excel spreadsheets have become integrated into most organizations worldwide, particularly those in the financial services industry, on which they will rely heavily. Hence, utilizing Excel macros and VBA programming to automate the manual excel processes improves the overall workflow efficiency of the business.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Inez Wong Wei Ting</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ho Liang Gek (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- RPA ChatBot  -->
+  <div class="modal fade" id="business-digitalisation75" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">RPA ChatBot</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>RPA Chatbot is a chatbot incorporated with Upath. It is able to 24/7 solve customer’s cashback issues. Thus, this improves the overall customer service experience.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Jett Cheong</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Ho Liang Gek (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- RPA- Billing Process 2021  -->
+  <div class="modal fade" id="business-digitalisation76" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">RPA - Billing Process 2021</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The Billing Process 2021 is an automation done using LEO studios, an older version of the current Kryon Studios. For this process, it extracts the Bill journal details and transact them into the SAP system. It offloads the mundane task of manually raising bills and increases the efficiency of the employees.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Wong Sin Tat</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Amanda SJ Ong (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- RPA GR PROCESS 2021 -->
+  <div class="modal fade" id="business-digitalisation77" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">RPA GR PROCESS 2021</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>RPA GR PROCESS 2021 is a robotic automation development to instruct Kryon robots to automate mundane and repetitive tasks. For this automation, it extracts good receipts journal details and transact them onto SAP. Thus, enabling more efficient approach than to handle them manually.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Yeo Yu Song, Sean</li>
+          </ul>
+          <h4>Supervisor</h4>
+          <p>Amanda SJ Ong (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Scorecard Dashboard Pipeline Automation -->
+  <div class="modal fade" id="business-digitalisation78" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Scorecard Dashboard Pipeline Automation</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The Scorecard Dashboard is a business intelligence (BI) dashboard that serves as a performance yardstick for the department, namely the Relationship Managers (RMs) and their leaders to visualize their key performance indicators (KPIs). The Pipeline Automation enables the team to monitor their customers’ activities in the bank’s digital business banking application. These projects eliminate manual work and facilitate the computation of achievement rates, thus saving precious time.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Amelia Chua
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Ryan Lim (Mr)          </p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Tableau Dashboards -->
+  <div class="modal fade" id="business-digitalisation79" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Tableau Dashboards</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Tableau dashboards is a consolidated data field that can be used for daily analytics purposes. This eliminated the process of extracting, cleaning and charting of data.  Thus, drastically increases the efficiency within the company when it comes to analysing market trends and movements.        </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Vanessa Leong Yan Qi</li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Angela Low (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Tracking Return Order System -->
+  <div class="modal fade" id="business-digitalisation80" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Tracking Return Order System</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Tracking Return Order System is an automation which allows users to input data on return orders and analyse the data collected. This system helps the business with improved management of return product and make better business decisions.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Muhammad Suhail Bin Salleh</li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Ho Liang Gek (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- VBA Project Implementation -->
+  <div class="modal fade" id="business-digitalisation81" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">VBA Project Implementation</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Excel VBA (Virtual Basic Application) is Microsoft’s programming language for Excel. This project involves integrating technology into the company to save time and money, increasing the turnover rate at the same time. Thus, the company can reduce their cost while streamlining operations.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Frederic Goh Rui Hong</li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Vincent Chew (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  
+  <!-- Vulnerability Assessment and Penetration Testing (VAPT) -->
+  <div class="modal fade" id="business-digitalisation82" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Vulnerability Assessment and Penetration Testing (VAPT)</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Website cyber security is important to keep information safe from hackers. Our clients were having trouble understanding and resolving the website security issues that was raised in the VAPT report. Our project features a risk assessment report and a WordPress prototype that helped our clients resolve the issues that they were facing and strengthen their overall website cyber security. 
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Dylan Wee (Project Leader)          </li>
+            <li>Jia Hao Tan
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Ryan Lim (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Automation of WhatsApp VBA -->
+  <div class="modal fade" id="business-digitalisation83" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Automation of WhatsApp VBA</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Automation of WhatsApp VBA is an excel sheet that is capable to message every customer on WhatsApp with a click of a button. It can highlight messages that has been sent out and print out a timestamp and resend messages based on the different colors. 
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Li Siwen</li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Vincent Chew (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Automation with Tote Board -->
+  <div class="modal fade" id="business-digitalisation84" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Automation with Tote Board</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>RPA (robotic process automation) is a software technology that makes it easy to build, deploy, and manage software robots that emulates human actions. It can perform tasks faster and more consistently than people, without a break. Thus, making organization more profitable, flexible and responsive while at the same time, increases employee satisfaction, engagement and productivity.</p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Ng Kian Hao, Eric</li>
+          </ul>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Automated Data Collection Using UiPath -->
+  <div class="modal fade" id="business-digitalisation85" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Automated Data Collection Using UiPath</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Automated Data Collection Using UiPath is a code that mimics a data collectors process made using UiPath. Once the code is triggered, it collects the “Top 30 components in the Singapore Straits Times Index (STI)” and stores it on a Google Sheet. Then, an email with a link to the google sheet will be sent out using Gmail to a group of people (team members). Thus, getting rid of the repetitive task so that data collectors can do other tasks like data visualization, saving their time and improving the efficiency of the work done by staff, eventually benefitting the company.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Kalangi Sai Pooja</li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Wong Kok Keong (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- RHB Bank IT Ops Manual Tracking -->
+  <div class="modal fade" id="business-digitalisation86" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">RHB Bank IT Ops Manual Tracking</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Proper systems are necessary for a company. As it is crucial to tell the employees how the company works and take someone unfamiliar with the company step-by-step through daily operations. Given a good tracker of the IT Ops Manual, it alleviates its liability and increases accountability.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Zhou Wenjun
+            </li>
+          </ul>
+          <h4>Supervisors</h4>
+            <p>Kwek Khee Leng (Mr)</p>
+            <p>Aye Thet San (Ms)</p>
+            <p>Wong Kok Keong (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Monthly Report Automation -->
+  <div class="modal fade" id="business-digitalisation87" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Monthly Report Automation</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Monthly reports are created at the start of every month. Macro Automation has reduced time spent on reporting by at least 90%. Allowing more effective and timely reporting.        </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Nursyarafina Binte Koming</li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Haagen Huang (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- S&P 500 Stock Analytics Interactive Dashboard -->
+  <div class="modal fade" id="business-digitalisation88" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">S&P 500 Stock Analytics Interactive Dashboard</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Choosing stocks to buy is difficult and this project solves it by analyzing S&P 500 companies using Tableau. It utilizes variables such as PE ratio, enterprise value, % difference between 52W high and low etc. Hence, amateur investors would not feel intimidated about investing as they have a tool that helps them scout for investments.  
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Eugene Teo Han Quan</li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Wong Kok Keong (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Warehouse digitalization & Branding -->
+  <div class="modal fade" id="business-digitalisation89" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Warehouse digitalization & Branding</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Digitalize parcel sorting process to ensure accountability and clear delegation of job task within warehouse. Create corporate website to improve company branding and allow easier content editing processes.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Xu Shangkun</li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Thomas Khoo (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Timesheet Application -->
+  <div class="modal fade" id="business-digitalisation90" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Timesheet Application</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>This timesheet application is for employees to key in their daily working activities and the supervisor consolidates every employee’s timesheets into a dashboard at the end of each month to discover insights. Macros are present for data validation and consolidates both individual and multiple timesheets to be displayed on a dashboard. Hence, data are verified upon submission of timesheet and valuable insights are achieved from the dashboard.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Bryan Lim Wei Zhe
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Alfred Teng (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Aste Global Pte Ltd - Ecommerce Online Catalog System -->
+  <div class="modal fade" id="business-digitalisation91" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Aste Global Pte Ltd - Ecommerce Online Catalog System</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The project is an E-Commerce website that uses OpenCart system. It allows Aste to automate their daily tasks and give them more time to focus on improving their business. At the same time, it improves their clients’ shopping experiences.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Tan Yan An
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Jasmine Tan (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Dealpipe+ -->
+  <div class="modal fade" id="business-digitalisation92" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Dealpipe+</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Dealpipe+ is a new platform module to replace the existing Pipeline and Dealpipe platforms. It provides an integrated workflow engine to process the entire life cycle of an investment deal. Through this project, it strives to streamline business investment process, enhanced portfolio monitoring, tighter platform integration for a deal creation and approval processes and improve on the existing design of the platform.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Qiu Lin Han
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Vincent He Yun Sheng (Mr)</p>
+            <p>Son Nguyen (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Decentralized Finance Arbitrage Bot -->
+  <div class="modal fade" id="business-digitalisation93" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Decentralized Finance Arbitrage Bot</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Utilising Flash loans and Web3 Technology to find and maximise arbitrage profit 24/7 automatically.</p>
+          <p>Reducing Human Error in trading, loss from trading fees and loss of sleep due to Fear of Missing Out.</p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Shawn Lee
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Vincent Chew (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- Firstcom Academy Training Management System (FCA TMS) -->
+  <div class="modal fade" id="business-digitalisation94" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Firstcom Academy Training Management System (FCA TMS)</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The Training management system (TMS) is designed specifically for training providers such as Firstcom academy (FCA) to streamline processes and manage all training courses in 1 central Hub. Therefore reducing costs and improving company operations.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Wong Li Shen
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Jason Chong (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- E-COMMERCE WEB SYSTEM  -->
+  <div class="modal fade" id="business-digitalisation95" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">E-COMMERCE WEB SYSTEM</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>A content management system paired that allows users to build and manage websites without coding knowledge. This solution is paired with an e-commerce website with a server platform service and allows users to create their own commerce store. Businesses have taken a toll on businesses and digitising them with solutions such as these will allow them to boost their sales and increase consumer turnover rate. 
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Muhd Danish
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Peter Choy (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!-- E-Commerce Website  -->
+  <div class="modal fade" id="business-digitalisation96" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 style="text-align:center;">E-Commerce Website</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>The problem solves the current situation of covid-19 as there are restriction in being in public and how a store operates in general. It is no longer the same old busy and crowded just like in the pasts. Stores have trouble generating sales from face-to-face meeting with customers. With this, an E-commerce website like this, it is possible to allow customers from the internet to buy products/services just as easy with one click.
+          </p>
+          <h4>Project By</h4>
+          <ul>
+            <li>Rex Liau Yang Kuang
+            </li>
+          </ul>
+          <h4>Supervisor</h4>
+            <p>Choy Hoe Yun, Peter (Mr)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+
+</body>
+</html>
+

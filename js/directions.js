@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 jQuery(document).ready(function () {
 	jQuery('.tabs .tab-links a').on('click', function (e) {
 		var currentAttrValue = jQuery(this).attr('href');
@@ -45,3 +46,18 @@ $(document).ready(function(){
 	  $("#tpe").slideToggle("slow");
 	});
   });
+=======
+jQuery(document).ready(function() {
+	jQuery('.tabs .tab-links a').on('click', function(e) {
+		var currentAttrValue = jQuery(this).attr('href');
+
+		// Show/Hide Tabs
+		jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+
+		// Change/remove current tab to active
+		jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+		e.preventDefault();
+	});
+});
+>>>>>>> 05143f626518128a146f1376975586d67e7b11ff

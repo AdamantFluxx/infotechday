@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/main.css" rel="stylesheet">
+    <style>
+        /*Banner Imager*/
+
+        .img-wrapper {
+            position: relative;
+        }
+
+            .img-wrapper img {
+                width: 100%;
+            }
+
+            .img-wrapper .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .img-wrapper h2 {
+                margin: 0 0 .5em;
+            }
+
+        /*End*/
+        /*Project image center*/
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .image {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+
+            .image img {
+                display: block;
+                width: 245px;
+                height: 138px;
+        }
+
+        .modalW{
+             width: 600px;
+        }
+        .btnDesign {
+              border-radius: 25px;
+              transition-duration: 0.4s;
+              background-color: #afdbf1;
+              text-align: center;
+              padding-top: 5px;
+            }
+
+            .btnDesign:hover {
+              background-color: #c4e3f3;
+            }
+    </style>
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+
+
+
+    <title>InfoTech Day 2023</title>
+</head>
+
+
+
+
+
+<body id="toTop" data-spy="scroll" data-target=".navbar" style="overflow-x: hidden;">
+
+    <!--nav logo-->
+    <nav class="navbar navbar-custom">
+        <a><img src="..\img\tp-horizontal-white.png" alt="Temasek Polytechnic" width="400" height="45"></a>
+    </nav>
+    <!--nav menu-->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#seminars">Seminars</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#iit">IIT Courses</a>
+            </li>
+            </ul>
+            <span class="navbar-text">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Getting To TP</a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </nav>
+    <!--Banner With search Bar-->
+    <center>
+
+        <div class="img-wrapper">
+            <img src="../img/ai.jpg" />
+            <div class="overlay">
+                <h1 style="color:white;">AI & Analytics</h1>
+                <a href="../html/ai-analytics_modal.html"><button class="btnDesign"><h3>Other Projects</h3></button></a>
+            </div>
+        </div>
+
+            
+
+    </center>
+    <!--Banner End-->
+    <br>
+
+    <!--back to top icon-->
+    <div id="backTop">
+        <a style="position: fixed; right: 50px; bottom: 15px; z-index: 100 "
+           onClick="ga('send', 'event', { eventCategory: 'InfoTech Day 2022', eventAction: 'InfoTech Day 2022:Navigation', eventLabel: 'Page Top'});"
+           class="page-scroll" href="#toTop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="71.736" height="73.837"
+                 viewBox="0 0 71.736 73.837">
+                <path id="Icon_awesome-arrow-alt-circle-up" data-name="Icon awesome-arrow-alt-circle-up"
+                      d="M.562,37.481C.562,17.087,16.616.563,36.43.563S72.3,17.087,72.3,37.481,56.244,74.4,36.43,74.4.562,57.876.562,37.481ZM42.794,54.75V37.481H53.048a1.8,1.8,0,0,0,1.229-3.052L37.66,17.414a1.685,1.685,0,0,0-2.444,0L18.583,34.429a1.793,1.793,0,0,0,1.229,3.052H30.067V54.75A1.767,1.767,0,0,0,31.8,56.536h9.256A1.767,1.767,0,0,0,42.794,54.75Z"
+                      transform="translate(-0.563 -0.563)" fill="#002f5e" />
+            </svg>
+        </a>
+    </div>
+
+    <!--projects-->
+    <section id="projectAi" class="projects-section">
+
+        <center>
+            <!--1-->
+            <div class=" container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#ai-analytics1"><img src="../img/AI Project/2022-ai-analytics-img1.jpg"></button>
+                        </div>
+                        <h4>An Automated Model Evaluation Framework</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#ai-analytics2"><img src="../img/AI Project/2022-ai-analytics-img2.jpg"></button>
+                        </div>
+                        <h4>Chatbots as Personalised Learning Assistants</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#ai-analytics3"><img src="../img/AI Project/2022-ai-analytics-img3.jpg"></button>
+                        </div>
+                        <h4>Project HIART: Detecting and Resolving Bias in Predictive Models</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#ai-analytics4"><img src="../img/AI Project/2022-ai-analytics-img4.jpg"></button>
+                        </div>
+                        <h4>Drone Vs Drone</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#ai-analytics5"><img src="../img/AI Project/2022-ai-analytics-img5.jpg"></button>
+                        </div>
+                        <h4>Fish Farm Digitalisation</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#ai-analytics6"><img src="../img/AI Project/2022-ai-analytics-img6.jpg"></button>
+                        </div>
+                        <h4>Predictive Maintenance of Fuel Dispenser</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#ai-analytics7"><img src="../img/AI Project/2022-ai-analytics-img7.jpg"></button>
+                        </div>
+                        <h4>Smart Serious Game Analytics Engine</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#ai-analytics8"><img src="../img/AI Project/2022-ai-analytics-img8.jpg"></button>
+                        </div>
+                        <h4>Video Analytics for the Easy Extraction of Vehicle Attributes</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#ai-analytics9"><img src="../img/AI Project/2022-ai-analytics-img9.jpg"></button>
+                        </div>
+                        <h4>Signature Forgery Detection Model</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="image">
+                            <button type="button" data-toggle="modal" data-target="#ai-analytics10"><img src="../img/AI Project/2022-ai-analytics-img10.jpg"></button>
+                        </div>
+                        <h4>Synthetic POI Image Generator</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+
+        </center>
+
+    </section>
+
+    <br />
+    <section id="footer" class="footer-section">
+      <p> Organized by:</p>
+      <img src="../img/tp-justified-red.png" height="50">
+
+      <script src="../js/navload.js"></script>
+
+  </section>
+
+
+
+    <!--Scripts-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/jquery.appear.js"></script>
+    <script src="../js/modals.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
+
+<!--Modals-->
+
+
+
+<!-- An Automated Model Evaluation Framework -->
+<div class="modal fade" id="ai-analytics1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width: 600px;">
+      <div class="modal-header">
+        <h3 style="text-align:center;">An Automated Model Evaluation Framework</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>After the training process of every machine learning model, there would definitely be a testing and evaluation phase. Currently, in Government Technology Agency (GovTech), there is no structured framework to run the evaluation process of the machine learning models. Besides this, when training a new model or a new version of a model, each AI engineer has to evaluate and track the individual model performance manually. </p>
+        <p>With this new automated model evaluation framework, AI engineers can have a structured way to evaluate the accuracy and performance of machine learning models. AI engineers can choose to either run the model evaluation framework manually or the automated way. Some of the key features are that evaluation processes on any models can be run with the performance metrics and results logged, stored and exported automatically and monitoring of model degradation with new test data can be done as well. </p>
+        <p>This project will be used by the AI engineers in GovTech Data Science and Artificial Intelligence Division.</p>
+
+        <h4>Key Benefits</h4>
+        <ul>
+          <li><strong>Efficient</strong> - Using test automation to replace manual work done by the AI engineers.  AI engineers no longer need to manually evaluate and track the results of the models. </li>
+          <li><strong>Convenient</strong> - Performance metrics are logged in the same location, making it easy for AI engineers to compare past and newer versions of the models.</li>
+        </ul>
+        <h4>Key Technologies Used</h4>
+        <ul>
+          <li>Flask, HTML, CSS</li>
+          <li>MLflow</li>
+          <li>Pytest</li>
+          <li>Slack API</li>
+        </ul>
+        <h4>Potential Enhancements</h4>
+        <p>This project can be enhanced with the following: </p>
+        <ul>
+          <li>Adding more performance metrics into the framework </li>
+          <li>Adding charts in exported excel/csv file for visualisations </li>
+        </ul>
+        <h4>Project By</h4>
+        <ul>
+          <li>Nathania Yeo</li>
+        </ul>
+        <h4>Industry Partner</h4>
+        <p>Government Technology Agency (GovTech) – Data Science and Artificial Intelligence Division (DSAID)</p>
+        <h4>Supervisor</h4>
+        <p>Goh Kai Song (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Chatbots as Personalised Learning Assistants -->
+<div class="modal fade" id="ai-analytics2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width: 600px;">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Chatbots as Personalised Learning Assistants</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>It is not uncommon for students and adult learners to study late into the night, on weekends, during curriculum hours and non-curriculum hours, on campus and even off campus. However, what happens when students have pressing questions, need help and are not sure whom they can turn to for a reliable answer? They can turn to Chatbots – learning companions that can be personalised.</p>
+        <p>The project aims to ensure that learners can study at their own pace and at any time of the day with a learning assistant to guide them. Scripts have been used to create subject-specific Chatbots on the Google Dialogflow platform. Given the highly automated nature of a Chatbot, any tutor can create one themselves.</p>
+        <p>Apart from encouraging self-directed learning, these Chatbots are also able to provide personalised learning recommendations based on users’ formative and/or summative performances. Students who are not strong in language skills and have difficulty crafting questions for the Chatbot can opt to use the learning menu to access curated learning materials to better understand concepts.</p>
+        <p>This project is supported by the Workforce Development Applied Research Fund (WDARF).</p>
+        <h4>Key Benefits</h4>
+        <ul>
+          <li><strong>Accessible</strong> – The Chatbot is available to answer questions 24/7</li>
+          <li><strong>Personalised</strong> – Makes recommendations on what learners can review</li>
+          <li><strong>Reliable</strong> – Uses Natural Language Processing (NLP) to capture correct intent and provide accurate answers</li>
+          <li><strong>Analytics-enabled</strong> – Allows for a companion dashboard for tutors to perform learning analytics</li>
+        </ul>
+        <h4>Key Technologies Used</h4>
+        <ul>
+          <li>Artificial Intelligence (AI) and Natural Language Processing (NLP)</li>
+          <li>Google Cloud platform’s suite of tools for hosting and delivering content </li>
+          <li>Robotic Process Automation (RPA)</li>
+          <li>Levenshtein distance for the recommender system</li>
+        </ul>
+        <h4>Potential Enhancements</h4>
+        <p>This application can be enhanced with the following:</p>
+        <ul>
+          <li>Supports seamless integration with Learning Management System and MS Teams   </li>
+          <li>Adding text and image extractors to augment the Chatbot database curation  </li>
+        </ul>
+        <h4>Project By</h4>
+        <ul>
+         <li>Lee Sin Yang (Project Leader)</li>
+         <li>Charles Tan Yong Wen</li>
+         <li>Pior Zheng Jie</li> 
+        </ul>
+        <h4>Industry Partner</h4>
+        <p>Institute of Adult Learning (IAL)</p>
+        <h4>Supervisor</h4>
+        <p>Zhang Huiyu (Dr) </p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Project HIART: Detecting and Resolving Bias in Predictive Models -->
+<div class="modal fade" id="ai-analytics3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width: 600px;">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Project HIART: Detecting and Resolving Bias in Predictive Models</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+      <p>With the current improvements in technology, more companies are starting to add predictive modelling systems as part of their business decision-making processes. However, most of the current predictive models are based on traditional metrics such as accuracy of information provided in the application document or profit margin for the company, and this may lead to situations where certain groups (e.g. low income, women, minority race/ethnicities in less developed countries) do not have fair access to services such as taking up a loan. This is the result of the inherent biases in the dataset. 
+        </p>
+        <p>The objective of the Responsible AI project is to come up with a framework that can be implemented as part of the model building process which will help to recognise and reduce any inherent bias that may inadvertently arise during the process. The framework, with the added fairness metrics, enables the developer to have a clear view of any potential bias or sources of bias in the model building process and then take steps to mitigate it. 
+          </p>
+          <p>The method explored in this project is that of using treatment disparity to mitigate the inherent biases. The final framework uses code nodes implemented in SAS Model Studio to reveal to the user the bias in the dataset so that the user can reduce it through the conscious process of treatment disparity</p>
+          <p>With this issue of unconscious bias solved, financial institutions can have more confidence to leverage their decision-making process on technology. It will also benefit customers as having a decision-making system that is completely objective allows eligible customers to have fair access to the services they require. 
+            </p>
+        <h4>Key Benefits</h4>
+        <ul>
+          <li><strong>Human Centricity</strong> – Prioritises human accessibility over profit</li>
+          <li><strong>Inclusivity</strong> – Gives equal oppurtunity to all who need the services regardless of gender, age, race or income</li>
+          <li><strong>Accountability</strong> – Addresses biases and mitigates impacts</li> 
+          <li><strong>Robustness</strong> – Incorporates easily into existing predictive models</li> 
+          <li><strong>Transparency</strong> – Displays data and information clearly on the dashboard to enable easy access to anyone involved in the decision-making process</li> 
+
+        </ul>
+        <h4>Key Technologies Used</h4>
+        <ul>
+            <li>SAS Viya</li>
+            <li>SAS Visual Machine Learning</li>
+              <li>SAS Model Manager</li>
+          </ul>
+        <h4>Potential Enhancements</h4>
+        <p>This application can be enhanced with the following:</p>
+        <ul>
+            <li>The model developed can be tested and enriched with more real-life data and synthetic data, where required.</li>
+                <li>The approach can be further extended based on lessons learnt from implementation of various industry frameworks (e.g. MAS F.E.A.T., Japan Social Principles of Human-centric AI, Australia AI Ethics Framework).
+                    <li>The lifecycle for model deployment and monitoring can be automated with CI/CD approach.</li>
+        </ul>
+        <h4>Video</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TmD2_kob_Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h4>Project By</h4>
+        <ul>
+            <li>Lingesh S/O Ganesh (TP)</li>
+            <li>Falko Schulz (SAS)</li>
+            <li>Jacky Long (SAS)</li>
+            <li>Manisha Khanna (SAS)</li>
+            <li>Ming Zuo Liew (SAS)</li>
+        </ul>
+
+        <h4>Industry Partner</h4>
+        <p>SAS Institute Pte. Ltd.</p>
+        <h4>Supervisor</h4>
+        <p>Surojit Dutta (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Drone Vs Drone -->
+<div class="modal fade" id="ai-analytics4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="width: 600px;">
+        <div class="modal-header">
+          <h3 style="text-align:center;">Drone Vs Drone</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Project Background</h4>
+          <p>Unmanned Aerial Vehicles (UAV) are used widely in Singapore to improve safety and efficiency, however, they also poses a potential problem. For example, illegal drone flying could disrupt events. Such incidents would require lots of resources to track and monitor. Furthermore, these resources have limitations in covering large terrains quickly and identifying small objects such as drones from afar. 
+          </p>
+          <p>This solution taps on the use of drones to detect drone activities around Singapore, particularly those that are illegal. This solution makes use of another drone to perform Object Detection with the use of Nvidia technologies. With this solution, the system can detect and intercept illegal drones from afar without a human being physically present. This will enhance the effectiveness as well as increase the reach and range of surveillance activities. The use of drones will also decrease the risks of exposing humans to dangerous substances. 
+          </p>
+          <p>The Object Detection technologies will enable capture and export of highly optimised and accurate Computer Vision Model for edge deployment through locating drones in real time videos.
+          </p>
+          <h4>Key Benefits</h4>
+          <ul>
+            <li><strong>Convenient</strong> – Drones can access a vast distance and difficult-to-reach locations more quickly and effectively than hired personnel</li>
+            <li><strong>Efficient</strong> – Drones can preform laborious and routine tasks, thus freeing up man hours for other tasks</li>
+            <li><strong>Security</strong> – Drones can be deployed to undertake high-risk tasks and to enhance Singapore Security System through detecting and monitoring illegal drone activities in Singapore</li>
+          </ul>
+          <h4>Key Technologies Used</h4>
+          <ul>
+              <li> Nvidia Transfer Learning Toolkit</li>
+              <li> Nvidia DeepStream</li>
+              <li> Jetson Tx2</li>              
+            </ul>
+          <h4>Potential Enhancements</h4>
+          <p>This project can be enhanced with the following:</p>
+          <ul>
+          <li>Improve model accuracy by training the model with images of different variations</li>
+          <li>Implement a tracking system to track the different drones detected by tagging them with a specific ID</li>
+          <li>Implement GUI for users to easily identify the data/model they want to work on from the AI Platform</li>
+          </ul>
+          
+              
+          </ul>
+          <h4>Project By</h4>
+          <ul>
+            <li>Loo Yu Xiang</li>
+          </ul>
+      
+          <h4>Industry Partner</h4>
+          <p>Defence Science and Technology Agency (DSTA)</p>
+          <h4>Supervisor</h4>
+          <p>Li Chin Ho (Ms)</p>
+          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+
+  <!-- Fish Farm Digitalisation -->
+<div class="modal fade" id="ai-analytics5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width: 600px;">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Fish Farm Digitalisation</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Information dissemination on a fish farm is typically done through word of mouth through multiple intermediaries. This may potentially distort the accuracy of the information. A tank of sick fishes may require specific treatments and care instructions, and distorted data may lead to improper treatment and may result in mass mortalities. Besides, a lot of useful information cannot be harnessed through this method. Information that can help to improve communication and processes can be used to optimise the productivity of a fish farm.</p> 
+        <p>Fish Farm Digitalisation aims to utilise these information to improve the traditional business communication processes of a fish farm to minimise errors during information transfer and enhance productivity through better utilisation of information. The centralised website can provide real-time information on the essential distribution of proceedings on the fish farm, the individual fish tank systems, and a feed variety recommender to better utilise the resources while minimising waste.</p> 
+        
+
+        <h4>Key Benefits</h4>
+        <ul>
+          <li><strong>Efficiency and Efficacy</strong> – A centralised platform to display information will eliminate the need for multiple intermediaries during information transfer and minimise errors</li>
+          <li><strong>Convenient</strong> – Feed Variety Recommender will suggest feed type upon input of the average bodyweight and species of a fish, which reduces errors and waste.</li>
+        </ul>
+        <h4>Key Technologies Used</h4>
+        <ul>
+            <li> Google Apps Script</li>
+            <li> Google Sites</li>
+            <li> Microsoft Access</li>              
+          </ul>
+        <h4>Potential Enhancements</h4>
+        <p>This application can be enhanced with the following:</p>
+        <ul>
+        <li>Feed Variety Recommender could be implemented on the farm website for all the stakeholders to access easily.</li>
+        </ul>
+        
+            
+        </ul>
+        <h4>Project By</h4>
+        <ul>
+          <li>Yuen Mun Kit Gerald</li>
+          <li>Lee Shih Hui</li>
+        </ul>
+    
+        <h4>Industry Partner</h4>
+        <p>Singapore Aquaculture Technologies</p>
+        <h4>Supervisor</h4>
+        <p>Linda William (Dr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+  
+<!-- Predictive Maintenance of Fuel Dispenser  -->
+<div class="modal fade" id="ai-analytics6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width: 600px;">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Predictive Maintenance of Fuel Dispenser </h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Changi Airport, as one of the busiest airport in the world, requires all its services and process to be smooth and ready, for its operational efficiency to be maintained. One of such crucial process is refueling planes when they are on the ground. The vehicles are used in the process of refueling the planes and are a vital part of airport operations. Any performance issues of the vehicles will cause delays and cascade downwards to delay in the plane’s departure. Thus, operational performance of the vehicles must be ensured to be optimal throughout.</p> 
+        <p>This project aims to improve the maintenance process for these vehicles, where the current system of maintenance utilizes only preventive and corrective measure. By predicting faults before they occur, helps vehicles to avoid faults that are unforeseen and disruptive to operation as it requires immediate correction. Potentially, it can also lead to cost saving, by reducing number of unnecessary preventive maintenance. 
+          By using association rule learning for the machine learning method, we can analyze historical faults, to recognize patterns and trends, and spot plausible causal relationships. This allows us to predict possible upcoming issues with the vehicles before they occur. The analysis insights are then placed into dashboards for operational & analytical use.</p> 
+        
+
+        <h4>Key Benefits</h4>
+        <ul>
+          <li><strong>Efficient</strong> – Using association rule learning to predict possible upcoming faults or parts that required maintenance, instead of routine preventive maintenance which are performed regardless of needs, or corrective maintenance where repairs are done only on occurrence of faults.</li>
+          <li><strong>Convenient</strong> – Digitization of vehicle operation, servicing, maintenance, allow data and model to be updated automatically. Enable data-driven decision making for maintenance and procurement of parts and services.</li>
+        </ul>
+        <h4>Key Technologies Used</h4>
+        <ul>
+            <li> Machine Learning (Using KNIME Analytics Platform)</li>
+            <li> Power BI</li>            
+          </ul>
+        <h4>Potential Enhancements</h4>
+        <p>This project can be enhanced with the following:</p>
+        <ul>
+        <li>Additional sensors built onboard the fuel dispenser vehicles.</li>
+        </ul>
+        
+            
+        </ul>
+        <h4>Project By</h4>
+        <ul>
+          <li>Alena Ko Wei Ting (TP)</li>
+        </ul>
+    
+        <h4>Potential Industry Partner</h4>
+        <p>Changi Airport Group</p>
+        <h4>Supervisor</h4>
+        <p>Goh Rui Quan (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Smart Serious Game Analytics Engine -->
+<div class="modal fade" id="ai-analytics7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width: 600px;">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Smart Serious Game Analytics Engine</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>The current generation of students have grown up with technology. They are used to and are comfortable with electronic devices, adapting to new functionalities and systems easily. Well-versed with smart phones and computers, tech-savvy students of today may not be very engaged during traditional two-hour long lectures which do not suit their learning styles.</p> 
+        <p>Serious Game is an interactive education tool for teaching and learning purposes. Specific IT concepts and skill sets can now be taught within an interactive game environment. The fusion of curriculum content and gamification provides greater learning engagement and improves student motivation. Consistent feedback is also provided to help improve students’ skills and knowledge.</p> 
+        <p>This project was presented at the 11th Annual Conference on Industrial Engineering and Operations Management (IEOM) in March 2021, and at The International Symposium on Advantages in Technology Education’s (ISATE) high school STEM competition and workshop in October 2021. A book chapter based on the project is also in the works for an upcoming publication titled “Using Sentiment Analytics to Understand Learners’ Experience in Serious Game Implementation”.</p>
+        
+
+        <h4>Key Benefits</h4>
+        <ul>
+          <li><strong>Learning Analytics</strong> – Data provide lecturers with information to improve student learning.</li>
+          <li><strong>Innovative</strong> – Combines dungeon crawlers and educational concepts, making learning fun.</li>
+        </ul>
+        <h4>Key Technologies Used</h4>
+        <ul>
+            <li> PHP</li>
+            <li> MySQL</li>     
+            <li> Python</li>    
+            <li> Google Charts API</li> 
+            <li> Natural Language Toolkit (NLTK)</li> 
+            <li> Spriter PRO </li> 
+            <li> Unity Engine</li> 
+
+          </ul>
+        <h4>Potential Enhancements</h4>
+        <p>This application can be enhanced with the following:</p>
+        <ul>
+        <li>Adding a recommendation engine to recommend actions to guide students’ learning progress.</li>
+        <li>Adding real time data flow and charts to provide lecturers and students instant access to accurate, up-to-date feedback on students’ learning performance.</li>
+        <li>Building a more complex model for object detection.</li>
+        </ul>
+        
+        </ul>
+        <h4>Project By</h4>
+        <ul>
+          <li>Alderick Chua Wei Jun</li>
+          <li>Aqil Kusaini</li>
+          <li>Garrison Lim Kai Xian</li>
+          <li>Kway Ler Koon</li>
+          <li>Ng Zheng Long </li>
+          <li>Wang Jia Yang</li>
+        </ul>
+    
+        <h4>Industry Partner</h4>
+        <p>Temasek Polytechnic</p>
+        <h4>Supervisor</h4>
+        <p>Linda William (Dr)</p>
+        <p>Muhammad Rizal Ismail (Mr)</p>
+        <p>Nur Aisha Khalid (Ms)</p>
+        <p>Simon Chan (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Video Analytics for the Easy Extraction of Vehicle Attributes -->
+<div class="modal fade" id="ai-analytics8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width: 600px;">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Video Analytics for the Easy Extraction of Vehicle Attributes</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>Cars are a necessity in a modern, fast-paced society like Singapore. Managing high traffic flow during peak periods can be tricky business, and as such road traffic management is essential to ensure smooth traffic. This project uses deep learning technology embedded in traffic cameras to capture key information in order to better manage traffic. With the identification of vehicle details such as car colour, type and model, it will be easier to track traffic flow count and certain types of vehicle on the road.</p> 
+        <p>Through the use of Yolov4 model and Deepsort algorithm, vehicle types can be identified, and KNN classifier can identify car colours. The Resnet model comes in handy in identifying specific car models. These features allow key vehicle attributes to be extracted automatically from traffic videos which can then be rendered into csv or other video formats for car manufacturers and traffic authorities to use. Car license plate tracking and vehicle tail tracing can also potentially become easier. Beyond the roads, this solution can be implemented in big facility car parking management and for the tracking of vehicles during large-scale events and in smaller districts.</p>
+        
+        <h4>Key Benefits</h4>
+        <ul>
+          <li><strong>Intelligent System</strong> – Vehicle information is easily extracted from traffic videos.</li>
+          <li><strong>Convenient</strong> – Automatic processing and analysis of video to capture key vehicle attributes for manufacturer use or traffic management purposes.</li>
+        </ul>
+        <h4>Key Technologies Used</h4>
+        <ul>
+            <li> Deep Learning using Python</li>
+            <li> Yolov4 model trained on COCO dataset</li>     
+            <li> Deepsort algorithm used with Yolov4 for vehicle identification</li>    
+            <li> KNN classifier trained on color dataset for color identification</li> 
+            <li> Resnet model trained on cars dataset for car model identification</li>
+
+          </ul>
+        <h4>Potential Enhancements</h4>
+        <p>This application can be enhanced with the following:</p>
+        <ul>
+        <li>Further evaluation of the algorithm for precise color identification.</li>
+        <li>Including a feature for vehicle speed prediction.</li>
+        </ul>
+        
+        </ul>
+        <h4>Project By</h4>
+        <ul>
+          <li>Yin Qiuhao</li>
+        </ul>
+    
+        <h4>Industry Partner</h4>
+        <p>Hitachi, Ltd.</p>
+        <h4>Supervisor</h4>
+        <p>Nami Imanishi (Ms)</p>
+        <p>Ranjan Rishabh (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Signature Forgery Detection Model -->
+<div class="modal fade" id="ai-analytics9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width: 600px;">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Signature Forgery Detection Model</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>The “Know-Your-Customer” business process requires customers to upload their Proof-of-Identity (POI) documents for identity verification and authentication.</p>
+        <p>This inspired the creation of the Signature Forgery Detection model. The Signature Forgery Detection Model is a binary classification model that is trained using deep learning algorithms to detect forged computer-generated signatures on identification documents.</p>
+        <p>The model locates and extracts signatures from POI documents and by leveraging the deep learning approach, it predicts whether the document is genuine or fraudulent.  Such a model speeds up the validation process of detecting signature manipulation and document forgery within the individual's POI documents effectively and efficiently.  This helps the company strengthen its efforts in combating fraud.</p>
+        
+        <h4>Key Benefits</h4>
+        <ul>
+          <li><strong>Greater Accuracy</strong> – Eliminates human error through the use of machine learning algorithms</li>
+          <li><strong>Cost-effective</strong> – Automates repetitive tasks of identifying forged signatures to ensure improved efficiency.</li>
+        </ul>
+        <h4>Key Technologies Used</h4>
+        <ul>
+            <li> YOLOv5 Repository (Object Detection Architectures)</li>
+            <li> Python (Programming Language)</li>     
+            <li> JupyterLab Notebook (Anaconda)</li>
+          </ul>
+        <h4>Potential Enhancements</h4>
+        <p>This application can be enhanced with the following:</p>
+        <ul>
+        <li>Elimination of background texture to enable reduction of the noise problem around the signatures for greater success in detection of computer-generated signatures.</li>
+        <li>Training of a new multilingual model to detect the strokes of the signatures of other languages.</li>
+        </ul>
+        <h4>Video</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/riRSHW93Pvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h4>Project By</h4>
+        <ul>
+          <li>Lee Jia Wen</li>
+        </ul>
+    
+        <h4>Industry Partner</h4>
+        <p>PayPal Innovation Lab, Singapore
+        </p>
+        <h4>Supervisor</h4>
+        <p>Alfred Teng Yee Wee (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+
+<!-- Synthetic POI Image Generator -->
+<div class="modal fade" id="ai-analytics10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width: 600px;">
+      <div class="modal-header">
+        <h3 style="text-align:center;">Synthetic POI Image Generator</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Project Background</h4>
+        <p>During the development of Optical Character Recognition (OCR) projects, a lot of datasets from image documents are needed. One example of such images are Proof of Identity (POI) documents. The process includes the drawing of bounding boxes around the text and the labelling of text and images. The process usually requires much time.</p>
+        <p>The Synthetic POI Image Generator is an Artificial Intelligence (AI) model based on a Generative Adversarial Network (GAN) structure. This AI model helps users as it semi-automates the process of preparing datasets for AI model training. The Generator successfully generates the synthetic data which replicate the input image and text as closely as possible. In addition, the labels which are generated are stored in a separate text file and will assist in further training of recognition of text. The datasets can be expanded at a very fast rate and once generated, they can be used immediately for the training of the AI model.</p>
+
+        <h4>Key Benefits</h4>
+        <ul>
+          <li><strong>Convenient</strong> – Allows for greater automated expansion of datasets by 200 – 400 images within one day compared to manual preparation of data.</li>
+          <li><strong>Secure</strong> – Reduces the risk of internal data breach through the use of synthetic images to train AI models rather than using classified POI documents.</li>
+        </ul>
+        <h4>Key Technologies Used</h4>
+        <ul>
+            <li> Python</li>
+            <li> TensorFlow</li>     
+            <li> Flask</li>
+            <li> HTML5</li>
+          </ul>
+        <h4>Potential Enhancements</h4>
+        <p>This application can be enhanced with the following:</p>
+        <ul>
+        <li>Allowing support for greater variety of non-alphanumeric characters such as brackets.</li>
+        <li>Allowing support for words longer than 8 characters to ensure more effective training for other AI models.</li>
+        </ul>
+        
+        </ul>
+        <h4>Project By</h4>
+        <ul>
+          <li>Soh De Lin Nicholas</li>
+        </ul>
+    
+        <h4>Industry Partner</h4>
+        <p>PayPal Innovation Lab, Singapore
+        </p>
+        <h4>Supervisor</h4>
+        <p>Alfred Teng Yee Wee (Mr)</p>
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+
+</body>
+</html>

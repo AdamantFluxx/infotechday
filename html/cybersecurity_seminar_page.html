@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="../css/main.css" rel="stylesheet">
+   <link href="../css/seminar_page.css" rel="stylesheet">
+   <link href="../css/seminar_modal.css" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="../js/nav.js">
+   </script>
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <title>InfoTech Day 2023</title>
+</head>
+
+<body id="toTop" data-spy="scroll" data-target=".navbar" style="padding-top: 130px;">
+
+ <nav id="navbar" class="navbar navbar-custom">
+   <img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" style="width: 400px !important; height: 45 !important;"></a>
+</nav>
+<!--nav menu-->
+<nav id="navbarMenu" style="position:fixed; z-index: 100; width: 100%;"
+   class="navbar navbar-expand-lg navbar-custom">
+
+   
+       <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class=" navbar-collapse" id="navMenu">
+       <ul class="navbar-nav mr-auto">
+           <li class="nav-item">
+               <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="index.html#seminars">Seminars</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="index.html#iit">IIT Courses</a>
+           </li>
+       </ul>
+       <span class="navbar-text">
+           <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                   <a class="nav-link" href="../html/about.html">About</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="../html/directions.html">Getting To TP</a>
+               </li>
+           </ul>
+       </span>
+   </div>
+</nav>
+
+    <!--back to top icon-->
+    <div id="backTop">
+      <a style="position: fixed; right: 50px; bottom: 15px; z-index: 100 "
+          onClick="ga('send', 'event', { eventCategory: 'InfoTech Day 2022', eventAction: 'InfoTech Day 2022:Navigation', eventLabel: 'Page Top'});"
+          class="page-scroll" href="#toTop"><svg xmlns="http://www.w3.org/2000/svg" width="71.736" height="73.837"
+              viewBox="0 0 71.736 73.837">
+              <path id="Icon_awesome-arrow-alt-circle-up" data-name="Icon awesome-arrow-alt-circle-up"
+                  d="M.562,37.481C.562,17.087,16.616.563,36.43.563S72.3,17.087,72.3,37.481,56.244,74.4,36.43,74.4.562,57.876.562,37.481ZM42.794,54.75V37.481H53.048a1.8,1.8,0,0,0,1.229-3.052L37.66,17.414a1.685,1.685,0,0,0-2.444,0L18.583,34.429a1.793,1.793,0,0,0,1.229,3.052H30.067V54.75A1.767,1.767,0,0,0,31.8,56.536h9.256A1.767,1.767,0,0,0,42.794,54.75Z"
+                  transform="translate(-0.563 -0.563)" fill="#002f5e" /></a>
+
+      </svg>
+  </div>
+
+
+  <div class="seminar-topic">
+    <h1> CYBERSECURITY & DIGITAL FORENSICS SEMINARS</h1>
+  </div>
+  <!-- Seminar Timeline here -->
+
+  <div class="wrapper">
+    <div class="center-line">
+      <a href="#" class="scroll-icon">up</a>
+    </div>
+    <div class="row row-1">
+       
+      <section>
+        <div class="time">1</div>
+       
+        <div class="details">
+          <span class="title">Welcome Address by</span>
+          <span>2:00pm</span> 
+        </div>
+
+        <h5>
+          Mr Ryan Lim
+        </h5>
+
+        <p>
+          Assistant Director <br>
+          School of Informatics & IT <br>
+          Temasek Polytechnic
+        </p>
+      </section>
+
+      
+    </div>
+    <div class="row row-2">
+      <section>
+        <div class="time">2</div>
+       
+        <div class="details">
+          <span class="title">The Need for Continous Transformation</span>
+          <span>2:05pm</span> 
+        </div>
+
+        <h5>
+          Mr Ewen Plougastel
+        </h5>
+
+        <p>
+          Vice President, SCS Business Analytics Chapter <br>
+          Managing Director, Accenture Strategy and Consulting, Singapore <br>
+          
+        </p>
+        <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal1" >Learn More</button>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <div class="time">3</div>
+        <div class="details">
+          <span class="title">Project Presentation by Graduates</span>
+          <span>2:30pm</span>
+        </div>
+        <p>- Diploma in Big Data & Analytics</p>
+ 
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <div class="time">4</div>
+        <div class="details">
+          <span class="title">The Fabric of Cyber Security
+          </span> 
+          <span>2:40pm	
+          </span>
+        </div>
+
+        <h5>Mr Patrick Bruinsma</h5>
+
+        <p>
+          Client Technical Manager <br>IBM Z in ASEAN</p>
+          <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal2"  >Learn More</button>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <div class="time">5</div>
+        <div class="details">
+          <span class="title">Project Presentation by Graduates from</span>
+          <span>3:10pm</span>
+        </div>
+        <p>- Diploma in Cybersecurity & Digital Forensics <br>
+          - Diploma in Financial Business Informatics</p>
+    </div>
+
+    <div class="row row-2">
+      <section>
+        <div class="time">6</div>
+        <div class="details">
+          <span class="title">Cloud the winning “quarterback”, for Digital Transformation in the NFL Championship
+          </span> 
+          <span>3:25pm	
+          </span>
+        </div>
+
+        <h5>Mr Sarbojit Madhab Bose</h5>
+
+        <p>
+          Director Training  <br> CSA Singapore Chapter</p>
+          <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal2"  >Learn More</button>
+      </section>
+    </div>
+
+    <div class="row row-1">
+      <section>
+        <div class="time">7</div>
+        <div class="details">
+          <span class="title">Project Presentation by Graduates from</span>
+          <span>3:55pm</span>
+        </div>
+        <p> - Diploma in Game Design & Development </p>
+    </div>
+
+    <div class="row row-2">
+      <section>
+        <div class="time">8</div>
+        <div class="details">
+          <span class="title">The Essential Approach to Cloud Governance and Security
+          </span> 
+          <span>3:25pm	
+          </span>
+        </div>
+
+        <h5>Mr Peter Gwee
+        </h5>
+
+        <p>
+          Manager <br>Security Assessment and Testing Division <br>
+          Cybersecurity Professional Services Business Unit <br>
+          ST Engineering Info-Security Pte Ltd</p>
+          <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal2"  >Learn More</button>
+      </section>
+    </div>
+
+    <div class="row row-1">
+      <section>
+        <div class="time">9</div>
+        <div class="details">
+          <span class="title">Project Presentation by Graduates from</span>
+          <span>3:55pm</span>
+        </div>
+        <p> - Diploma in Information Technology </p>
+    </div>
+
+    
+  </div>
+
+
+  <div class="container-fluid container-1">
+    <dvi class="speaker-profile">
+
+      <h1>Speaker Profiles</h1>
+    </dvi>
+   
+
+
+    <div class="row row-speaker">
+
+      <div class="card border-0" style="width: 18rem;">
+        <img class="card-img-top" src="../img/speaker1.jpg" alt="Card image cap">
+        <div class="middle">
+          <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal1">Learn More</button>
+            <!-- Button trigger modal -->
+        </div>
+        <div class="card-body special">
+          <h5 class="card-title">Ewen Plougastel</h5>
+          <p class="card-text"><em>Vice-President</em>, SCS Business Analytics Chapter <br>
+            <em>Managing Director</em>, Accenture Strategy and Consulting, Singapore</p>
+        </div>
+      </div>
+
+      <div class="card border-0" style="width: 18rem;">  
+        <img class="card-img-top" src="../img/speaker6.png" alt="Card image cap">
+        <div class="card-body">
+          <div class="middle">
+            <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal2">Learn More</button>
+              <!-- Button trigger modal -->
+          </div>
+          <h5 class="card-title"> Patrick Bruinsma
+          </h5>
+          <p class="card-text"><em>Client Technical Manager </em> <br>
+            IBM Z in ASEAN</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-speaker">
+
+      <div class="card border-0" style="width: 18rem;">
+        <img class="card-img-top" src="../img/speaker7.jpg" alt="Card image cap">
+        <div class="middle">
+          <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal3">Learn More</button>
+            <!-- Button trigger modal -->
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">	Sarbojit Madhab Bose </h5>
+          <p class="card-text"> <em> Director Training </em> <br> Cloud Security Alliance(CSA) Singapore Chapter</p>
+        </div>
+      </div>
+
+      <div class="card border-0" style="width: 18rem;">  
+        <img class="card-img-top" src="../img/ivan.png" alt="Card image cap">
+        <div class="middle">
+          <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal4">Learn More</button>
+            <!-- Button trigger modal -->
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Peter Gwee</h5>
+          <p class="card-text"><em>Manager, Security Assessment and Testing Division,</em> <br>Cybersecurity Professional Services Business Unit <br>
+            ST Engineering Info-Security Pte Ltd</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+   
+    </div>
+
+
+
+    <!-- Footer Section Here -->
+
+  </section>
+  <section id="footer" class="footer-section">
+      <p> Organized by:</p>
+      <img src="../img/tp-justified-red.png" height="50">
+
+
+  </section>
+  
+  
+  <!-- Speaker 1 -->
+  <div class="modal fade" id="speakerModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Speaker Profile & Seminar Topic</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+  
+          <div class="container-fluid">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <img  class= "speaker" src="../img/speaker1.jpg">
+                </div>
+              <div class="col content">
+  
+                <div class="name"> Mr Ewen Plougastel </div>
+                <div class="titles"> Vice-President, SCS Business Analytics Chapter <br>
+                  Managing Director, Accenture Strategy and Consulting, Singapore
+                </div>
+                <div class="content-1">Focusing on Innovation & Transformation, Ewen is the Head of Digital, Data, Analytics & AI Delivery Team in ASEAN. Based in Singapore, Ewen has 20 years of experience shaping and running large scale Business, Digital & IT programs. Ewen has worked in a variety of industry verticals (Airport, Insurance, Bank, Retail, Telco etc.) across the globe (Singapore, Australia, Malaysia, France, UK).
+  
+                  Ewen holds a Master’s degree and numerous certifications. Well connected to the ecosystem, Ewen is a frequent speaker at industry conferences and author of blogs.
+                </div>
+  
+                <div class="content-2">
+                  The need for continuous transformation
+                </div>
+  
+                <div class="content-3">
+                  Transformation is no longer a “once in a generation” event, it is now a constant. Once regarded as a singular event, completely reinventing a business or a business model is required at a much higher frequency. The increasing pace of innovation combined with rapidly changing social, environmental and regulatory environments are pressing organisations and ecosystems to continuously evolve in order to survive and thrive. And organisations are finding it harder to navigate the increasingly competitive and disruptive business environments.
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Speaker 2 -->
+
+  <div class="modal fade" id="speakerModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Speaker Profile & Seminar Topic</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+  
+          <div class="container-fluid">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <img  class= "speaker" src="../img/patrick.png">
+                </div>
+
+              <div class="col content">
+  
+                <div class="name"> Patrick Bruinsma
+                </div>
+                <div class="titles"> Client Technical Manager <br>IBM Z in ASEAN
+                  
+                </div>
+                <div class="content-1">
+                  Patrick’s mission is to help customers meet the most stringent security and other quality of service requirements for their critical business workloads. Patrick was born and raised in the Netherlands. He is classically trained as a systems programmer to implement and operate sophisticated IT environments, with extensive experience in performance engineering, high availability, security and problem determination. After 21 years of working directly with end-users and customers on their IT challenges, he is now a multidimensional specialist, architect and manager of a super-specialist squad.
+                  <br>
+                  In March 2019, he moved to Singapore with his wife and two Dachshunds.
+
+                  
+                </div>
+
+                <div class="content-2">
+                  The Fabric of Cyber Security: How to be extraordinarily safe and progressive in a time of danger and disaster that looms
+                </div>
+
+                <div class="content-3">
+                  You are often unaware of what technology is hidden behind your credit card or bank account. But these systems have to be secure and reliable. Meanwhile, digital transformation and Hybrid Cloud adoption drive security complexity while being challenged by increased cyber-attacks and a lack of resources and skills. So, we need a solid security approach that is one thing. A methodology to ensure ourselves to embrace the concept of Zero Trust. Next to that, we want the technical assurance that the technology stack is impenetrable to the degree it can still be used, of course. Hardware isolation and the highest level of encryption key protection are part of such. In this brief session, Patrick will share his perspective of IT governance for security, operational insurance and even better, technical insurance with state-of-the-art technology.
+                </div>
+
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Speaker 3 -->
+  <div class="modal fade" id="speakerModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Speaker Profile & Seminar Topic</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+  
+          <div class="container-fluid">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <img  class= "speaker" src="../img/mahid.png">
+                </div>
+              <div class="col content">
+  
+                <div class="name"> Sarbojit Madhab Bose </div>
+                <div class="titles"> Director Training <br>
+                  Cloud Security Alliance(CSA) Singapore Chapter
+                </div>
+                <div class="content-1">Sarbojit is a seasoned IT security professional with over 30 years of working experience. His expertise includes skills in Information Technology, Cyber & Cloud Security, Data Privacy, Governance, and Risk and Compliance space. He is the Director of Training in CSA Singapore Chapter, where he was the honorary treasurer in the protem committee prior to the chapter registration.
+                  <br>
+                  Sarbojit has provided Audit, Consultancy and Training services in Singapore and abroad. He gained hands-on experience in building up both Private and Hybrid Cloud Solutions for his customers while working for Dimension Data and T-Systems in Singapore. He is currently a professional trainer and course developer for SkillsFuture Singapore sponsored training.
+                </div>
+  
+                <div class="content-2">
+                  Cloud the winning “quarterback”, for Digital Transformation in the NFL Championship
+                </div>
+  
+                <div class="content-3">
+                  A quarterback plays a vital role for his team and paves the way to victory in the famous NFL Championships in the USA. There is a long list of them who have starred in the Super Bowl for the past 56 years. In today’s world of continuous evolution, all organisations must drive their business to a “new normal”. Digital Transformation has become a means of survival of the fittest. In this revolution, cloud computing has a key.
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Speaker 4 -->
+
+  <div class="modal fade" id="speakerModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Speaker Profile & Seminar Topic</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+  
+          <div class="container-fluid">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <img  class= "speaker" src="../img/peter.png">
+                </div>
+              <div class="col content">
+  
+                <div class="name"> Peter Gwee</div>
+                <div class="titles"> Manager, Security Assessment and Testing Division, <br>
+                  Cybersecurity Professional Services Business Unit <br> 
+                  ST Engineering Info-Security Pte Ltd
+                </div>
+                <div class="content-1">Peter is a Cybersecurity Manager and Information Security Risk Practitioner. His experiences in Information Technology cover Information Security for over 20 years. He has covered security practices for security risk management, cloud security posture assessment, email security, end-point and malware detection, cybersecurity threat intelligence, and security operations centres.
+                  <br>
+                  Peter is currently working as a security manager and risk assessment consultant. His past roles include assignments for information governance role in government sector jobs and IT management roles in aviation enterprises. He has been an active ISACA volunteer since 2014 and has supported the ISACA exams and awards.
+                </div>
+  
+                <div class="content-2">
+                  The Essential Approach to Cloud Governance and Security
+                </div>
+  
+                <div class="content-3">
+                  In the new normal, the post “Covid” era has accelerated the adoption of Cloud Computing and offers flexible arrangements for digital work. However, due to strict security needs, the gap has widened in terms of good Cloud Governance and effective Cloud Security.
+                  <br>
+                  So what are the gaps? And where and how are we going to solve the problem of this combined effort. Let us look into the “Essentials” and exactly what it means to Digitally Transform your working environment in a safe and secure way.
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<body>
+
+ 
