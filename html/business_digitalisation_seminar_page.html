@@ -26,53 +26,58 @@
    <title>InfoTech Day 2023</title>
 </head>
 
-<body id="toTop" data-spy="scroll" data-target=".navbar" style="padding-top: 130px;">
+<body id="toTop" data-spy="scroll" data-target=".navbar">
 
- <nav id="navbar" class="navbar navbar-custom">
-  <div class="temasek-title">
-    <img  src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" style="width: 400px !important; height: 45 !important;"></a>
-  </div>
-   
-</nav>
-<!--nav menu-->
-<nav id="navbarMenu" style="position:fixed; z-index: 100; width: 100%;"
-   class="navbar navbar-expand-lg navbar-custom">
+     <!--nav menu 1-->
+     <nav id="navbar" class="navbar navbar-custom" style="z-index: 100; top: 0;">
+      <img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" width="250" height="45"></a>
+      <div class="dropdown">
+          <button onclick="openDropdown()" class="dropbtn">More</button>
+          <div id="myDropdown" class="dropdown-content">
+              <a href="index.html#projects">Projects</a>
+              <a href="index.html#seminars">Seminars</a>
+              <a href="index.html#iit">IIT Courses</a>
+              <a href="../html/about.html">About</a>
+              <a
+                  href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
+                  of Excellence</a>
 
-   
-       <span class="navbar-toggler-icon"></span>
-   </button>
-   <div class=" navbar-collapse" id="navMenu">
-       <ul class="navbar-nav mr-auto">
-           <li class="nav-item">
-               <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
-           </li>
-           <li class="nav-item">
-               <a class="nav-link" href="index.html#seminars">Seminars</a>
-           </li>
-           <li class="nav-item">
-               <a class="nav-link" href="index.html#iit">IIT Courses</a>
-           </li>
+          </div>
+      </div>
+  </nav>
+  <!--nav menu 2-->
+  <nav id="navbarMenu" style="position:fixed; z-index: 100; width: 100%; "
+      class="navbar navbar-expand-md navbar-custom">
+      <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html#seminars">Seminars</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html#iit">IIT Courses</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"
+                      href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
+                      of Excellence</a>
+              </li>
+          </ul>
+          <span class="navbar-text">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="../html/about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../html/directions.html">Getting To TP</a>
+                  </li>
 
-           <li class="nav-item">
-            <a class="nav-link"
-                href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
-                of Excellence</a>
-           </li>
-       </ul>
-       <span class="navbar-text">
-           <ul class="navbar-nav mr-auto">
-               <li class="nav-item">
-                   <a class="nav-link" href="../html/about.html">About</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="../html/directions.html">Getting To TP</a>
-               </li>
-           </ul>
-       </span>
-   </div>
-</nav>
-
-
+              </ul>
+          </span>
+      </div>
+  </nav>
     <!--back to top icon-->
     <div id="backTop">
       <a style="position: fixed; right: 50px; bottom: 15px; z-index: 100 "
@@ -87,6 +92,9 @@
   </div>
 
 
+  <br><br>
+  <br><br>
+  
 
 
   <div class="seminar-topic">

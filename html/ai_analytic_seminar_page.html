@@ -2,81 +2,111 @@
 <html lang="en">
 
 <head>
-   <!-- Required meta tags -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="../css/main.css" rel="stylesheet">
-   <link href="../css/footer.css" rel="stylesheet"> 
-   <link href="../css/nav.css" rel="stylesheet">
-   <link href="../css/seminar_page.css" rel="stylesheet">
-   <link href="../css/seminar_modal.css" rel="stylesheet">
-   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-   <script src="../js/nav.js">
-   </script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js">
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-   <title>InfoTech Day 2023</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/footer.css" rel="stylesheet">
+  <link href="../css/nav.css" rel="stylesheet">
+  <link href="../css/seminar_page.css" rel="stylesheet">
+  <link href="../css/seminar_modal.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="../js/nav.js">
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <title>InfoTech Day 2023</title>
 </head>
 
 <body id="toTop" data-spy="scroll" data-target=".navbar" style="padding-top: 130px;">
+  <!--nav menu 1-->
+  <nav id="navbar" class="navbar navbar-custom" style="z-index: 100; top: 0;">
+    <img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" width="250" height="45"></a>
+    <div class="dropdown">
+      <button onclick="openDropdown()" id="dropbtn" class="dropbtn">More</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#seminars">Seminars</a>
+        <a href="index.html#iit">IIT Courses</a>
+        <a href="../html/about.html">About</a>
+        <a
+          href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
+          of Excellence</a>
 
- <nav id="navbar" class="navbar navbar-custom">
-   <img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" style="width: 400px !important; height: 45 !important;"></a>
-</nav>
-<!--nav menu-->
-<nav id="navbarMenu" style="position:fixed; z-index: 100; width: 100%;"
-   class="navbar navbar-expand-lg navbar-custom">
-
-   
-       <span class="navbar-toggler-icon"></span>
-   </button>
-   <div class=" navbar-collapse" id="navMenu">
-       <ul class="navbar-nav mr-auto">
-           <li class="nav-item">
-               <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
-           </li>
-           <li class="nav-item">
-               <a class="nav-link" href="index.html#seminars">Seminars</a>
-           </li>
-           <li class="nav-item">
-               <a class="nav-link" href="index.html#iit">IIT Courses</a>
-           </li>
-           <li class="nav-item">
-            <a class="nav-link"
-                href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
-                of Excellence</a>
+      </div>
+    </div>
+  </nav>
+  <!--nav menu 2-->
+  <nav id="navbarMenu" style="position:fixed; z-index: 100; width: 100%; "
+    class="navbar navbar-expand-md navbar-custom">
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
         </li>
-       </ul>
-       <span class="navbar-text">
-           <ul class="navbar-nav mr-auto">
-               <li class="nav-item">
-                   <a class="nav-link" href="../html/about.html">About</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="../html/directions.html">Getting To TP</a>
-               </li>
-           </ul>
-       </span>
-   </div>
-</nav>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#seminars">Seminars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#iit">IIT Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+            href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
+            of Excellence</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../html/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/directions.html">Getting To TP</a>
+          </li>
 
-    <!--back to top icon-->
-    <div id="backTop">
-      <a style="position: fixed; right: 50px; bottom: 15px; z-index: 100 "
-          onClick="ga('send', 'event', { eventCategory: 'InfoTech Day 2022', eventAction: 'InfoTech Day 2022:Navigation', eventLabel: 'Page Top'});"
-          class="page-scroll" href="#toTop"><svg xmlns="http://www.w3.org/2000/svg" width="71.736" height="73.837"
-              viewBox="0 0 71.736 73.837">
-              <path id="Icon_awesome-arrow-alt-circle-up" data-name="Icon awesome-arrow-alt-circle-up"
-                  d="M.562,37.481C.562,17.087,16.616.563,36.43.563S72.3,17.087,72.3,37.481,56.244,74.4,36.43,74.4.562,57.876.562,37.481ZM42.794,54.75V37.481H53.048a1.8,1.8,0,0,0,1.229-3.052L37.66,17.414a1.685,1.685,0,0,0-2.444,0L18.583,34.429a1.793,1.793,0,0,0,1.229,3.052H30.067V54.75A1.767,1.767,0,0,0,31.8,56.536h9.256A1.767,1.767,0,0,0,42.794,54.75Z"
-                  transform="translate(-0.563 -0.563)" fill="#002f5e" /></a>
+        </ul>
+      </span>
+    </div>
+  </nav>
+  <!--back to top icon-->
+  <div id="backTop">
+    <a style="position: fixed; right: 50px; bottom: 15px; z-index: 100 "
+      onClick="ga('send', 'event', { eventCategory: 'InfoTech Day 2022', eventAction: 'InfoTech Day 2022:Navigation', eventLabel: 'Page Top'});"
+      class="page-scroll" href="#toTop"><svg xmlns="http://www.w3.org/2000/svg" width="71.736" height="73.837"
+        viewBox="0 0 71.736 73.837">
+        <path id="Icon_awesome-arrow-alt-circle-up" data-name="Icon awesome-arrow-alt-circle-up"
+          d="M.562,37.481C.562,17.087,16.616.563,36.43.563S72.3,17.087,72.3,37.481,56.244,74.4,36.43,74.4.562,57.876.562,37.481ZM42.794,54.75V37.481H53.048a1.8,1.8,0,0,0,1.229-3.052L37.66,17.414a1.685,1.685,0,0,0-2.444,0L18.583,34.429a1.793,1.793,0,0,0,1.229,3.052H30.067V54.75A1.767,1.767,0,0,0,31.8,56.536h9.256A1.767,1.767,0,0,0,42.794,54.75Z"
+          transform="translate(-0.563 -0.563)" fill="#002f5e" /></a>
 
-      </svg>
+    </svg>
+  </div>
+
+  <br><br>
+
+  <!--back to top icon-->
+  <div id="backTop">
+    <a style="position: fixed; right: 50px; bottom: 15px; z-index: 100 "
+      onClick="ga('send', 'event', { eventCategory: 'InfoTech Day 2022', eventAction: 'InfoTech Day 2022:Navigation', eventLabel: 'Page Top'});"
+      class="page-scroll" href="#toTop"><svg xmlns="http://www.w3.org/2000/svg" width="71.736" height="73.837"
+        viewBox="0 0 71.736 73.837">
+        <path id="Icon_awesome-arrow-alt-circle-up" data-name="Icon awesome-arrow-alt-circle-up"
+          d="M.562,37.481C.562,17.087,16.616.563,36.43.563S72.3,17.087,72.3,37.481,56.244,74.4,36.43,74.4.562,57.876.562,37.481ZM42.794,54.75V37.481H53.048a1.8,1.8,0,0,0,1.229-3.052L37.66,17.414a1.685,1.685,0,0,0-2.444,0L18.583,34.429a1.793,1.793,0,0,0,1.229,3.052H30.067V54.75A1.767,1.767,0,0,0,31.8,56.536h9.256A1.767,1.767,0,0,0,42.794,54.75Z"
+          transform="translate(-0.563 -0.563)" fill="#002f5e" /></a>
+
+    </svg>
   </div>
 
 
@@ -87,17 +117,16 @@
 
   <div class="wrapper">
     <div class="center-line">
-      <a class="scroll-icon" href="#" target="_blank"><i
-        class="fa fa-inverse fa-arrow-up "></i></a>
+      <a class="scroll-icon" href="#" target="_blank"><i class="fa fa-inverse fa-arrow-up "></i></a>
     </div>
     <div class="row row-1">
-       
+
       <section>
         <div class="time">1</div>
-       
+
         <div class="details">
           <span class="title">Welcome Address by</span>
-          <span>2:00pm</span> 
+          <span>2:00pm</span>
         </div>
 
         <h5>
@@ -111,15 +140,15 @@
         </p>
       </section>
 
-      
+
     </div>
     <div class="row row-2">
       <section>
         <div class="time">2</div>
-       
+
         <div class="details">
           <span class="title">The Need for Continous Transformation</span>
-          <span>2:05pm</span> 
+          <span>2:05pm</span>
         </div>
 
         <h5>
@@ -129,9 +158,9 @@
         <p>
           Vice President, SCS Business Analytics Chapter <br>
           Managing Director, Accenture Strategy and Consulting, Singapore <br>
-          
+
         </p>
-        <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal1" >Learn More</button>
+        <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal1">Learn More</button>
       </section>
     </div>
     <div class="row row-1">
@@ -142,7 +171,7 @@
           <span>2:30pm</span>
         </div>
         <p>- Diploma in Big Data & Analytics</p>
- 
+
       </section>
     </div>
     <div class="row row-2">
@@ -150,8 +179,8 @@
         <div class="time">4</div>
         <div class="details">
           <span class="title">Data & Analytics in KPMG
-          </span> 
-          <span>2:40pm	
+          </span>
+          <span>2:40pm
           </span>
         </div>
 
@@ -159,7 +188,7 @@
         <h5>Mr Paul Kent</h5>
         <p>
           Partners, KPMG Singapore</p>
-          <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal2"  >Learn More</button>
+        <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal2">Learn More</button>
       </section>
     </div>
     <div class="row row-1">
@@ -176,14 +205,14 @@
       <section>
         <div class="time">6</div>
         <div class="details">
-          <span class="title">	
+          <span class="title">
             Does innovation require latest technology?</span>
           <span>3:25pm</span>
         </div>
         <h5> Mr Tew Kar Leong </h5>
         <p>Innovation Manager <br>
           Operations Innovation, Schroders</p>
-          <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal3" >Learn More</button>
+        <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal3">Learn More</button>
       </section>
     </div>
     <div class="row row-1">
@@ -199,15 +228,15 @@
       <section>
         <div class="time">8</div>
         <div class="details">
-          <span class="title">	
+          <span class="title">
             How PayPal builds AI capabilities to empower innovation and enhance different products?
-</span>
+          </span>
           <span>4:00pm</span>
         </div>
         <h5> Ms Zhang jiazheng</h5>
         <p>Machine Learning Engineer <br>
           Paypal</p>
-          <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal4" >Learn More</button>
+        <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal4">Learn More</button>
       </section>
     </div>
   </div>
@@ -218,7 +247,7 @@
 
       <h1>Speaker Profiles</h1>
     </dvi>
-   
+
 
 
     <div class="row row-speaker">
@@ -227,21 +256,22 @@
         <img class="card-img-top" src="../img/speaker1.jpg" alt="Card image cap">
         <div class="middle">
           <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal1">Learn More</button>
-            <!-- Button trigger modal -->
+          <!-- Button trigger modal -->
         </div>
         <div class="card-body special">
           <h5 class="card-title">Ewen Plougastel</h5>
           <p class="card-text"><em>Vice-President</em>, SCS Business Analytics Chapter <br>
-            <em>Managing Director</em>, Accenture Strategy and Consulting, Singapore</p>
+            <em>Managing Director</em>, Accenture Strategy and Consulting, Singapore
+          </p>
         </div>
       </div>
 
-      <div class="card border-0" style="width: 18rem;">  
+      <div class="card border-0" style="width: 18rem;">
         <img class="card-img-top" src="../img/barbara.png" alt="Card image cap">
         <div class="card-body">
           <div class="middle">
             <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal5">Learn More</button>
-              <!-- Button trigger modal -->
+            <!-- Button trigger modal -->
           </div>
           <h5 class="card-title"> Barbara Crane
           </h5>
@@ -257,7 +287,7 @@
         <img class="card-img-top" src="../img/paul.png" alt="Card image cap">
         <div class="middle">
           <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal6">Learn More</button>
-            <!-- Button trigger modal -->
+          <!-- Button trigger modal -->
         </div>
         <div class="card-body">
           <h5 class="card-title">Paul Kent </h5>
@@ -265,11 +295,11 @@
         </div>
       </div>
 
-      <div class="card border-0" style="width: 18rem;">  
+      <div class="card border-0" style="width: 18rem;">
         <img class="card-img-top" src="../img/tew_kar_leong.png" alt="Card image cap">
         <div class="middle">
           <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal3">Learn More</button>
-            <!-- Button trigger modal -->
+          <!-- Button trigger modal -->
         </div>
         <div class="card-body">
           <h5 class="card-title">Tew Kar Leong</h5>
@@ -281,11 +311,11 @@
 
 
     <div class="row row-speaker">
-      <div class="card border-0" style="width: 18rem;">  
+      <div class="card border-0" style="width: 18rem;">
         <img class="card-img-top" src="../img/zhang.png" alt="Card image cap">
         <div class="middle">
           <button class="button-1" role="button" data-toggle="modal" data-target="#speakerModal4">Learn More</button>
-            <!-- Button trigger modal -->
+          <!-- Button trigger modal -->
         </div>
         <div class="card-body">
           <h5 class="card-title">Zhang Jiazheng
@@ -294,7 +324,7 @@
         </div>
       </div>
 
-      <div class="card border-0" style="width: 18rem; opacity: 0;">  
+      <div class="card border-0" style="width: 18rem; opacity: 0;">
         <img class="card-img-top" src="../img/zhang.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Zhang Jiazheng
@@ -303,52 +333,53 @@
         </div>
       </div>
     </div>
-   
-    </div>
+
+  </div>
 
 
-<!--footer-->
-<footer class="site-footer">
-  <div class="container">
+  <!--footer-->
+  <footer class="site-footer">
+    <div class="container">
       <div class="row">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-8" style="text-align: left;">
-                      <h6>Organized by:</h6>
-                      <img id="footerLogo" src="../img/tp-justified-red.png" style="width: 25%;">
-                      <br>
-                      <br>
-                      <br>
-                      <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
-                          <a href="#">Temasek Polytechnic</a>.
-                      </p>
-                  </div>
-                  <div class="col-sm-2 col-sm-offset-1">
-                      <h6>Connect with us:</h6>
-                      <i class="fa-solid fa-arrow-up"></i>
-                      <a href="https://www.facebook.com/temasekpoly" target="_blank"><i
-                        class="fa fa-inverse fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8" style="text-align: left;">
+              <h6>Organized by:</h6>
+              <img id="footerLogo" src="../img/tp-justified-red.png" style="width: 25%;">
+              <br>
+              <br>
+              <br>
+              <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                <a href="#">Temasek Polytechnic</a>.
+              </p>
+            </div>
+            <div class="col-sm-2 col-sm-offset-1">
+              <h6>Connect with us:</h6>
+              <i class="fa-solid fa-arrow-up"></i>
+              <a href="https://www.facebook.com/temasekpoly" target="_blank"><i
+                  class="fa fa-inverse fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
 
-                      <a href="https://www.twitter.com/temasekpoly" target="_blank"><i
-                              class="fa fa-inverse fa-twitter fa-2x"></i></a>&nbsp;&nbsp;
-                      <a href="https://www.youtube.com/user/temasekpolysg" target="_blank"><i
-                              class="fa fa-inverse fa-youtube-play fa-2x"></i></a>&nbsp;&nbsp;
-                      <a href="https://www.instagram.com/temasekpoly" target="_blank"><i
-                              class="fa fa-inverse fa-instagram fa-2x"></i></a>&nbsp;&nbsp;
-                      <h6>Contact us:</h6>
+              <a href="https://www.twitter.com/temasekpoly" target="_blank"><i
+                  class="fa fa-inverse fa-twitter fa-2x"></i></a>&nbsp;&nbsp;
+              <a href="https://www.youtube.com/user/temasekpolysg" target="_blank"><i
+                  class="fa fa-inverse fa-youtube-play fa-2x"></i></a>&nbsp;&nbsp;
+              <a href="https://www.instagram.com/temasekpoly" target="_blank"><i
+                  class="fa fa-inverse fa-instagram fa-2x"></i></a>&nbsp;&nbsp;
+              <h6>Contact us:</h6>
 
-                      <p style="text-align:left ; color: white;">School of Informatics & IT
+              <p style="text-align:left ; color: white;">School of Informatics & IT
 
-                          iit@tp.edu.sg
+                iit@tp.edu.sg
 
-                          (65) 6780 5158</p>
+                (65) 6780 5158</p>
 
-                  </div>
-</footer>
-  
-  
+            </div>
+  </footer>
+
+
   <!-- Speaker 1 -->
-  <div class="modal fade" id="speakerModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="speakerModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -358,37 +389,47 @@
           </button>
         </div>
         <div class="modal-body">
-  
+
           <div class="container-fluid">
-  
+
             <div class="row">
               <div class="col-md-4">
-                <img  class= "speaker" src="../img/speaker1.jpg">
-                </div>
+                <img class="speaker" src="../img/speaker1.jpg">
+              </div>
               <div class="col content">
-  
+
                 <div class="name"> Mr Ewen Plougastel </div>
                 <div class="titles"> Vice-President, SCS Business Analytics Chapter <br>
                   Managing Director, Accenture Strategy and Consulting, Singapore
                 </div>
-                <div class="content-1">Focusing on Innovation & Transformation, Ewen is the Head of Digital, Data, Analytics & AI Delivery Team in ASEAN. Based in Singapore, Ewen has 20 years of experience shaping and running large scale Business, Digital & IT programs. Ewen has worked in a variety of industry verticals (Airport, Insurance, Bank, Retail, Telco etc.) across the globe (Singapore, Australia, Malaysia, France, UK).
-  
-                  Ewen holds a Master’s degree and numerous certifications. Well connected to the ecosystem, Ewen is a frequent speaker at industry conferences and author of blogs.
+                <div class="content-1">Focusing on Innovation & Transformation, Ewen is the Head of Digital, Data,
+                  Analytics & AI Delivery Team in ASEAN. Based in Singapore, Ewen has 20 years of experience shaping and
+                  running large scale Business, Digital & IT programs. Ewen has worked in a variety of industry
+                  verticals (Airport, Insurance, Bank, Retail, Telco etc.) across the globe (Singapore, Australia,
+                  Malaysia, France, UK).
+
+                  Ewen holds a Master’s degree and numerous certifications. Well connected to the ecosystem, Ewen is a
+                  frequent speaker at industry conferences and author of blogs.
                 </div>
-  
+
                 <div class="content-2">
                   The need for continuous transformation
                 </div>
-  
+
                 <div class="content-3">
-                  Transformation is no longer a “once in a generation” event, it is now a constant. Once regarded as a singular event, completely reinventing a business or a business model is required at a much higher frequency. The increasing pace of innovation combined with rapidly changing social, environmental and regulatory environments are pressing organisations and ecosystems to continuously evolve in order to survive and thrive. And organisations are finding it harder to navigate the increasingly competitive and disruptive business environments.
+                  Transformation is no longer a “once in a generation” event, it is now a constant. Once regarded as a
+                  singular event, completely reinventing a business or a business model is required at a much higher
+                  frequency. The increasing pace of innovation combined with rapidly changing social, environmental and
+                  regulatory environments are pressing organisations and ecosystems to continuously evolve in order to
+                  survive and thrive. And organisations are finding it harder to navigate the increasingly competitive
+                  and disruptive business environments.
                 </div>
               </div>
-  
+
             </div>
-  
+
           </div>
-  
+
         </div>
         <div class="modal-footer border-0">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -401,7 +442,8 @@
 
   <!-- Speaker 2 (special - vers)-->
 
-  <div class="modal fade" id="speakerModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="speakerModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -411,44 +453,54 @@
           </button>
         </div>
         <div class="modal-body">
-  
+
           <div class="container-fluid">
-  
+
             <div class="row">
               <div class="col-md-4">
-                <img  class= "speaker" src="../img/barbara.png">
-                <img  class= "speaker" src="../img/paul.png" style ="margin-top: 120px;">
-                </div>
+                <img class="speaker" src="../img/barbara.png">
+                <img class="speaker" src="../img/paul.png" style="margin-top: 120px;">
+              </div>
 
               <div class="col content">
-  
+
                 <div class="name"> Ms Barbara Crane</div>
                 <div class="titles"> Partners <br>KPMG Singapore
-                  
+
                 </div>
                 <div class="content-1">
-                  Barbara currently leads the data driven transformation practice in KPMG Singapore. Barbara has had 16 years of experience in Transaction Banking, Corporate and Investment Banking and has worked across business and operations at HSBC, BNP Paribas and NatWest Markets in Europe and Asia. In the past 7 years, Barbara has been working on transformational and strategic partnerships, enabling the adoption of new technology and best practices, most recently with SAP and Google Cloud.
+                  Barbara currently leads the data driven transformation practice in KPMG Singapore. Barbara has had 16
+                  years of experience in Transaction Banking, Corporate and Investment Banking and has worked across
+                  business and operations at HSBC, BNP Paribas and NatWest Markets in Europe and Asia. In the past 7
+                  years, Barbara has been working on transformational and strategic partnerships, enabling the adoption
+                  of new technology and best practices, most recently with SAP and Google Cloud.
                 </div>
 
                 <div class="name" style="margin-top: 15px;"> Mr Paul Kent</div>
                 <div class="titles"> Partners <br>KPMG Singapore
                 </div>
                 <div class="content-1">
-                  Paul currently leads the Data and Analytics practice in KPMG Singapore. He has over 22 years of experience in Australia, the Middle East and Asia. Paul has a strong analytical background and has led complex assessments to analyse and assess data to improve decision making for both private and public sector clients. His experience includes ideation and use case identification, data governance, and analytics to better understand corporate and individual customers, improve business outcomes and reduce costs.
+                  Paul currently leads the Data and Analytics practice in KPMG Singapore. He has over 22 years of
+                  experience in Australia, the Middle East and Asia. Paul has a strong analytical background and has led
+                  complex assessments to analyse and assess data to improve decision making for both private and public
+                  sector clients. His experience includes ideation and use case identification, data governance, and
+                  analytics to better understand corporate and individual customers, improve business outcomes and
+                  reduce costs.
                 </div>
                 <div class="content-2">
                   Data & Analytics in KPMG
                 </div>
-  
+
                 <div class="content-3">
-                  This talk will focus on the developments of Data & Analytics in KPMG globally, and locally in Singapore. There will be short use cases on use cases in Singapore.
+                  This talk will focus on the developments of Data & Analytics in KPMG globally, and locally in
+                  Singapore. There will be short use cases on use cases in Singapore.
                 </div>
               </div>
-  
+
             </div>
-  
+
           </div>
-  
+
         </div>
         <div class="modal-footer border-0">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -457,7 +509,8 @@
     </div>
   </div>
   <!-- Speaker 3 -->
-  <div class="modal fade" id="speakerModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="speakerModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -467,35 +520,47 @@
           </button>
         </div>
         <div class="modal-body">
-  
+
           <div class="container-fluid">
-  
+
             <div class="row">
               <div class="col-md-4">
-                <img  class= "speaker" src="../img/tew_kar_leong.png">
-                </div>
+                <img class="speaker" src="../img/tew_kar_leong.png">
+              </div>
               <div class="col content">
-  
+
                 <div class="name"> Mr Tew Kar Leong </div>
                 <div class="titles"> Innovations Manager <br>
                   Operations Innovations, Schroders
                 </div>
-                <div class="content-1">Kar Leong has over 15 years of professional experience focusing on research and development of technology. Currently he manages the Innovation pillar within the Operations Innovation team that is led out of Singapore, supported by staff based in UK and ID regional offices. The Operations Innovation team was established in 2017 as a driver to deliver RPA and Intelligent Automation for all business units within Schroders. The Innovation pillar focuses on incorporating latest technologies (e.g. Low Code No Code, Cloud) and AI/ML solutions (e.g. NLP, Image Processing) into solutions that are delivered for businesses. During his previous stints with A*Star, SAP, and IDC Kar Leong published multiple peer reviewed research articles on AI/ML and is also listed as an inventor for 3 patents granted by the United States Patent & Trademark Office.
+                <div class="content-1">Kar Leong has over 15 years of professional experience focusing on research and
+                  development of technology. Currently he manages the Innovation pillar within the Operations Innovation
+                  team that is led out of Singapore, supported by staff based in UK and ID regional offices. The
+                  Operations Innovation team was established in 2017 as a driver to deliver RPA and Intelligent
+                  Automation for all business units within Schroders. The Innovation pillar focuses on incorporating
+                  latest technologies (e.g. Low Code No Code, Cloud) and AI/ML solutions (e.g. NLP, Image Processing)
+                  into solutions that are delivered for businesses. During his previous stints with A*Star, SAP, and IDC
+                  Kar Leong published multiple peer reviewed research articles on AI/ML and is also listed as an
+                  inventor for 3 patents granted by the United States Patent & Trademark Office.
                 </div>
-  
+
                 <div class="content-2">
                   Does innovation require the latest technology?
                 </div>
-  
+
                 <div class="content-3">
-                  What is innovation? Does it mean the adoption of latest AI models or the newest release of a development platform (e.g. LCNC, RPA) within the business? This session will address the two questions based on the solutions delivered by the Schroders Operations Innovation team. These solutions cover a wide spectrum of technology (e.g. RPA, Cloud, Kubernetes, Low Code No Code) and AI/ML (e.g. NLP, image processing) which are utilised on a daily basis to support processes within the firm.
+                  What is innovation? Does it mean the adoption of latest AI models or the newest release of a
+                  development platform (e.g. LCNC, RPA) within the business? This session will address the two questions
+                  based on the solutions delivered by the Schroders Operations Innovation team. These solutions cover a
+                  wide spectrum of technology (e.g. RPA, Cloud, Kubernetes, Low Code No Code) and AI/ML (e.g. NLP, image
+                  processing) which are utilised on a daily basis to support processes within the firm.
                 </div>
               </div>
-  
+
             </div>
-  
+
           </div>
-  
+
         </div>
         <div class="modal-footer border-0">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -506,7 +571,8 @@
 
   <!-- Speaker 4 -->
 
-  <div class="modal fade" id="speakerModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="speakerModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -516,35 +582,47 @@
           </button>
         </div>
         <div class="modal-body">
-  
+
           <div class="container-fluid">
-  
+
             <div class="row">
               <div class="col-md-4">
-                <img  class= "speaker" src="../img/zhang.png">
-                </div>
+                <img class="speaker" src="../img/zhang.png">
+              </div>
               <div class="col content">
-  
-                <div class="name"> 	Ms Zhang Jiazheng</div>
+
+                <div class="name"> Ms Zhang Jiazheng</div>
                 <div class="titles"> Machine Learning Engineer <br>
                   Paypal
                 </div>
-                <div class="content-1">Jiazheng joined PayPal Singapore’s R&D Team as a machine learning engineer in 2021 and prior to that she did her internship with the team in 2020. Jiazheng is a Computer Science graduate from SUTD with a focus on AI and Data Science, winning the PayPal Natural Language Processing Class Award and the Keppel Award of Excellence in the Computer Science Department. She has experience with various aspects of AI, such as traditional machine learning, Computer Vision, Natural Language Processing, etc. At PayPal, she now mainly focuses on Computer Vision related algorithms and software engineering.
+                <div class="content-1">Jiazheng joined PayPal Singapore’s R&D Team as a machine learning engineer in
+                  2021 and prior to that she did her internship with the team in 2020. Jiazheng is a Computer Science
+                  graduate from SUTD with a focus on AI and Data Science, winning the PayPal Natural Language Processing
+                  Class Award and the Keppel Award of Excellence in the Computer Science Department. She has experience
+                  with various aspects of AI, such as traditional machine learning, Computer Vision, Natural Language
+                  Processing, etc. At PayPal, she now mainly focuses on Computer Vision related algorithms and software
+                  engineering.
                 </div>
-  
+
                 <div class="content-2">
                   How PayPal builds AI capabilities to empower innovation and enhance different products?
                 </div>
-  
+
                 <div class="content-3">
-                  We are in a data-driven era where huge amounts of data are produced and stored every day. How to make sense of the data and gain insights from it has become a question that draws great attention. With the help of Artificial Intelligence technology, we make tremendous data valuable. As a leading financial technology company, PayPal leverages and innovates cutting-edge AI technology to enhance user experience, ensure transaction security and compliance. In this session, we will understand what opportunities and challenges AI has brought to us, as well as how PayPal builds AI capabilities to empower innovation and enhance different products.
+                  We are in a data-driven era where huge amounts of data are produced and stored every day. How to make
+                  sense of the data and gain insights from it has become a question that draws great attention. With the
+                  help of Artificial Intelligence technology, we make tremendous data valuable. As a leading financial
+                  technology company, PayPal leverages and innovates cutting-edge AI technology to enhance user
+                  experience, ensure transaction security and compliance. In this session, we will understand what
+                  opportunities and challenges AI has brought to us, as well as how PayPal builds AI capabilities to
+                  empower innovation and enhance different products.
                 </div>
               </div>
-  
+
             </div>
-  
+
           </div>
-  
+
         </div>
         <div class="modal-footer border-0">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -553,107 +631,118 @@
     </div>
   </div>
 
-<!-- Speaker Seperate 1-->
+  <!-- Speaker Seperate 1-->
 
-<div class="modal fade" id="speakerModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Speaker Profile & Seminar Topic</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
+  <div class="modal fade" id="speakerModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Speaker Profile & Seminar Topic</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
 
-        <div class="container-fluid">
+          <div class="container-fluid">
 
-          <div class="row">
-            <div class="col-md-4">
-              <img  class= "speaker" src="../img/barbara.png">
+            <div class="row">
+              <div class="col-md-4">
+                <img class="speaker" src="../img/barbara.png">
               </div>
 
-            <div class="col content">
+              <div class="col content">
 
-              <div class="name"> Ms Barbara Crane</div>
-              <div class="titles"> Partners <br>KPMG Singapore
-                
-              </div>
-              <div class="content-1">
-                Barbara currently leads the data driven transformation practice in KPMG Singapore. Barbara has had 16 years of experience in Transaction Banking, Corporate and Investment Banking and has worked across business and operations at HSBC, BNP Paribas and NatWest Markets in Europe and Asia. In the past 7 years, Barbara has been working on transformational and strategic partnerships, enabling the adoption of new technology and best practices, most recently with SAP and Google Cloud.
+                <div class="name"> Ms Barbara Crane</div>
+                <div class="titles"> Partners <br>KPMG Singapore
+
+                </div>
+                <div class="content-1">
+                  Barbara currently leads the data driven transformation practice in KPMG Singapore. Barbara has had 16
+                  years of experience in Transaction Banking, Corporate and Investment Banking and has worked across
+                  business and operations at HSBC, BNP Paribas and NatWest Markets in Europe and Asia. In the past 7
+                  years, Barbara has been working on transformational and strategic partnerships, enabling the adoption
+                  of new technology and best practices, most recently with SAP and Google Cloud.
+                </div>
+
+                <div class="content-2">
+                  Data & Analytics in KPMG
+                </div>
+
+                <div class="content-3">
+                  This talk will focus on the developments of Data & Analytics in KPMG globally, and locally in
+                  Singapore. There will be short use cases on use cases in Singapore.
+                </div>
               </div>
 
-              <div class="content-2">
-                Data & Analytics in KPMG
-              </div>
-
-              <div class="content-3">
-                This talk will focus on the developments of Data & Analytics in KPMG globally, and locally in Singapore. There will be short use cases on use cases in Singapore.
-              </div>
             </div>
 
           </div>
 
         </div>
-
-      </div>
-      <div class="modal-footer border-0">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-<!-- Speaker Seperate 2 -->
+  <!-- Speaker Seperate 2 -->
 
 
-<div class="modal fade" id="speakerModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Speaker Profile & Seminar Topic</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
+  <div class="modal fade" id="speakerModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Speaker Profile & Seminar Topic</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
 
-        <div class="container-fluid">
+          <div class="container-fluid">
 
-          <div class="row">
-            <div class="col-md-4">
-              <img  class= "speaker" src="../img/paul.png">
+            <div class="row">
+              <div class="col-md-4">
+                <img class="speaker" src="../img/paul.png">
               </div>
 
-            <div class="col content">
-              <div class="name" style="margin-top: 15px;"> Mr Paul Kent</div>
-              <div class="titles"> Partners <br>KPMG Singapore
-              </div>
-              <div class="content-1">
-                Paul currently leads the Data and Analytics practice in KPMG Singapore. He has over 22 years of experience in Australia, the Middle East and Asia. Paul has a strong analytical background and has led complex assessments to analyse and assess data to improve decision making for both private and public sector clients. His experience includes ideation and use case identification, data governance, and analytics to better understand corporate and individual customers, improve business outcomes and reduce costs.
-              </div>
-              <div class="content-2">
-                Data & Analytics in KPMG
+              <div class="col content">
+                <div class="name" style="margin-top: 15px;"> Mr Paul Kent</div>
+                <div class="titles"> Partners <br>KPMG Singapore
+                </div>
+                <div class="content-1">
+                  Paul currently leads the Data and Analytics practice in KPMG Singapore. He has over 22 years of
+                  experience in Australia, the Middle East and Asia. Paul has a strong analytical background and has led
+                  complex assessments to analyse and assess data to improve decision making for both private and public
+                  sector clients. His experience includes ideation and use case identification, data governance, and
+                  analytics to better understand corporate and individual customers, improve business outcomes and
+                  reduce costs.
+                </div>
+                <div class="content-2">
+                  Data & Analytics in KPMG
+                </div>
+
+                <div class="content-3">
+                  This talk will focus on the developments of Data & Analytics in KPMG globally, and locally in
+                  Singapore. There will be short use cases on use cases in Singapore.
+                </div>
               </div>
 
-              <div class="content-3">
-                This talk will focus on the developments of Data & Analytics in KPMG globally, and locally in Singapore. There will be short use cases on use cases in Singapore.
-              </div>
             </div>
 
           </div>
 
         </div>
-
-      </div>
-      <div class="modal-footer border-0">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<body>
-
- 
+  <body>

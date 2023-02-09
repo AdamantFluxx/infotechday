@@ -19,6 +19,28 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>InfoTech Day 2023</title>
     <style>
+            @media (max-device-width: 1000px)  {
+    #navbarMenu {
+        display: none;
+
+    }
+
+    .dropbtn {
+        display: block;
+    }
+
+}
+@media (max-width: 1000px) {
+    #navbarMenu {
+        display: none;
+
+    }
+
+    .dropbtn {
+        display: block;
+    }
+
+}
         /*Banner Imager*/
 
         .img-wrapper {
@@ -103,46 +125,56 @@
 
 
 <body id="toTop" data-spy="scroll" data-target=".navbar" style="overflow-x: hidden;">
+    <!--nav menu 1-->
+    <nav id="navbar" class="navbar navbar-custom" style="z-index: 100;">
+      <img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" width="250" height="45"></a>
+      <div class="dropdown">
+          <button onclick="openDropdown()" class="dropbtn">More</button>
+          <div id="myDropdown" class="dropdown-content">
+              <a href="index.html#projects">Projects</a>
+              <a href="index.html#seminars">Seminars</a>
+              <a href="index.html#iit">IIT Courses</a>
+              <a href="../html/about.html">About</a>
+              <a
+                  href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
+                  of Excellence</a>
 
-    <!--nav logo-->
-    <nav class="navbar navbar-custom">
-        <a><img src="..\img\tp-horizontal-white.png" alt="Temasek Polytechnic" width="400" height="45"></a>
-    </nav>
-    <!--nav menu-->
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav mr-auto">
+          </div>
+      </div>
+  </nav>
+  <!--nav menu 2-->
+  <nav id="navbarMenu" style="position:fixed; z-index: 100; width: 100%;"
+      class="navbar navbar-expand-md navbar-custom">
+      <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                    <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#seminars">Seminars</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#iit">IIT Courses</a>
-                </li>
-                <li class="nav-item">
+                  <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html#seminars">Seminars</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html#iit">IIT Courses</a>
+              </li>
+              <li class="nav-item">
                   <a class="nav-link"
                       href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
                       of Excellence</a>
               </li>
-            </ul>
-            <span class="navbar-text">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Getting To TP</a>
-                    </li>
-                </ul>
-            </span>
-        </div>
-    </nav>
+          </ul>
+          <span class="navbar-text">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="../html/about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../html/directions.html">Getting To TP</a>
+                  </li>
+
+              </ul>
+          </span>
+      </div>
+  </nav>
     <!--Banner With search Bar-->
     <center>
 

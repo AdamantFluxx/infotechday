@@ -21,13 +21,20 @@
     <title>InfoTech Day 2023</title>
 </head>
 
-<body id="toTop" data-spy="scroll" data-target=".navbar" style="padding-top: 130px;">
-    <nav id="navbar" class="navbar navbar-custom">
-        <img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" width="400" height="45"></a>
-    </nav>
-    <!--nav menu-->
-    <nav id="navbarMenu" style="position:fixed; z-index: 100; width: 100%;"
-        class="navbar navbar-expand-lg navbar-custom">
+<body id="toTop" data-spy="scroll" data-target=".navbar">
+    <!--nav menu 1-->
+    <nav id="navbar" class="navbar navbar-custom" style="z-index: 100;">
+        <img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" width="250" height="45"></a>
+        <div class="dropdown">
+            <button onclick="openDropdown()" class="dropbtn">More</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#seminars">Seminars</a>
+                <a href="index.html#iit">IIT Courses</a>
+                <a href="../html/about.html">About</a>
+                <a
+                    href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
+                    of Excellence</a>
 
             </div>
         </div>
@@ -110,167 +117,167 @@
             </div>
         </div>
     </section>
-    <!--projects-->
-    <section id="projects" class="projects-section">
-        <center style="background-color: #002F5E">
-            <h1 style="color:  white;">Projects</h1>
-            <h4 style="color:  white;"> find various projects from the different categories </h4>
-        </center>
-        <br>
-        <div class="container">
-            <div id="aiproject" class="col-sm-5">
-                <p><a href="../html/ai_analytics_projects.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
-                            src="../img/ai_analytics.jpg">
-                </p>
-                <br>
-            </div>
-            <div id="bdproject" class="col-sm-5 col-sm-offset-1">
-                <p><a href="../html/Business-digitalisation_projects.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
-                            src="../img/business_digitalisation.jpg">
-
-                </p>
-                <br>
-            </div>
-            <div id="csproject" class="col-sm-5">
-                <p><a href="../html/Cybersecurity_projects.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
-                            src="../img/cybersecurity.jpg">
-                </p>
-                <br>
-            </div>
-            <div id="improject" class="col-sm-5 col-sm-offset-1">
-                <p><a href="../html/immersive_media_project.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
-                            src="../img/immersive.jpg">
-                </p>
-                <br>
-            </div>
+ <!--projects-->
+ <section id="projects" class="projects-section">
+    <center style="background-color: #002F5E">
+        <h1 style="color:  white;">Projects</h1>
+        <h4 style="color:  white;"> find various projects from the different categories </h4>
+    </center>
+    <br>
+    <div class="container">
+        <div id="aiproject" class="col-sm-5">
+            <p><a href="../html/ai_analytics_projects.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                        src="../img/ai_analytics.jpg">
+            </p>
+            <br>
         </div>
-    </section>
-    <!--seminars-->
-    </section>
-    <section id="seminars" class="seminars-section">
-        <center style="background-color: #002F5E">
-            <h1 style="color:  white;">Seminars</h1>
-            <h4 style="color:  white;"> find various seminars from the different categories </h4>
-        </center>
-        <br>
-        <div class="container">
-            <div id="aiproject" class="col-sm-5">
-                <p><a href="../html/ai_analytic_seminar_page.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
-                            src="../img/ai_analytics.jpg">
-                </p>
-                <br>
-            </div>
-            <div id="bdproject" class="col-sm-5 col-sm-offset-1">
-                <p><a href="../html/business_digitalisation_seminar_page.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
-                            src="../img/business_digitalisation.jpg">
-                </p>
-                <br>
-            </div>
-            <div id="csproject" class="col-sm-5">
-                <p><a href="../html/cybersecurity_seminar_page.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
-                            src="../img/cybersecurity.jpg">
-                </p>
-                <br>
-            </div>
-            <div id="improject" class="col-sm-5 col-sm-offset-1">
-                <p><a href="../html/immersivemedia_seminar_page.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
-                            src="../img/immersive.jpg">
-                </p>
-                <br>
-            </div>
+        <div id="bdproject" class="col-sm-5 col-sm-offset-1">
+            <p><a href="../html/Business-digitalisation_projects.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                        src="../img/business_digitalisation.jpg">
+
+            </p>
+            <br>
         </div>
-
-    </section>
-    <!--iit courses-->
-    <section id="iit" class="iit-section">
-        <center style="background-color: #002F5E">
-            <h1 style="color:  white;">IIT Courses</h1>
-            <h4 style="color:  white;"> Explore the many IT Courses in Temasek Polytechnic</h4>
-        </center>
-        <br>
-        <div class="container">
-            <div id="aiproject" class="col-sm-5">
-                <p><a target="_blank"
-                        href="https://www.tp.edu.sg/schools-and-courses/students/schools/iit/common-ict-programme.html"><img
-                            style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
-                            src="../img/common_ict.jpg">
-                </p>
-                <br>
-            </div>
-            <div id="bdproject" class="col-sm-5 col-sm-offset-1">
-                <p><a target="_blank"
-                        href="https://www.tp.edu.sg/schools-and-courses/students/schools/iit/applied-artificial-intelligence.html"><img
-                            style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
-                            src="../img/applied_ai.jpg">
-                </p>
-                <br>
-            </div>
-            <div id="csproject" class="col-sm-5">
-                <p><a target="_blank"
-                        href="https://www.tp.edu.sg/schools-and-courses/students/schools/iit/big-data-analytics.html"><img
-                            style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
-                            src="../img/big_data.jpg">
-                </p>
-                <br>
-            </div>
-            <div id="improject" class="col-sm-5 col-sm-offset-1">
-                <p><a target="_blank"
-                        href="https://www.tp.edu.sg/schools-and-courses/students/schools/iit/cybersecurity-digital-forensics.html"><img
-                            style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
-                            src="../img/cybersecurity_digitalforensics.jpg">
-                </p>
-                <br>
-            </div>
-            <div id="improject" class="col-sm-5">
-                <p><a target="_blank" href="https://www.tp.edu.sg/schools/iit/information-technology"><img
-                            style="width: 100%; height: auto ;" class="img-responsive rounded-xl" src="../img/iit.jpg">
-                </p>
-                <br>
-            </div>
-            <div id="improject" class="col-sm-5 col-sm-offset-1">
-                <p><a href="../html/iit_other.html"><img style="width: 100%; height: auto ;"
-                            class="img-responsive rounded-xl" src="../img/iit_others.jpg">
-                </p>
-                <br>
-            </div>
+        <div id="csproject" class="col-sm-5">
+            <p><a href="../html/Cybersecurity_projects.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                        src="../img/cybersecurity.jpg">
+            </p>
+            <br>
         </div>
-    </section>
-    <!--footer-->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8" style="text-align: left;">
-                            <h6>Organized by:</h6>
-                            <img id="footerLogo" src="../img/tp-justified-red.png" style="width: 25%;">
-                            <br>
-                            <br>
-                            <br>
-                            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
-                                <a href="#">Temasek Polytechnic</a>.
-                            </p>
-                        </div>
-                        <div class="col-sm-2 col-sm-offset-1">
-                            <h6>Connect with us:</h6>
-                            <a href="https://www.facebook.com/temasekpoly" target="_blank"><i
-                                    class="fa fa-inverse fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
-                            <a href="https://www.twitter.com/temasekpoly" target="_blank"><i
-                                    class="fa fa-inverse fa-twitter fa-2x"></i></a>&nbsp;&nbsp;
-                            <a href="https://www.youtube.com/user/temasekpolysg" target="_blank"><i
-                                    class="fa fa-inverse fa-youtube-play fa-2x"></i></a>&nbsp;&nbsp;
-                            <a href="https://www.instagram.com/temasekpoly" target="_blank"><i
-                                    class="fa fa-inverse fa-instagram fa-2x"></i></a>&nbsp;&nbsp;
-                            <h6>Contact us:</h6>
+        <div id="improject" class="col-sm-5 col-sm-offset-1">
+            <p><a href="../html/immersive_media_project.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                        src="../img/immersive.jpg">
+            </p>
+            <br>
+        </div>
+    </div>
+</section>
+<!--seminars-->
+</section>
+<section id="seminars" class="seminars-section">
+    <center style="background-color: #002F5E">
+        <h1 style="color:  white;">Seminars</h1>
+        <h4 style="color:  white;"> find various seminars from the different categories </h4>
+    </center>
+    <br>
+    <div class="container">
+        <div id="aiproject" class="col-sm-5">
+            <p><a href="../html/ai_analytic_seminar_page.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                        src="../img/ai_analytics.jpg">
+            </p>
+            <br>
+        </div>
+        <div id="bdproject" class="col-sm-5 col-sm-offset-1">
+            <p><a href="../html/business_digitalisation_seminar_page.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                        src="../img/business_digitalisation.jpg">
+            </p>
+            <br>
+        </div>
+        <div id="csproject" class="col-sm-5">
+            <p><a href="../html/cybersecurity_seminar_page.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                        src="../img/cybersecurity.jpg">
+            </p>
+            <br>
+        </div>
+        <div id="improject" class="col-sm-5 col-sm-offset-1">
+            <p><a href="../html/immersivemedia_seminar_page.html"><img style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                        src="../img/immersive.jpg">
+            </p>
+            <br>
+        </div>
+    </div>
 
-                            <p style="text-align:left ; color: white;">School of Informatics & IT
+</section>
+<!--iit courses-->
+<section id="iit" class="iit-section">
+    <center style="background-color: #002F5E">
+        <h1 style="color:  white;">IIT Courses</h1>
+        <h4 style="color:  white;"> Explore the many IT Courses in Temasek Polytechnic</h4>
+    </center>
+    <br>
+    <div class="container">
+        <div id="aiproject" class="col-sm-5">
+            <p><a target="_blank"
+                    href="https://www.tp.edu.sg/schools-and-courses/students/schools/iit/common-ict-programme.html"><img
+                        style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                        src="../img/common_ict.jpg">
+            </p>
+            <br>
+        </div>
+        <div id="bdproject" class="col-sm-5 col-sm-offset-1">
+            <p><a target="_blank"
+                    href="https://www.tp.edu.sg/schools-and-courses/students/schools/iit/applied-artificial-intelligence.html"><img
+                        style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                        src="../img/applied_ai.jpg">
+            </p>
+            <br>
+        </div>
+        <div id="csproject" class="col-sm-5">
+            <p><a target="_blank"
+                    href="https://www.tp.edu.sg/schools-and-courses/students/schools/iit/big-data-analytics.html"><img
+                        style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                        src="../img/big_data.jpg">
+            </p>
+            <br>
+        </div>
+        <div id="improject" class="col-sm-5 col-sm-offset-1">
+            <p><a target="_blank"
+                    href="https://www.tp.edu.sg/schools-and-courses/students/schools/iit/cybersecurity-digital-forensics.html"><img
+                        style="width: 100%; height: auto ;" class="img-responsive rounded-xl"
+                        src="../img/cybersecurity_digitalforensics.jpg">
+            </p>
+            <br>
+        </div>
+        <div id="improject" class="col-sm-5">
+            <p><a target="_blank" href="https://www.tp.edu.sg/schools/iit/information-technology"><img
+                        style="width: 100%; height: auto ;" class="img-responsive rounded-xl" src="../img/iit.jpg">
+            </p>
+            <br>
+        </div>
+        <div id="improject" class="col-sm-5 col-sm-offset-1">
+            <p><a href="../html/iit_other.html"><img style="width: 100%; height: auto ;"
+                        class="img-responsive rounded-xl" src="../img/iit_others.jpg">
+            </p>
+            <br>
+        </div>
+    </div>
+</section>
+<!--footer-->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8" style="text-align: left;">
+                        <h6>Organized by:</h6>
+                        <img id="footerLogo" src="../img/tp-justified-red.png" style="width: 25%;">
+                        <br>
+                        <br>
+                        <br>
+                        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                            <a href="#">Temasek Polytechnic</a>.
+                        </p>
+                    </div>
+                    <div class="col-sm-2 col-sm-offset-1">
+                        <h6>Connect with us:</h6>
+                        <a href="https://www.facebook.com/temasekpoly" target="_blank"><i
+                                class="fa fa-inverse fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+                        <a href="https://www.twitter.com/temasekpoly" target="_blank"><i
+                                class="fa fa-inverse fa-twitter fa-2x"></i></a>&nbsp;&nbsp;
+                        <a href="https://www.youtube.com/user/temasekpolysg" target="_blank"><i
+                                class="fa fa-inverse fa-youtube-play fa-2x"></i></a>&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/temasekpoly" target="_blank"><i
+                                class="fa fa-inverse fa-instagram fa-2x"></i></a>&nbsp;&nbsp;
+                        <h6>Contact us:</h6>
 
-                                iit@tp.edu.sg
+                        <p style="text-align:left ; color: white;">School of Informatics & IT
 
-                                (65) 6780 5158</p>
+                            iit@tp.edu.sg
 
-                        </div>
-    </footer>
+                            (65) 6780 5158</p>
+
+                    </div>
+</footer>
 </body>
 
 </html>

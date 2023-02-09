@@ -24,48 +24,74 @@
    <title>InfoTech Day 2023</title>
 </head>
 
-<body id="toTop" data-spy="scroll" data-target=".navbar" style="padding-top: 130px;">
+<body id="toTop" data-spy="scroll" data-target=".navbar";">
+     <!--nav menu 1-->
+     <nav id="navbar" class="navbar navbar-custom" style="z-index: 100; top: 0;">
+      <img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" width="250" height="45"></a>
+      <div class="dropdown">
+          <button onclick="openDropdown()" class="dropbtn">More</button>
+          <div id="myDropdown" class="dropdown-content">
+              <a href="index.html#projects">Projects</a>
+              <a href="index.html#seminars">Seminars</a>
+              <a href="index.html#iit">IIT Courses</a>
+              <a href="../html/about.html">About</a>
+              <a
+                  href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
+                  of Excellence</a>
 
- <nav id="navbar" class="navbar navbar-custom">
-   <img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" style="width: 400px !important; height: 45 !important;"></a>
-</nav>
-<!--nav menu-->
-<nav id="navbarMenu" style="position:fixed; z-index: 100; width: 100%;"
-   class="navbar navbar-expand-lg navbar-custom">
+          </div>
+      </div>
+  </nav>
+  <!--nav menu 2-->
+  <nav id="navbarMenu" style="position:fixed; z-index: 100; width: 100%; "
+      class="navbar navbar-expand-md navbar-custom">
+      <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html#seminars">Seminars</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html#iit">IIT Courses</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"
+                      href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
+                      of Excellence</a>
+              </li>
+          </ul>
+          <span class="navbar-text">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="../html/about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../html/directions.html">Getting To TP</a>
+                  </li>
 
-   
-       <span class="navbar-toggler-icon"></span>
-   </button>
-   <div class=" navbar-collapse" id="navMenu">
-       <ul class="navbar-nav mr-auto">
-           <li class="nav-item">
-               <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
-           </li>
-           <li class="nav-item">
-               <a class="nav-link" href="index.html#seminars">Seminars</a>
-           </li>
-           <li class="nav-item">
-               <a class="nav-link" href="index.html#iit">IIT Courses</a>
-           </li>
+              </ul>
+          </span>
+      </div>
+  </nav>
+    <!--back to top icon-->
+    <div id="backTop">
+      <a style="position: fixed; right: 50px; bottom: 15px; z-index: 100 "
+          onClick="ga('send', 'event', { eventCategory: 'InfoTech Day 2022', eventAction: 'InfoTech Day 2022:Navigation', eventLabel: 'Page Top'});"
+          class="page-scroll" href="#toTop"><svg xmlns="http://www.w3.org/2000/svg" width="71.736" height="73.837"
+              viewBox="0 0 71.736 73.837">
+              <path id="Icon_awesome-arrow-alt-circle-up" data-name="Icon awesome-arrow-alt-circle-up"
+                  d="M.562,37.481C.562,17.087,16.616.563,36.43.563S72.3,17.087,72.3,37.481,56.244,74.4,36.43,74.4.562,57.876.562,37.481ZM42.794,54.75V37.481H53.048a1.8,1.8,0,0,0,1.229-3.052L37.66,17.414a1.685,1.685,0,0,0-2.444,0L18.583,34.429a1.793,1.793,0,0,0,1.229,3.052H30.067V54.75A1.767,1.767,0,0,0,31.8,56.536h9.256A1.767,1.767,0,0,0,42.794,54.75Z"
+                  transform="translate(-0.563 -0.563)" fill="#002f5e" /></a>
 
-           <li class="nav-item">
-            <a class="nav-link"
-                href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
-                of Excellence</a>
-        </li>
-       </ul>
-       <span class="navbar-text">
-           <ul class="navbar-nav mr-auto">
-               <li class="nav-item">
-                   <a class="nav-link" href="../html/about.html">About</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="../html/directions.html">Getting To TP</a>
-               </li>
-           </ul>
-       </span>
-   </div>
-</nav>
+      </svg>
+  </div>
+
+
+  <br><br>
+  <br><br>
+  
 
     <!--back to top icon-->
     <div id="backTop">
