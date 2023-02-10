@@ -7,6 +7,9 @@
     .dropbtn {
         display: block;
     }
+    #backTop{
+        display: none;
+    }
 
 }
 @media (max-width: 1000px) {
@@ -17,6 +20,9 @@
 
     .dropbtn {
         display: block;
+    }
+    #backTop{
+        display: none;
     }
 
 }

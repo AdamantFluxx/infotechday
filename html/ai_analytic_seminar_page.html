@@ -2,40 +2,65 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../css/main.css" rel="stylesheet">
-  <link href="../css/footer.css" rel="stylesheet">
-  <link href="../css/nav.css" rel="stylesheet">
-  <link href="../css/seminar_page.css" rel="stylesheet">
-  <link href="../css/seminar_modal.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="../js/nav.js">
-  </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <title>InfoTech Day 2023</title>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="../css/main.css" rel="stylesheet">
+   <link href="../css/seminar_page.css" rel="stylesheet">
+   <link href="../css/seminar_modal.css" rel="stylesheet">
+   <link href="../css/nav.css" rel="stylesheet">
+   <link href="../css/footer.css" rel="stylesheet"> 
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="../js/nav.js">
+    
+   </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <title>InfoTech Day 2023</title>
+   <style>
+    @media (max-device-width: 1000px)  {
+  #navbarMenu {
+      display: none;
+
+  }
+
+  .dropbtn {
+      display: block;
+  }
+
+}
+@media (max-width: 1000px) {
+  #navbarMenu {
+      display: none;
+
+  }
+
+  .dropbtn {
+      display: block;
+  }
+
+}
+</style>
+
 </head>
+
 
 <body id="toTop" data-spy="scroll" data-target=".navbar" style="padding-top: 130px;">
   <!--nav menu 1-->
   <nav id="navbar" class="navbar navbar-custom" style="z-index: 100; top: 0;">
-    <img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" width="250" height="45"></a>
+    <a href="index.html"><img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic"
+        style="width: 270px ; height:40px;"></a>
     <div class="dropdown">
-      <button onclick="openDropdown()" id="dropbtn" class="dropbtn">More</button>
+      <button onclick="openDropdown()" id="dropbtn" class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 39.444 23.261">
+        <path id="Icon_ionic-md-arrow-dropdown" data-name="Icon ionic-md-arrow-dropdown" d="M9,13.5,28.722,36.761,48.444,13.5Z" transform="translate(-9 -13.5)" fill="#fff"/>
+      </svg></button>
       <div id="myDropdown" class="dropdown-content">
         <a href="index.html#projects">Projects</a>
         <a href="index.html#seminars">Seminars</a>

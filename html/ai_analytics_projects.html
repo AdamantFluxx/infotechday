@@ -132,55 +132,60 @@
 <body id="toTop" data-spy="scroll" data-target=".navbar" style="overflow-x: hidden;">
 
     <!--nav menu 1-->
-    <nav id="navbar" class="navbar navbar-custom" style="z-index: 100;">
-      <img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" width="250" height="45"></a>
-      <div class="dropdown">
-          <button onclick="openDropdown()" class="dropbtn">More</button>
-          <div id="myDropdown" class="dropdown-content">
-              <a href="index.html#projects">Projects</a>
-              <a href="index.html#seminars">Seminars</a>
-              <a href="index.html#iit">IIT Courses</a>
-              <a href="../html/about.html">About</a>
-              <a
-                  href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
-                  of Excellence</a>
+  <nav id="navbar" class="navbar navbar-custom" style="z-index: 100; top: 0;">
+    <a href="index.html"><img src="../img/tp-horizontal-white.png" alt="Temasek Polytechnic" style = "width: 270px ; height:40px;"></a>
+    <div class="dropdown">
+      <button onclick="openDropdown()" id="dropbtn" class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 39.444 23.261">
+        <path id="Icon_ionic-md-arrow-dropdown" data-name="Icon ionic-md-arrow-dropdown" d="M9,13.5,28.722,36.761,48.444,13.5Z" transform="translate(-9 -13.5)" fill="#fff"/>
+      </svg></button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#seminars">Seminars</a>
+        <a href="index.html#iit">IIT Courses</a>
+        <a href="../html/about.html">About</a>
+        <a
+          href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
+          of Excellence</a>
 
-          </div>
       </div>
+    </div>
   </nav>
   <!--nav menu 2-->
-  <nav id="navbarMenu" style="position:fixed; z-index: 100; width: 100%;"
-      class="navbar navbar-expand-md navbar-custom">
-      <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                  <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="index.html#seminars">Seminars</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="index.html#iit">IIT Courses</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link"
-                      href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
-                      of Excellence</a>
-              </li>
-          </ul>
-          <span class="navbar-text">
-              <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="../html/about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="../html/directions.html">Getting To TP</a>
-                  </li>
+  <nav id="navbarMenu" style="position:fixed; z-index: 100; width: 100%; "
+    class="navbar navbar-expand-md navbar-custom">
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="index.html#projects" class="nav-link page-scroll">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#seminars">Seminars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#iit">IIT Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+            href="https://www.tp.edu.sg/research-and-industry/centres-of-excellence/centres-under-school-of-informatics-it.html">Centres
+            of Excellence</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../html/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/directions.html">Getting To TP</a>
+          </li>
 
-              </ul>
-          </span>
-      </div>
+        </ul>
+      </span>
+    </div>
   </nav>
+  <br>
+  <br>
+  <br>
     <!--Banner With search Bar-->
     <center>
 
@@ -347,7 +352,7 @@
 <!-- An Automated Model Evaluation Framework -->
 <div class="modal fade" id="ai-analytics1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content" style="width: 600px;">
+    <div class="modal-content" style="width: auto;">
       <div class="modal-header">
         <h3 style="text-align:center;">An Automated Model Evaluation Framework</h3>
       </div>
@@ -397,7 +402,7 @@
 <!-- Chatbots as Personalised Learning Assistants -->
 <div class="modal fade" id="ai-analytics2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content" style="width: 600px;">
+    <div class="modal-content" style="width: auto;">
       <div class="modal-header">
         <h3 style="text-align:center;">Chatbots as Personalised Learning Assistants</h3>
       </div>
@@ -451,7 +456,7 @@
 <!-- Project HIART: Detecting and Resolving Bias in Predictive Models -->
 <div class="modal fade" id="ai-analytics3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content" style="width: 600px;">
+    <div class="modal-content" style="width: auto;">
       <div class="modal-header">
         <h3 style="text-align:center;">Project HIART: Detecting and Resolving Bias in Predictive Models</h3>
       </div>
@@ -487,7 +492,7 @@
                     <li>The lifecycle for model deployment and monitoring can be automated with CI/CD approach.</li>
         </ul>
         <h4>Video</h4>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TmD2_kob_Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe  src="https://www.youtube.com/embed/TmD2_kob_Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h4>Project By</h4>
         <ul>
             <li>Lingesh S/O Ganesh (TP)</li>
@@ -515,7 +520,7 @@
 <!-- Drone Vs Drone -->
 <div class="modal fade" id="ai-analytics4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content" style="width: 600px;">
+      <div class="modal-content" style="width: auto;">
         <div class="modal-header">
           <h3 style="text-align:center;">Drone Vs Drone</h3>
         </div>
@@ -572,7 +577,7 @@
   <!-- Fish Farm Digitalisation -->
 <div class="modal fade" id="ai-analytics5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content" style="width: 600px;">
+    <div class="modal-content" style="width: auto;">
       <div class="modal-header">
         <h3 style="text-align:center;">Fish Farm Digitalisation</h3>
       </div>
@@ -625,7 +630,7 @@
 <!-- Predictive Maintenance of Fuel Dispenser  -->
 <div class="modal fade" id="ai-analytics6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content" style="width: 600px;">
+    <div class="modal-content" style="width: auto;">
       <div class="modal-header">
         <h3 style="text-align:center;">Predictive Maintenance of Fuel Dispenser </h3>
       </div>
@@ -677,7 +682,7 @@
 <!-- Smart Serious Game Analytics Engine -->
 <div class="modal fade" id="ai-analytics7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content" style="width: 600px;">
+    <div class="modal-content" style="width: auto;">
       <div class="modal-header">
         <h3 style="text-align:center;">Smart Serious Game Analytics Engine</h3>
       </div>
@@ -744,7 +749,7 @@
 <!-- Video Analytics for the Easy Extraction of Vehicle Attributes -->
 <div class="modal fade" id="ai-analytics8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content" style="width: 600px;">
+    <div class="modal-content" style="width: auto;">
       <div class="modal-header">
         <h3 style="text-align:center;">Video Analytics for the Easy Extraction of Vehicle Attributes</h3>
       </div>
@@ -799,7 +804,7 @@
 <!-- Signature Forgery Detection Model -->
 <div class="modal fade" id="ai-analytics9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content" style="width: 600px;">
+    <div class="modal-content" style="width: auto;">
       <div class="modal-header">
         <h3 style="text-align:center;">Signature Forgery Detection Model</h3>
       </div>
@@ -827,7 +832,7 @@
         <li>Training of a new multilingual model to detect the strokes of the signatures of other languages.</li>
         </ul>
         <h4>Video</h4>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/riRSHW93Pvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe  src="https://www.youtube.com/embed/riRSHW93Pvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h4>Project By</h4>
         <ul>
           <li>Lee Jia Wen</li>
@@ -853,7 +858,7 @@
 <!-- Synthetic POI Image Generator -->
 <div class="modal fade" id="ai-analytics10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content" style="width: 600px;">
+    <div class="modal-content" style="width: auto;">
       <div class="modal-header">
         <h3 style="text-align:center;">Synthetic POI Image Generator</h3>
       </div>

@@ -5,28 +5,7 @@
   box-sizing: border-box;
   
 }
-@media (max-device-width: 1000px)  {
-    #navbarMenu {
-        display: none;
 
-    }
-
-    .dropbtn {
-        display: block;
-    }
-
-}
-@media (max-width: 1000px) {
-    #navbarMenu {
-        display: none;
-
-    }
-
-    .dropbtn {
-        display: block;
-    }
-
-}
 html{
   scroll-behavior: smooth;
 }
