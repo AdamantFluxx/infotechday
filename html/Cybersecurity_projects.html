@@ -7,6 +7,7 @@
    <link href="../css/nav.css" rel="stylesheet">
    <link href="../css/main.css" rel="stylesheet">
    <link href="../css/footer.css" rel="stylesheet">
+   <link href="../css/project.css" rel="stylesheet">
 
    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
    <script src="../js/nav.js">
@@ -210,84 +211,192 @@
     <br>
     <br>
 
-    <!--projects-->
-    <section id="CyberSecurity" class="projects-section">
+   
 
-        <center>
-            <!--1-->
-            <div class=" container">
-                <div class="row">
 
-                            <div class="col-sm">
-                              <div class="image">
-                                <button type="button" data-toggle="modal" data-target="#cybersecurity1"><img src="../img/cybersecurity/2022-cybersecurity-img1.jpg" ></p></button>
-                            </div>
-                              <h4>Data Scraping with RPA</h4>
-                              <p>&nbsp;</p>
-                            </div>
-                    <div class="col-sm">
-                        <div class="image">
-                            <button type="button" data-toggle="modal" data-target="#cybersecurity2"><img src="../img/cybersecurity/2022-cybersecurity-img2.jpg"></button>
-                        </div>
-                        <h4>FoodBuy – An E2E Business Solution</h4>
-                        <p>&nbsp;</p>
-                    </div>
-                    <div class="col-sm">
-                        <div class="image">
-                            <button type="button" data-toggle="modal" data-target="#cybersecurity3"><img src="../img/cybersecurity/2022-cybersecurity-img3.jpg"></button>
-                        </div>
-                        <h4>GreenTrek Mobile Application</h4>
-                        <p>&nbsp;</p>
-                    </div>
-                    <div class="col-sm">
-                        <div class="image">
-                            <button type="button" data-toggle="modal" data-target="#cybersecurity4"><img src="../img/cybersecurity/2022-cybersecurity-img4.jpg"></button>
-                        </div>
-                        <h4>Interactive Chatbot for AMS</h4>
-                        <p>&nbsp;</p>
-                    </div>
-                    <div class="col-sm">
-                        <div class="image">
-                            <button type="button" data-toggle="modal" data-target="#cybersecurity5"><img src="../img/cybersecurity/2022-cybersecurity-img5.jpg"></button>
-                        </div>
-                        <h4>SGenius Student Learning Portal</h4>
-                        <p>&nbsp;</p>
-                    </div>
-                    <div class="col-sm">
-                        <div class="image">
-                            <button type="button" data-toggle="modal" data-target="#cybersecurity6"><img src="../img/cybersecurity/2022-cybersecurity-img6.jpg"></button>
-                        </div>
-                        <h4>One Stop Fitness</h4>
-                        <p>&nbsp;</p>
-                    </div>
-                    <div class="col-sm">
-                        <div class="image">
-                            <button type="button" data-toggle="modal" data-target="#cybersecurity7"><img src="../img/cybersecurity/2022-cybersecurity-img7.jpg"></button>
-                        </div>
-                        <h4>TP InfoTech Day 2022 Microsite</h4>
-                        <p>&nbsp;</p>
-                    </div>
-                    <div class="col-sm">
-                        <div class="image">
-                            <button type="button" data-toggle="modal" data-target="#cybersecurity8"><img src="../img/cybersecurity/2022-cybersecurity-img8.jpg"></button>
-                        </div>
-                        <h4>TPsecureKeys Key Management System</h4>
-                        <p>&nbsp;</p>
-                    </div>
-                    
-                </div>
+    <div class="container-fluid container-1"> 
+
+
+
+
+      <div class="row">
+
+         <!-- CDF Automated Security -->
+         <div class="col-sm">
+          <div class="card border-0" style="width: 18rem;">
+            <img class="card-img-top" src="../img/cybersecurity/CDF_Automated_Security.png" alt="Card image cap">
+            <div class="middle">
+              <button class="button-1" role="button" data-toggle="modal" data-target="#project1">Learn More</button>
+              <!-- Button trigger modal -->
             </div>
+            <div class="card-body special">
+              <h5 class="card-title">Automated Security Testing Platform</h5>
+            </div>
+          </div>
+        </div>
 
-        </center>
 
-    </section>
+        <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title" >Automated Security Testing Platform</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4>Project Background</h4>
+                <p>Are you a web developer looking for a one-stop solution to test the integrity of your code? Is your website secure enough from being hacked? Our Automated Security Testing Platform (ASTP) is an affordable solution that scans your Java Web Application for vulnerabilities.
+                </p>
 
+                <p>
+                  ASTP incorporates the three phases of DevSecOps and conducts rigorous testing for every stage of the web development lifecycle. A wide variety of dynamic and static security analysis tools are implemented, including Snyk, SonarQube and Nikto, to ensure a comprehensive scan of your project. With ASTP’s analysis, you can perform debugging and be assured that your final site is secure and ready to be published online.
+                </p>
 
+                <h4>Key Benefits</h4>
+                <ul>
+                  <li><strong>Comprehensive</strong> – Both static and dynamic analysis tools are used to provide a complete picture of the vulnerabilities in the application.
+                  </li>
+                  <li><strong>Convenient</strong> – Results of security testing are collated into a web page for straightforward reference of the reports generated.
+                  </li>
+                  <li><strong>Efficient</strong> - Security testing of source codes is fast and automated, so users do not have to tirelessly check through their codes manually for errors.
+                  </li>
+                </ul>
+                <h4>Key Technologies Used</h4>
+                <ul>
+                  <li>Jenkins</li>
+                  <li>GitHub</li>
+                  <li>Maven</li>
+                  <li>Tomcat</li>
+                </ul>
+                <h4>Potential Enhancements</h4>
+                <p>This application can be enhanced with the following:</p>
+                <ul>
+                  <li>Integration of Selenium to automate the browsing of the web application
+                  </li>
+                  <li>Implementation of more advanced dynamic analysis tools
+                  </li>
+                </ul>
+                <h4>Project By</h4>
+                <ul>
+                  <li>Tan Jie Xuan Jeshua (Project Leader)</li>
+                  <li>Lee Maximus</li>
+                  <li>Lee Say Kiet, Jacob</li>
+                  <li>Marcus Wong Kai Jie</li>
+                </ul>
+                <h4>Supervisor</h4>
+                <p>Poh Zhi Yuan (Mr.)</p>
 
-    <!--test-->
-    <!-- The Modal -->
+                <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+                <br />
+                <br />
+              </div>
 
-    <!--end test-->
+            </div>
+          </div>
+        </div>
+
+         <!-- CDF Bluetooth -->
+         <div class="col-sm">
+          <div class="card border-0" style="width: 18rem;">
+            <img class="card-img-top" src="../img/cybersecurity/CDF_Bluetooth_Security.png" alt="Card image cap">
+            <div class="middle">
+              <button class="button-1" role="button" data-toggle="modal" data-target="#project1">Learn More</button>
+              <!-- Button trigger modal -->
+            </div>
+            <div class="card-body special">
+              <h5 class="card-title">Bluetooth Security</h5>
+            </div>
+          </div>
+        </div>
+
+         <!-- CDF Fake News -->
+         <div class="col-sm">
+          <div class="card border-0" style="width: 18rem;">
+            <img class="card-img-top" src="../img/cybersecurity/CDF_FakeNews.png" alt="Card image cap">
+            <div class="middle">
+              <button class="button-1" role="button" data-toggle="modal" data-target="#project1">Learn More</button>
+              <!-- Button trigger modal -->
+            </div>
+            <div class="card-body special">
+              <h5 class="card-title">Fake News Detector </h5>
+            </div>
+          </div>
+        </div>
+
+         <!-- CDF Protect ur Network -->
+         <div class="col-sm">
+          <div class="card border-0" style="width: 18rem;">
+            <img class="card-img-top" src="../img/cybersecurity/CDF_ProtectUr_Network.png" alt="Card image cap">
+            <div class="middle">
+              <button class="button-1" role="button" data-toggle="modal" data-target="#project1">Learn More</button>
+              <!-- Button trigger modal -->
+            </div>
+            <div class="card-body special">
+              <h5 class="card-title">Protect your Network with SDN Defender</h5>
+            </div>
+          </div>
+        </div>
+
+         <!-- CDF Crime Scene -->
+         <div class="col-sm">
+          <div class="card border-0" style="width: 18rem;">
+            <img class="card-img-top" src="../img/cybersecurity/CDF_Crime_Scene.png" alt="Card image cap">
+            <div class="middle">
+              <button class="button-1" role="button" data-toggle="modal" data-target="#project1">Learn More</button>
+              <!-- Button trigger modal -->
+            </div>
+            <div class="card-body special">
+              <h5 class="card-title">Crime Scene Responder</h5>
+            </div>
+          </div>
+        </div>
+
+          <!-- CDF IIOT -->
+         <div class="col-sm">
+          <div class="card border-0" style="width: 18rem;">
+            <img class="card-img-top" src="../img/cybersecurity/CDF_IIOT_Vulnerability.png" alt="Card image cap">
+            <div class="middle">
+              <button class="button-1" role="button" data-toggle="modal" data-target="#project1">Learn More</button>
+              <!-- Button trigger modal -->
+            </div>
+            <div class="card-body special">
+              <h5 class="card-title">IIOT Vulnerability Search Database</h5>
+            </div>
+          </div>
+        </div>
+
+                 <!-- CDF MalScape -->
+         <div class="col-sm">
+          <div class="card border-0" style="width: 18rem;">
+            <img class="card-img-top" src="../img/cybersecurity/CDF_MalScape.png" alt="Card image cap">
+            <div class="middle">
+              <button class="button-1" role="button" data-toggle="modal" data-target="#project1">Learn More</button>
+              <!-- Button trigger modal -->
+            </div>
+            <div class="card-body special">
+              <h5 class="card-title">MalScape </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- PlaceHolder for now -->
+        <div class="col-sm">
+          <div class="card border-0" style="width: 18rem; opacity: 0;">
+            <img class="card-img-top" src="../img/cybersecurity/CDF_MalScape.png" alt="Card image cap">
+            <div class="middle">
+              <button class="button-1" role="button" data-toggle="modal" data-target="#project1">Learn More</button>
+              <!-- Button trigger modal -->
+            </div>
+            <div class="card-body special">
+              <h5 class="card-title">Project DEMPSEY: An AWS Climate Risk Project</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
 
 <!--footer-->
@@ -336,453 +445,8 @@
     <script src="../js/modals.js"></script>
     <script src="../js/jquery.easing.min.js"></script>
 
-<!--Modals-->
 
-<!-- 3D Malware Game -->
-<div class="modal fade" id="cybersecurity1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 style="text-align:center;">3D Malware Game</h3>
-        </div>
-        <div class="modal-body">
-          <h4>Project Background</h4>
-          <p>Many people are unaware of the dangers of malware. This leads them to unknowingly install malware onto their computer systems and become victims of cyber-attacks. With the rapid rise in malware attacks each year, it is increasingly important to educate the general public on its dangers and how to prevent their devices from getting infected.</p>        
-          <p>The 3D Malware Game is an immersive desktop game. It features many interactive and fun rooms which allow users to move around to learn more about the dangers and threats of malware. In these interactive rooms, players get to enjoy the different game modes as well as learn from informative videos before answering quizzes. By completing the mini-games and quizzes, users will be more informed about the current dangers and threats of malware.</p>
-          <h4>Key Benefits</h4>
-          <ul>
-            <li><strong>Interactive learning experience</strong> – Enables learning in a fun and hands-on manner.</li>
-            <li><strong>Protection from malware via increased awareness</strong> – Ability to identify malware if users encounter them in future.</li>
-          </ul>
-          <h4>Key Technologies Used</h4>
-          <ul>
-            <li>Unity Game Engine</li>
-            <li>Visual Studio Code</li>
-          </ul>
-          <h4>Potential Enhancements</h4>
-          <p>This application can be enhanced with the following:</p>
-          <ul>
-            <li>Wider variety of interactive games and quizzes</li>
-            <li>Better graphics and rendering to enhance immersive experience</li>
-            <li>Support for mobile and VR devices</li>
-          </ul>
-          <h4>Project By</h4>
-          <ul>
-            <li>Law Jia Ying Isebelle (Project Leader)</li>
-            <li>Lim Jing Kai</li>
-            <li>Lim Jun Hui</li>
-            <li>Lucas Ng Hong Wei</li>
-          </ul>
-          <h4>Supervisor</h4>
-          <p>Jet Lim (Mr)</p>
-          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
-          <br />
-          <br />
-        </div>
-      </div>
-      <!-- /.modal-content --> 
-    </div>
-    <!-- /.modal-dialog --> 
-  </div>
-  <!-- /.modal --> 
-  
-  <!-- Arithmetic Circuit Homomorphic Encryption Upgrading RFC7664 to SIDH -->
-  <div class="modal fade" id="cybersecurity2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 style="text-align:center;">Arithmetic Circuit Homomorphic Encryption Upgrading RFC7664 to SIDH</h3>
-        </div>
-        <div class="modal-body">
-          <h4>Project Background</h4>
-          <p>This project is an extension of an on-going research project on Arithmetic Circuit Homomorphic encryption (ACHE) which was implemented based on Fast Fully Homomorphic Encryption over the Torus (TFHE). Previous project groups have implemented the foundation for single operator calculation and use of Dragonfly Key Exchange (RFC 7664) for authentication, and Abstract Syntax Notation One (ASN.1) X.690 Basic Encoding Rule (BER) as well as expanded the capability to calculate expressions up to two operators.</p>
-          <p>This project upgrades the current authentication method of RFC 7664 to a Post-Quantum Algorithm called Supersingular Isogeny Diffie-Hellman which makes use of a family of isogenous curves to map from one elliptic curve to another that is a hard problem to crack even for a quantum computer.</p>
-          
-          <h4>Key Benefits</h4>
-          <ul>
-            <li><strong>Increased speed </strong> – Runs functionally faster than previous iterations of the project</li>
-            <li><strong>Increased security</strong> – Upgrading to a post-quantum algorithm key pairing further hardens the overall system</li>
-          </ul>
-          <h4>Key Technologies Used</h4>
-          <ul>
-            <li>TFHE</li>
-            <li>Ubuntu 20.04 LTS</li>
-            <li>SIDH</li>
-          </ul>
-          <h4>Potential Enhancements</h4>
-          <p>This application can be enhanced with the following:</p>
-          <ul>
-            <li>Implementation of a GUI for better user experience</li>
-            <li>Use of floating-point data type for division capability​</li>
-            <li>Use of Domain Name System to contact clients</li>
-            <li>Bug fixes on long exchange time between Output machine and keygen</li>
-          </ul>
-          <h4>Project By</h4>
-          <ul>
-            <li>Joshua Khoo Wen Xin</li>
-            <li>Justin Teoh Xin Wei</li> 
-          </ul>
-          <h4>Industry Partner</h4>
-          <p>Temasek Polytechnic</p>
-          <h4>Supervisor</h4>
-          <p>Yap Chern Nam (Dr)</p>
-          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
-          <br />
-          <br />
-        </div>
-      </div>
-      <!-- /.modal-content --> 
-    </div>
-    <!-- /.modal-dialog --> 
-  </div>
-  <!-- /.modal --> 
-  
-  <!-- Automation of Malware Analysis -->
-  <div class="modal fade" id="cybersecurity3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 style="text-align:center;">Automation of Malware Analysis</h3>
-        </div>
-        <div class="modal-body">
-          <h4>Project Background</h4>
-          <p>230,000 malwares are discovered every day and this number is expected to grow exponentially. It is challenging for a malware analyst to manually analyse every single malware detected as it is an intensive and tedious process. The analyst might not even be able to perform effective and efficient analysis due to the sheer workload.</p>
-          <p>Automating Malware Analysis helps to improve classification establishment and better incident response which enhances efficiency, especially in organisations where resources1 are paramount. This project utilises various IT technologies (e.g. AMQP Messaging, RPA Platform, Database Technology) during the entire automated malware analysis process2 to produce a detailed report. This report enables analysts to obtain a general idea of the malware capabilities within a short period of time3, thus allowing them to prioritise resources accordingly.
-          </p>
-          <ul>
-            <li>1 Resources refer to time, manpower, hardware and money</li>
-            <li>2 Support for Portable Executable file type only</li>
-            <li>3 Dependent on hardware specifications (~20 minutes)</li>
-          </ul>
-          <h4>Key Benefits</h4>
-          <ul>
-            <li><strong>Reduced human error</strong> – Ensures consistency, adherence to processes, compliance and increased security by eliminating mistakes.</li>
-            <li><strong>User-friendly and Scalable</strong> – Ease of use and customisable to company’s needs.</li>
-            <li><strong>Efficient</strong> – Both static and dynamic analysis are done within a short period of time, saving resources.</li>
-            <li><strong>Resource Prioritisation</strong> – Time, manpower, hardware and money can be reallocated to other crucial areas.</li>
-          </ul>
-          <h4>Key Technologies Used</h4>
-          <ul>
-            <li>UiPath, MySQL and RabbitMQ</li>
-            <li>Languages (e.g. Python, Batch, Bash)</li>
-            <li>Analysis Tools (e.g. Cuckoo Sandbox, FLOSS, PPEE)</li>
-          </ul>
-          <h4>Potential Enhancements</h4>
-          <p>This application can be enhanced with the following:</p>
-          <ul>
-            <li>Better readability and experience for malware analysts</li>
-            <li>Additional support for more file types, analysis tools, and environments</li>
-          </ul>
-          <h4>Project By</h4>
-          <ul>
-            <li>Tay Jing Xun  (Project Leader)</li>
-            <li>Cheryl Toh Wen Qi</li>
-            <li>Samuel Chan</li>
-            <li>Tan Yi Ching</li>
-            <li>Yeo Wan Lin</li>
-          </ul>
-          <h4>Industry Partner</h4>
-          <p>Temasek Polytechnic<br>
-             Malware Analysis Centre</p>
-          <h4>Supervisor</h4>
-          <p>Poh Zhi Yuan (Mr)</p>
-          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
-          <br />
-          <br />
-        </div>
-      </div>
-      <!-- /.modal-content --> 
-    </div>
-    <!-- /.modal-dialog --> 
-  </div>
-  <!-- /.modal --> 
-  
-  <!-- Blockchain Chain of Custody -->
-  <div class="modal fade" id="cybersecurity4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 style="text-align:center;">Blockchain Chain of Custody</h3>
-        </div>
-        <div class="modal-body">
-          <h4>Project Background</h4>
-          <p>During the investigation of criminal cases, the evidence collected must be handled properly so that it can be used to support the case in court. When evidence is transferred from person to person, there is a chance of the evidence being tampered with. As such, the integrity of the evidence needs to be verified through the chain of custody, which is a record of the movement of the evidence. Details that are tracked include the person who handled the evidence, the date and time it was retrieved or transferred as well as the purpose of retrieval. This process typically involves the physical signing of forms to track the logging in and out process. However, these documents can easily be manipulated.</p>
-          <p>The Blockchain Chain of Custody system is a tamper-proof solution that traces the movement of the evidence. This digital system records the details of anyone who needs to interact with the evidence. Blockchain technology decentralises the recorded data, making it close to impossible to alter it. In addition, two-factor authentication (2FA) is required for all logins to the system. Hence, this system is a secure solution that maintains the integrity of evidence.</p>
-          <h4>Key Benefits</h4>
-          <ul>
-            <li><strong>Integrity of evidence</strong> – Provides credibility for use in professional environments.</li>
-            <li><strong>Ease of use</strong> – Includes user-friendly features, such as search function and report generation.</li>
-            <li><strong>Tamper resistant system</strong> – Almost impossible to alter the data.</li>
-            <li><strong>Transparency and accountability</strong> – Shows all details of personnel in custody of the evidence.</li>
-          </ul>
-          <h4>Key Technologies Used</h4>
-          <ul>
-            <li>Blockchain</li>
-            <li>Chain-of-custody system</li>
-            <li>Various security measures</li>
-            <li>Distributed ledger system</li>
-            <li>Delegated proof-of-stake</li>
-          </ul>
-          <h4>Potential Enhancements</h4>
-          <p>This application can be enhanced with the following:</p>
-          <ul>
-            <li>Blockchain mechanism for audit trail</li>
-            <li>Automated adding of evidence</li>
-            <li>Improved advanced search features</li>
-          </ul>
-          <h4>Video</h4>
-          <iframe width="450" height="315" src="https://www.youtube.com/embed/BfWm6zzdoXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <h4>Project By</h4>
-          <ul>
-            <li>Muhammad Yusuf Bin Adlee Nazree (Project Leader)​</li>
-            <li>Lum Zheng Yao, Nigel​</li>
-            <li>Nathan Teo Jiajun</li>
-          </ul>
-          <h4>Supervisor</h4>
-          <p>Lim Chee Yong (Mr)</p>
-          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
-          <br />
-          <br />
-        </div>
-      </div>
-      <!-- /.modal-content --> 
-    </div>
-    <!-- /.modal-dialog --> 
-  </div>
-  <!-- /.modal --> 
-  
-  <!-- Monday Blue -->
-  <div class="modal fade" id="cybersecurity5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 style="text-align:center;">Monday Blues</h3>
-          </div>
-          <div class="modal-body">
-            <h4>Project Background</h4>
-          <p>This project aims to showcase to the public that commonly used wireless Bluetooth devices such as keyboard and mouse can be exploited via Bluetooth vulnerabilities. An attacker with a Bluetooth dongle sniffer combined with an attack software can wirelessly connect to a victim’s Bluetooth mouse or keyboard. The attacker can then maliciously launch a remote desktop session, activate the webcam and key logger on the victim’s Windows machine to retrieve sensitive information.</p> 
-          <p>To mitigate such an attack, the team created a vulnerable device scanning tool programme that will identify if the connected peripheral devices are vulnerable to any known exploits. It will alert the victim to scan the device followed by suggestions for possible remediation such as updating the firmware on the device.</p>
-            
-            <h4>Key Benefits</h4>
-            <ul>
-              <li><strong>Alert</strong> – Alert victims of the threat of being hacked via Bluetooth to the public by giving them a look into the tools that hackers use to infect victims.</li>
-              <li><strong>Convenient</strong> – Checking of vulnerable devices connected to host computers</li>
-            </ul>
-            <h4>Key Technologies Used</h4>
-            <ul>
-               <li>Kali Linux</li>
-               <li>Metasploit </li>
-               <li>Jackit </li>
-               <li>Ducky scripts </li>
-               <li>Python and Web Scraping (Device Scanning Tool)</li>                
-            </ul>
-            <h4>Potential Enhancements</h4>
-            <p>This application can be enhanced with the following:</p>
-            <ul>
-              <li>Include a variety of different exploitation tools like Empire and Cobalt Strike</li>
-              <li>A GUI to choose from different attack methods</li>
-              <li>Totally hidden exploit so the victim would not notice anything peculiar</li>
-              <li>A feature to automatically disconnect the device as soon as a vulnerable device is detected, and encompass a broader range of vulnerabilities (Device Scanning Tool)</li>   
-            </ul>
-            <h4>Project By</h4>
-            <ul>
-              <li>So Hong Yao (Project Leader)</li>
-              <li>Quek Ming Jun Anson</li>
-              <li>Reuben Jeremy Hoh Kai Bin</li>
-              <li>Shalom Zachary Roy</li>     
-            </ul>
-            <h4>Industry Partner</h4>
-            <p>Temasek Polytechnic</p>
-            <h4>Supervisor</h4>
-            <p>Shaun Tan (Mr)</p>
-            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
-            <br />
-            <br />
-          </div>
-        </div>
-        <!-- /.modal-content --> 
-      </div>
-      <!-- /.modal-dialog --> 
-    </div>
-    <!-- /.modal --> 
-  
-  
-    <!-- RPA Integrated Red Teaming Automation -->
-  <div class="modal fade" id="cybersecurity6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 style="text-align:center;">RPA Integrated Red Teaming Automation</h3>
-          </div>
-          <div class="modal-body">
-            <h4>Project Background</h4>
-           <p>Red teaming is a methodology that commonly refers to the practice of testing one’s security systems,
-            aimed to discover system weaknesses and vulnerabilities mainly on operational networks or
-            infrastructure that malicious cyber attackers can exploit. However, these penetration tests need to be
-            done frequently to ensure an adequate security posture.</p>
-            <p>Finding these weaknesses and vulnerabilities individually is a very manually intensive process.
-              However, many scans are done by hand and are repetitive. They severely handicap the efficiency and
-              productivity of our auditors, preventing them from focusing on more important and intricate issues.
-              </p>
-           <p>By integrating Robotic Process Automation (RPA), this project aims to eliminate the need for these
-            processes that are done manually by automating them. We have researched and developed scripts
-            and integrated RPA into them, which can substitute the intensive manual penetration testing
-            procedures. RPA allows more time for the auditors to focus on other complex issues. This will aid Red
-            Team auditors, who must conduct frequent tests on multiple IT infrastructures, to produce more
-            accurate and consistent results in shorter time frames.</p>          
-            <h4>Key Benefits</h4>
-            <ul>
-              <li><strong>Ease of use</strong> – Intuitive user interface allows users to execute scans easily</li>
-              <li><strong>Efficient</strong> – Usage of RPA automates certain processes and reduces downtime</li>
-              <li><strong>Productivity Boost</strong> – Lessens the load on auditors, allowing them to work on more complex issues</li>
-              <li><strong>Consistent and Accurate</strong> – Scan results mainly focused on consistency and accuracy</li>
-            </ul>
-            <h4>Key Technologies Used</h4>
-            <ul>
-              <li>Python Programming</li>
-              <li>RPA with Python (TagUI)</li>
-              <li>Flask Web Development</li>              
-            </ul>
-            <h4>Potential Enhancements</h4>
-            <p>This application can be enhanced with the following:</p>
-            <ul>
-                <li>More comprehensive dashboard for better data visualization</li>
-                <li>User Management System to track user usage of the software</li>
-                <li>Scheduling Capabilities</li>          
-            </ul>
-            <h4>Project By</h4>
-            <ul>
-              <li>Ng Sheng Qi Ethan (Project Leader)</li>
-                <li>Nicholas Kee</li>
-                <li>Owen Terence</li>
-                <li>Pang Zheng Da</li>              
-            </ul>
-            <h4>Industry Partner</h4>
-            <p>Temasek Polytechnic</p>
-            <h4>Supervisor</h4>
-            <p>Lim Chee Yong (Mr)</p>
-            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
-            <br />
-            <br />
-          </div>
-        </div>
-        <!-- /.modal-content --> 
-      </div>
-      <!-- /.modal-dialog --> 
-    </div>
-    <!-- /.modal --> 
-  
-      <!-- The Hacker's Playground -->
-  <div class="modal fade" id="cybersecurity7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 style="text-align:center;">The Hacker's Playground</h3>
-          </div>
-          <div class="modal-body">
-            <h4>Project Background</h4>
-              <p>The project is designed to complement a core subject “Ethical Hacking and Intrusion Prevention (EHIP)” in the Diploma in Cybersecurity & Digital Forensics. This project provides students with an opportunity to perform cyberattacks on a fictitious organisation and ultimately gain a solid foundational understanding of penetration testing – an authorised simulated cyberattack on a computer system performed to evaluate the security of the system.</p>
-               <p>The Hacker's Playground serves as a comprehensive, beginner-friendly sandbox environment revolving around a simulated corporation. Its sole purpose is for information security enthusiasts to enhance their hacking skills and practise what they have learned in a fun yet challenging way. The sandbox provides a training ground for learning pen-testing strategies, tools, and industry standards.</p>
-  
-            <h4>Key Benefits</h4>
-            <ul> 
-              <li><strong>Educational</strong> – Nurtures individuals in the cybersecurity field</li> 
-              <li><strong>Strengthen Defence</strong> – Enhances Singapore’s front-line defence against cyber criminals</li> 
-              <li><strong>Practical –</strong> Provides an engaging and educational structure for all participants</li>           
-            </ul>
-            <h4>Key Technologies Used</h4>
-            <ul>
-                <li>Oracle VM VirtualBox</li> 
-                <li>Windows & Linux Based Operating Systems</li> 
-                <li>PfSense Software</li>                             
-            </ul>
-            <h4>Potential Enhancements</h4>
-            <p>This application can be enhanced with the following:</p>
-            <ul>
-                <li>Include more Windows and MacOS machines to simulate the real world</li>  
-                <li>Addition of web-based attacks</li>  
-                <li>Implement challenges that involve exploiting the software of games</li>  
-                <li>Introduce a sequel which comprises intermediary and more advanced challenges</li>      
-            </ul>
-            <h4>Project By</h4>
-            <ul>
-                <li>Leong Shao Jun (Project Leader)</li>  
-                <li>Kang Chenghua</li>  
-                <li>Khin Phyu Phyu Sin</li>  
-                <li>Maria Varghese</li>                             
-            </ul>
-            <h4>Industry Partner</h4>
-            <p>Temasek Polytechnic</p>
-            <h4>Supervisor</h4>
-            <p>Sayed Hamzah Sayed Ali Alhabshe (Mr)</p>
-            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
-            <br />
-            <br />
-          </div>
-        </div>
-        <!-- /.modal-content --> 
-      </div>
-      <!-- /.modal-dialog --> 
-    </div>
-    <!-- /.modal --> 
-  
-      <!-- Intrusion Defense System -->
-  <div class="modal fade" id="cybersecurity8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 style="text-align:center;">Intrusion Defense System</h3>
-          </div>
-          <div class="modal-body">
-            <h4>Project Background</h4>
-            <p>Cyber threats have been on the rise in recent years. To combat this, many organisations have resorted to purchasing expensive security solutions. However, Small and Medium-Sized Enterprises (SMEs) may not be able to afford such robust solutions to protect their network.</p>
-            <p>The TP AMC Network Security Solution is a two-part project to enhance the cybersecurity infrastructure in Temasek Polytechnic’s Advanced Manufacturing Centre (TP AMC). The first part involved rigorous penetration testing to identify specific security concerns within the AMC Lab. Following this, the team created an affordable tool to protect against the identified security flaws in the network. The tool integrates the ntopng software with inexpensive MikroTik network routers to block potential cyber attacks. It also sends alerts to notify users about these incoming attacks. As such, this project provides an effective and low-cost network security solution that can be used by SMEs.</p>          
-  
-            <h4>Key Benefits</h4>
-            <ul>         
-              <li>Identifying vulnerabilities</li> 
-              <li>Highlighting potential impact on AMC</li> 
-              <li>Provide SMEs with a cost-efficient solution.</li>
-              <li>Able to be used as teaching material to facilitate education on 
-                cybersecurity engineering.</li>
-                <li>Open-source model to encourage open collaboration.</li>
-            </ul>
-            <h4>Key Technologies Used</h4>
-            <ul>
-                <li>Kali Linux</li> 
-                <li>MikroTik</li> 
-                <li>ntopng</li> 
-                <li>TagUI – RPA</li> 
-                <li>Scapy</li> 
-                <li>Ubuntu</li>                                             
-            </ul>
-            <h4>Potential Enhancements</h4>
-            <p>This application can be enhanced with the following:</p>
-            <ul>
-                <li>EtherCAT switch</li> 
-                <li>Include contexts such as user, device, application, and more in the alerts.</li> 
-                <li>Block off suspicious network ports in addition to the IPv4 address.</li> 
-                <li>Enhance the reliability of the RPA program.</li> 
-       
-            </ul>
-            <h4>Project By</h4>
-            <ul>
-                <li>Chue Zen Whye (Project Leader)</li> 
-                <li>Denver Chin Zhihua</li>                            
-            </ul>
-            <h4>Industry Partner</h4>
-            <p>Temasek Polytechnic Advanced Manufacturing Centre (AMC)</p>
-            <h4>Supervisor</h4>
-            <p>Yap Chern Nam (Dr)</p>
-            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
-            <br />
-            <br />
-          </div>
-        </div>
-        <!-- /.modal-content --> 
-      </div>
-      <!-- /.modal-dialog --> 
-    </div>
-    <!-- /.modal --> 
+
+
 </body>
 </html>

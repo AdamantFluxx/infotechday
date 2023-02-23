@@ -23,7 +23,7 @@
   }
   
   .card-img-top {
-      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       height: 200px;
       width: 100px;
       transition: .5s ease;
